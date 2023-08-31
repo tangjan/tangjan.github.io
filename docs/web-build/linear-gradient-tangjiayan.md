@@ -1,7 +1,5 @@
 # CSS linear-gradient 渐变色
 
-<link rel="stylesheet" href="/style.css">
-
 偶然了解到了 CSS 的 [linear-gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images/Using_CSS_gradients)，于是想用它将「糖加盐」进行字体渐变渲染。
 
 效果：<span class="jan">糖加盐</span>
@@ -31,3 +29,4 @@ color: [transparent](https://developer.mozilla.org/en-US/docs/Web/CSS/named-colo
 
 * [background-clip - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip)
 * [通过CSS实现 文字渐变色 的两种方式 - 前端简单说 - SegmentFault 思否](https://segmentfault.com/a/1190000011882933)
+* [Extending the Default Theme | VitePress](https://vitepress.dev/guide/extending-default-theme#customizing-css)
