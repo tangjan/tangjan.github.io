@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "糖加盐的笔记站",
+  title: "糖加盐的学习笔记",
   description: "Jan Tang",
   // lastUpdated: true,
   themeConfig: {
@@ -20,8 +20,12 @@ export default defineConfig({
     //   copyright: 'Copyright © 2019-present Evan You'
     // },
     search: {
-      provider: 'local'
+      provider: 'local',
     },
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/tangjan' }
+    ],
 
     sidebar: [
       {
@@ -106,19 +110,9 @@ export default defineConfig({
         ]
       },
       {
-        text: '草稿',
-        items: [
-          { text: 'VitePress 部署到 Github Pages', link: '/draft/vitepress/vitepress-github-pages'}
-        ]
-      },
-      {
         text: `CC BY-NC-SA 4.0`, link: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh',
       }
     ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/tangjan' }
-    ]
   }
 })
 

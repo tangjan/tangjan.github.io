@@ -8,30 +8,30 @@ import {
 } from "./chunk-V634PGSD.js";
 
 // node_modules/vitepress/dist/client/theme-default/index.js
-import "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/styles/fonts.css";
+import "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/styles/fonts.css";
 
 // node_modules/vitepress/dist/client/theme-default/without-fonts.js
-import "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/styles/vars.css";
-import "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/styles/base.css";
-import "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/styles/utils.css";
-import "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/styles/components/custom-block.css";
-import "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/styles/components/vp-code.css";
-import "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/styles/components/vp-code-group.css";
-import "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/styles/components/vp-doc.css";
-import "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/styles/components/vp-sponsor.css";
-import VPBadge from "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/components/VPBadge.vue";
-import Layout from "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/Layout.vue";
-import { default as default2 } from "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/components/VPImage.vue";
-import { default as default3 } from "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/components/VPButton.vue";
-import { default as default4 } from "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/components/VPHomeHero.vue";
-import { default as default5 } from "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/components/VPHomeFeatures.vue";
-import { default as default6 } from "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/components/VPHomeSponsors.vue";
-import { default as default7 } from "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/components/VPDocAsideSponsors.vue";
-import { default as default8 } from "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/components/VPSponsors.vue";
-import { default as default9 } from "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/components/VPTeamPage.vue";
-import { default as default10 } from "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/components/VPTeamPageTitle.vue";
-import { default as default11 } from "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/components/VPTeamPageSection.vue";
-import { default as default12 } from "E:/Program Files/nodejs/node_modules/vitepress/dist/client/theme-default/components/VPTeamMembers.vue";
+import "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/styles/vars.css";
+import "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/styles/base.css";
+import "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/styles/utils.css";
+import "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/styles/components/custom-block.css";
+import "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/styles/components/vp-code.css";
+import "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/styles/components/vp-code-group.css";
+import "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/styles/components/vp-doc.css";
+import "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/styles/components/vp-sponsor.css";
+import VPBadge from "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/components/VPBadge.vue";
+import Layout from "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/Layout.vue";
+import { default as default2 } from "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/components/VPImage.vue";
+import { default as default3 } from "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/components/VPButton.vue";
+import { default as default4 } from "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/components/VPHomeHero.vue";
+import { default as default5 } from "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/components/VPHomeFeatures.vue";
+import { default as default6 } from "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/components/VPHomeSponsors.vue";
+import { default as default7 } from "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/components/VPDocAsideSponsors.vue";
+import { default as default8 } from "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/components/VPSponsors.vue";
+import { default as default9 } from "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/components/VPTeamPage.vue";
+import { default as default10 } from "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/components/VPTeamPageTitle.vue";
+import { default as default11 } from "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/components/VPTeamPageSection.vue";
+import { default as default12 } from "Y:/repositories/vitepress/vitepress-jan-note/node_modules/vitepress/dist/client/theme-default/components/VPTeamMembers.vue";
 
 // node_modules/vitepress/dist/client/shared.js
 var inBrowser = typeof document !== "undefined";
