@@ -40,4 +40,4 @@
 更多地记一些 <span style="color:red;">公开化的</span> 知识笔记，也就是仅通过 [Internet](https://en.wikipedia.org/wiki/Internet) 就能获取到的知识。
 像 <span style="color:red;">公司内部</span>、<span style="color:red;">商业项目</span> 等 有<span style="color:red;">保密</span>要求的知识就不记啦。
 
-测试。
+测试。~
