@@ -1,11 +1,3 @@
-<!-- ---
-
-layout: doc
-
---- -->
-
-<!-- https://vitepress.dev/reference/default-theme-home-page -->
-
 # README
 
 本站是「糖加盐的笔记站」，用来记录个人学习笔记。
@@ -14,7 +6,7 @@ layout: doc
 
 答：
 
-我认为笔记要是 <mark style="color:red;">自己的</mark>、能 <span style="color:red;">娓娓</span>[^1]<mark style="color:red;">而谈</mark> 的东西。
+我认为笔记要是 <span style="color:red;">自己的</span>、能 <span style="color:red;">娓娓而谈</span> 的东西。
 
 娓娓：形容说话不知疲倦或婉转动听的样子。
 
@@ -30,20 +22,20 @@ layout: doc
 
 笔记站的主要目的是梳理自己的知识体系；博客的主要目的是让一个陌生人最快速地了解我。
 
-因此笔记站用来记录成体系的、零散的知识笔记，博客用来记录拿得出手的 <mark style="color:red;">项目</mark> / <mark style="color:red;">文章</mark>。
+因此笔记站用来记录成体系的、零散的知识笔记，博客用来记录拿得出手的 <span style="color:red;">项目</span> / <span style="color:red;">文章</span>。
 
 ## 为什么要把笔记公开发表，而不是自己写Word文档存在电脑里自己看？
 
 答：
 
-1. 可以<mark style="color:red;">让大家看到</mark>，起到监督作用，让我更有动力把笔记记得美观、详细一些；
-2. 满足自己的<mark style="color:red;">表现欲</mark>；
+1. 可以<span style="color:red;">让大家看到</span>，起到监督作用，让我更有动力把笔记记得美观、详细一些；
+2. 满足自己的<span style="color:red;">表现欲</span>；
 3. 算是一个小项目展示出来；
-4. markdown 格式的笔记简约好看。
+4. spandown 格式的笔记简约好看。
 
 以上原因大致按照重要性排序。
 
 ## 记哪些笔记？
 
-更多地记一些 <mark style="color:red;">公开化的</mark> 知识笔记，也就是仅通过 [Internet](https://en.wikipedia.org/wiki/Internet) 就能获取到的知识。
-像 <mark style="color:red;">公司内部</mark>、<mark style="color:red;">商业项目</mark> 等 有<mark style="color:red;">保密</mark>要求的知识就不记啦。
+更多地记一些 <span style="color:red;">公开化的</span> 知识笔记，也就是仅通过 [Internet](https://en.wikipedia.org/wiki/Internet) 就能获取到的知识。
+像 <span style="color:red;">公司内部</span>、<span style="color:red;">商业项目</span> 等 有<span style="color:red;">保密</span>要求的知识就不记啦。

@@ -6,7 +6,7 @@ Google 了一下，参考 [申请SSL证书一直无法通过DNS验证的问题](
 
 <figure><img src="https://cdn.tangjiayan.com/notes/default/CAA-record.png" alt=""><figcaption></figcaption></figure>
 
-[CAA](https://en.wikipedia.org/wiki/DNS\_Certification\_Authority\_Authorization)，全称 <mark style="color:red;">C</mark>ertification <mark style="color:red;">A</mark>uthority <mark style="color:red;">A</mark>uthorization，证书颁发机构授权。
+[CAA](https://en.wikipedia.org/wiki/DNS\_Certification\_Authority\_Authorization)，全称 <span style="color:red;">C</span>ertification <span style="color:red;">A</span>uthority <span style="color:red;">A</span>uthorization，证书颁发机构授权。
 
 CAA 类型记录的作用是域名持有者向 [CA](https://en.wikipedia.org/wiki/Certificate\_authority)（证书颁发机构）表明他们是否有权为特定域名颁发数字证书。
 
