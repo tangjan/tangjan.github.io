@@ -2,7 +2,10 @@
 
 偶然了解到了 CSS 的 [linear-gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images/Using_CSS_gradients)，于是想用它将「糖加盐」进行字体渐变渲染。
 
-效果：<span class="jan">糖加盐</span>
+效果：
+<p class="jan">糖加盐</p>
+
+CSS：
 
 ```css
 .jan{
@@ -20,10 +23,10 @@ color: [transparent](https://developer.mozilla.org/en-US/docs/Web/CSS/named-colo
 
 <figure>
 <img style="text-align:center;" src="https://piapro.net/intl/images/ch_img_miku.png" alt="">
-<img src="https://img.moegirl.org.cn/common/8/84/YUEZHENGLING.jpg" alt="">
+<img src="https://cdn.tangjiayan.com/notes/common/YUEZHENGLING.png" alt="">
 </figure>
 
-图片分别引用自 [piapro](https://piapro.net/intl/zh-cn_character.html)、[萌娘百科](https://zh.moegirl.org.cn/%E4%B9%90%E6%AD%A3%E7%BB%AB) 。
+图片分来自 [piapro](https://piapro.net/intl/zh-cn_character.html)、[萌娘百科](https://zh.moegirl.org.cn/%E4%B9%90%E6%AD%A3%E7%BB%AB) 。
 
 参考：
 
