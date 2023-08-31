@@ -12,6 +12,8 @@
 
 ## 记录
 
+* 8月31日
+  * [VitePress 部署到 Github Pages](/web-build/vitepress-github-pages)
 * 8月30日
   * 将笔记从 [GitBook](https://www.gitbook.com/) 迁移至 [Vitepress](https://vitepress.dev/)
 * 8月29日

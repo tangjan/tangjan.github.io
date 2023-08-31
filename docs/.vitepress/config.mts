@@ -63,6 +63,7 @@ export default defineConfig({
             text: '建站',
             collapsed: true,
             items: [
+              { text: 'VitePress 部署到 Github Pages', link: '/web-build/vitepress-github-pages'},
               { text: 'CAA 类型解析记录会影响 SSL 证书的申请', link: '/web-build/caa-ssl'},
               { text: 'Windows 本地 Wordpress CMS 搭建', link: '/web-build/windows-local-wordpress'},
               { text: 'XAMPP - phpmyadmin：Error establishing a database connection', link: '/web-build/debug/Error-establishing-a-database-connection'},
