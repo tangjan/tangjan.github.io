@@ -9,4 +9,4 @@
 
 * `'0'` = 48
 * `'A'` = 65
-* `'a'` = 65 + <mark style="color:red;">32</mark> = 97
+* `'a'` = 65 + <font color="red">32</font> = 97

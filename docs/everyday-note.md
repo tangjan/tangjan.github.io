@@ -12,6 +12,8 @@
 
 ## 记录
 
+* 9月1日
+  * [重装 v2ray - WS + TLS + Web + CloudFlare](/anti/reinstall-v2ray)
 * 8月31日
   * [VitePress 部署到 Github Pages](/web-build/vitepress-github-pages)
   * [CSS linear-gradient 渐变色](/web-build/linear-gradient-tangjiayan)
