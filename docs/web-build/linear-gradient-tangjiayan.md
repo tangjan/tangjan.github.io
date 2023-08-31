@@ -26,7 +26,7 @@ color: [transparent](https://developer.mozilla.org/en-US/docs/Web/CSS/named-colo
 <img src="https://cdn.tangjiayan.com/notes/common/YUEZHENGLING.png" alt="">
 </figure>
 
-图片分来自 [piapro](https://piapro.net/intl/zh-cn_character.html)、[萌娘百科](https://zh.moegirl.org.cn/%E4%B9%90%E6%AD%A3%E7%BB%AB) 。
+图片分别来自 [piapro](https://piapro.net/intl/zh-cn_character.html)、[萌娘百科](https://zh.moegirl.org.cn/%E4%B9%90%E6%AD%A3%E7%BB%AB) 。
 
 参考：
 
