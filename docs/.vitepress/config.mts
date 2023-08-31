@@ -13,7 +13,7 @@ export default defineConfig({
     //   // { text: '学习笔记', link: '/markdown-examples' }
     // ],
 
-    logo: '/logo.svg',
+    logo: 'https://cdn.tangjiayan.com/logo.svg',
 
     // footer:{
     //   message: 'Released under the MIT License.',
