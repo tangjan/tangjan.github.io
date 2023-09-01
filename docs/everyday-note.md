@@ -14,6 +14,7 @@
 
 * 9月1日
   * [重装 v2ray - WS + TLS + Web + CloudFlare](/anti/reinstall-v2ray)
+  * [设置 lastUpdated 时出现 spawn-git-ENOENT](/web-build/vitepress/spawn-git-ENOENT)
 * 8月31日
   * [VitePress 部署到 Github Pages](/web-build/vitepress-github-pages)
   * [CSS linear-gradient 渐变色](/web-build/linear-gradient-tangjiayan)

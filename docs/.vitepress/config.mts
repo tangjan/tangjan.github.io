@@ -41,13 +41,6 @@ export default defineConfig({
       {
         text: '未分类',
         items: [
-          { text: 'liunx',
-            collapsed: true,
-            items: [
-              { text: '常见命令的全称', link: '/unclassified/linux/full-name' },
-              { text: '用户管理', link: '/unclassified/linux/user' }
-            ]
-          },
           { text: '未分类',
             collapsed: true,
             items: [
@@ -56,20 +49,18 @@ export default defineConfig({
               { text: 'VS Code 插件 markdownlint 提示 “no-hard-tabs”', link: '/unclassified/vscode-hard-tab'},
             ]
           },
+          { text: 'liunx',
+            collapsed: true,
+            items: [
+              { text: '常见命令的全称', link: '/unclassified/linux/full-name' },
+              { text: '用户管理', link: '/unclassified/linux/user' }
+            ]
+          },
         ],
       },
       {
         text: '建站',
         items: [
-          {
-            text: 'VitePress',
-            collapsed: true,
-            items:[
-              { text: 'VitePress 部署到 Github Pages', link: '/web-build/vitepress/vitepress-github-pages'},
-              { text: '设置 lastUpdated 时出现 spawn-git-ENOENT', link: '/web-build/vitepress/spawn-git-ENOENT'},
-              
-            ],
-          },
           {
             text: '建站',
             collapsed: true,
@@ -80,7 +71,16 @@ export default defineConfig({
               { text: 'CSS linear-gradient 渐变色', link: '/web-build/linear-gradient-tangjiayan'},
               { text: 'XAMPP - phpmyadmin：Error establishing a database connection', link: '/web-build/debug/Error-establishing-a-database-connection'},
             ]
-          }
+          },
+          {
+            text: 'VitePress',
+            collapsed: true,
+            items:[
+              { text: 'VitePress 部署到 Github Pages', link: '/web-build/vitepress/vitepress-github-pages'},
+              { text: '设置 lastUpdated 时出现 spawn-git-ENOENT', link: '/web-build/vitepress/spawn-git-ENOENT'},
+              
+            ],
+          },
         ]
       },
       {
