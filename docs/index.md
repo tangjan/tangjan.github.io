@@ -36,7 +36,7 @@
 2. Word 文档不太方便实现 [www](https://en.wikipedia.org/wiki/World_Wide_Web) 的效果；
 3. 网页更方便分享与互联。
 
-## 为什么要公开发表，而不是自己看？
+## 为什么要公开发表，而不是只自己看？
 
 答：
 

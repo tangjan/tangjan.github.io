@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "糖加盐的学习笔记",
   description: "Jan Tang",
+  head: [['link', { rel: 'icon', href: 'https://cdn.tangjiayan.com/logo.svg' }]],
   // lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
