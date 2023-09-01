@@ -43,7 +43,8 @@
 1. 可以 <span style="color:red;">让大家看到</span>，起到监督作用，让我更有动力把笔记写得美观、详细、准确；
 2. 满足自己的 <span style="color:red;">表现欲</span>；
 3. 算是一个小项目展示出来；
-4. [VitePress](https://vitepress.dev/) + [markdown](https://daringfireball.net/projects/markdown/syntax) 用来记笔记，功能丰富、简单、简约、美观。
+4. [VitePress](https://vitepress.dev/) + [markdown](https://daringfireball.net/projects/markdown/syntax) 用来记笔记，功能丰富、简单、简约、美观；
+5. 锻炼表述能力。
 
 ## 记哪些笔记？
 
