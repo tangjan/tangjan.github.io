@@ -13,7 +13,7 @@
 ## 记录
 
 - 9月3日
-  - [注音元素 &lt;ruby&gt;](/web-build/HTML/ruby)
+  - [注音元素 &lt;ruby&gt;](/web-build/html/ruby)
 - 9月2日
   - 食言啦 !
 - 9月1日
