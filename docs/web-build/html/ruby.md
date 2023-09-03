@@ -1,4 +1,4 @@
-# HTML 注音元素 &lt;ruby&gt;
+# 注音元素 &lt;ruby&gt;
 
 ## 例
 

@@ -84,7 +84,7 @@ export default defineConfig({
             text: 'HTML',
             collapsed: true,
             items:[
-              { text: 'HTML 注音元素 &lt;ruby&gt;', link: '/web-build/ruby'},
+              { text: 'HTML 注音元素 &lt;ruby&gt;', link: '/web-build/html/ruby'},
             ],
           },
         ]
