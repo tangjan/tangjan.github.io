@@ -29,7 +29,7 @@
 </ruby>
 
 > [尾上 世莉架](https://zh.moegirl.org.cn/%E5%B0%BE%E4%B8%8A%E4%B8%96%E8%8E%89%E6%9E%B6)：《Caho;Child》女主角。
-> ![onoe-serika](http://chaoschild.jp/origin/images/chara_serika.png)
+> ![onoe-serika](https://cdn.tangjiayan.com/notes/common/chara_serika.png)
 
 ### HTML
 
