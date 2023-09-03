@@ -53,3 +53,7 @@
 更多地记一些 <span style="color:red;">公开化</span> 的知识笔记，也就是仅通过 [Internet](https://en.wikipedia.org/wiki/Internet) 就能获取到的知识。
 
 像 <span style="color:red;">公司内部</span>、<span style="color:red;">商业项目</span> 等有保密要求的知识就不记啦。
+
+## 请突破网络审查后再来阅读
+
+本站有很多[墙](https://zh.wikipedia.org/wiki/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E)外 [URL](https://en.wikipedia.org/wiki/URL)，所以请自行 [突破网络审查](https://zh.wikipedia.org/wiki/%E7%AA%81%E7%A0%B4%E7%BD%91%E7%BB%9C%E5%AE%A1%E6%9F%A5) 后再来阅读哦 !

@@ -49,7 +49,7 @@ export default defineConfig({
               { text: 'VS Code 插件 markdownlint 提示 “no-hard-tabs”', link: '/unclassified/vscode-hard-tab'},
             ]
           },
-          { text: 'liunx',
+          { text: 'Liunx',
             collapsed: true,
             items: [
               { text: '常见命令的全称', link: '/unclassified/linux/full-name' },
