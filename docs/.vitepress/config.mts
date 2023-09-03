@@ -78,7 +78,13 @@ export default defineConfig({
             items:[
               { text: 'VitePress 部署到 Github Pages', link: '/web-build/vitepress/vitepress-github-pages'},
               { text: '设置 lastUpdated 时出现 spawn-git-ENOENT', link: '/web-build/vitepress/spawn-git-ENOENT'},
-              
+            ],
+          },
+          {
+            text: 'HTML',
+            collapsed: true,
+            items:[
+              { text: '注音元素 &lt;ruby&gt;', link: '/web-build/html/ruby'},
             ],
           },
         ]

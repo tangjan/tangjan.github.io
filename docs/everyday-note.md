@@ -8,22 +8,26 @@
 
 对策：
 
-* 每天发表 <span style="color:red;">至少一篇</span> 笔记初版。
+- 每天发表 <span style="color:red;">至少一篇</span> 笔记初版。
 
 ## 记录
 
-* 9月1日
-  * [重装 v2ray - WS + TLS + Web + CloudFlare](/anti/reinstall-v2ray)
-  * [设置 lastUpdated 时出现 spawn-git-ENOENT](/web-build/vitepress/spawn-git-ENOENT)
-* 8月31日
-  * [VitePress 部署到 Github Pages](/web-build/vitepress/vitepress-github-pages)
-  * [CSS linear-gradient 渐变色](/web-build/linear-gradient-tangjiayan)
-* 8月30日
-  * 将笔记从 [GitBook](https://www.gitbook.com/) 迁移至 [Vitepress](https://vitepress.dev/)
-* 8月29日
-  * [array](/programming/c++/containers/array)
-* 8月28日
-  * [XAMPP - phpmyadmin：Error establishing a database connection](/web-build/debug/Error-establishing-a-database-connection)
-  <!-- * [CSS：linear-gradient 实现融入 MIKU绿 和 阿绫红 的「糖加盐」](web-build/footer-tangjiayan.md) -->
-* 8月27日
-  * [VS Code 插件 markdownlint 提示 “no-hard-tabs”](/unclassified/vscode-hard-tab)
+- 9月3日
+  - [注音元素 &lt;ruby&gt;](/web-build/HTML/ruby)
+- 9月2日
+  - 食言啦 !
+- 9月1日
+  - [重装 v2ray - WS + TLS + Web + CloudFlare](/anti/reinstall-v2ray)
+  - [设置 lastUpdated 时出现 spawn-git-ENOENT](/web-build/vitepress/spawn-git-ENOENT)
+- 8月31日
+  - [VitePress 部署到 Github Pages](/web-build/vitepress/vitepress-github-pages)
+  - [CSS linear-gradient 渐变色](/web-build/linear-gradient-tangjiayan)
+- 8月30日
+  - 将笔记从 [GitBook](https://www.gitbook.com/) 迁移至 [Vitepress](https://vitepress.dev/)
+- 8月29日
+  - [array](/programming/c++/containers/array)
+- 8月28日
+  - [XAMPP - phpmyadmin：Error establishing a database connection](/web-build/debug/Error-establishing-a-database-connection)
+  <!-- - [CSS：linear-gradient 实现融入 MIKU绿 和 阿绫红 的「糖加盐」](web-build/footer-tangjiayan.md) -->
+- 8月27日
+  - [VS Code 插件 markdownlint 提示 “no-hard-tabs”](/unclassified/vscode-hard-tab)
