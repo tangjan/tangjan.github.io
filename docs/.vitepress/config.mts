@@ -65,7 +65,7 @@ export default defineConfig({
             text: '建站',
             collapsed: true,
             items: [
-              
+              { text: '仿豆瓣主页静态页面', link: '/web-build/fake-douban'},
               { text: 'CAA 类型解析记录会影响 SSL 证书的申请', link: '/web-build/caa-ssl'},
               { text: 'Windows 本地 Wordpress CMS 搭建', link: '/web-build/windows-local-wordpress'},
               { text: 'CSS linear-gradient 渐变色', link: '/web-build/linear-gradient-tangjiayan'},
