@@ -69,6 +69,7 @@ export default defineConfig({
               { text: 'Windows 本地 Wordpress CMS 搭建', link: '/web-build/windows-local-wordpress'},
               { text: 'CAA 类型解析记录会影响 SSL 证书的申请', link: '/web-build/caa-ssl'},
               { text: 'XAMPP - phpmyadmin：Error establishing a database connection', link: '/web-build/debug/Error-establishing-a-database-connection'},
+              { text: 'url', link: '/web-build/url'},
             ]
           },
           {
@@ -77,6 +78,13 @@ export default defineConfig({
             items:[
               { text: 'VitePress 部署到 Github Pages', link: '/web-build/vitepress/vitepress-github-pages'},
               { text: '设置 lastUpdated 时出现 spawn-git-ENOENT', link: '/web-build/vitepress/spawn-git-ENOENT'},
+            ],
+          },
+          {
+            text: 'WordPress',
+            collapsed: true,
+            items:[
+              { text: 'Windows 本地 Wordpress CMS 搭建', link: '/web-build/wordpress/windows-local-wordpress'},
             ],
           },
           {
