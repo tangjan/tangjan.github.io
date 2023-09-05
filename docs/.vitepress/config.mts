@@ -60,6 +60,7 @@ export default defineConfig({
       },
       {
         text: '建站',
+        // collapsed: true,
         items: [
           {
             text: '建站',
@@ -71,6 +72,27 @@ export default defineConfig({
               { text: 'XAMPP - phpmyadmin：Error establishing a database connection', link: '/web-build/debug/Error-establishing-a-database-connection'},
               { text: 'url', link: '/web-build/url'},
             ]
+          },
+          {
+            text: 'CSS',
+            collapsed: true,
+            items:[
+              { text: 'linear-gradient 渐变色', link: '/web-build/css/linear-gradient-tangjiayan'},
+            ],
+          },
+          {
+            text: 'HTML',
+            collapsed: true,
+            items:[
+              { text: 'HTML 注音元素 &lt;ruby&gt;', link: '/web-build/html/ruby'},
+            ],
+          },
+          {
+            text: 'Markdown',
+            collapsed: true,
+            items:[
+              { text: 'GitHub-Style Table', link: '/web-build/markdown/github-style-table'},
+            ],
           },
           {
             text: 'VitePress',
@@ -85,20 +107,6 @@ export default defineConfig({
             collapsed: true,
             items:[
               { text: 'Windows 本地 Wordpress CMS 搭建', link: '/web-build/wordpress/windows-local-wordpress'},
-            ],
-          },
-          {
-            text: 'HTML',
-            collapsed: true,
-            items:[
-              { text: 'HTML 注音元素 &lt;ruby&gt;', link: '/web-build/html/ruby'},
-            ],
-          },
-          {
-            text: 'CSS',
-            collapsed: true,
-            items:[
-              { text: 'linear-gradient 渐变色', link: '/web-build/css/linear-gradient-tangjiayan'},
             ],
           },
         ]

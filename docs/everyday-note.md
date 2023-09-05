@@ -14,6 +14,8 @@
 
 ::: details 2023.9
 
+- 9月5日
+  - [GitHub-Style Table](/web-build/markdown/github-style-table.md)
 - 9月4日
   - [仿豆瓣主页静态页面](/web-build/fake-douban)
   - [url](/web-build/url)
