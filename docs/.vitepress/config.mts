@@ -67,7 +67,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: '仿豆瓣主页静态页面', link: '/web-build/fake-douban'},
-              { text: 'Windows 本地 Wordpress CMS 搭建', link: '/web-build/windows-local-wordpress'},
+              { text: 'Windows 本地 Wordpress CMS 搭建', link: '/web-build/wordpress/windows-local-wordpress'},
               { text: 'CAA 类型解析记录会影响 SSL 证书的申请', link: '/web-build/caa-ssl'},
               { text: 'XAMPP - phpmyadmin：Error establishing a database connection', link: '/web-build/debug/Error-establishing-a-database-connection'},
               { text: 'url', link: '/web-build/url'},

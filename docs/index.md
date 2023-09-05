@@ -50,8 +50,10 @@
 
 答：
 
-1. <span style="color:red;">公开化</span> 的知识笔记，也就是仅通过 [Internet](https://en.wikipedia.org/wiki/Internet) 就能获取到的知识，像 <span style="color:red;">公司内部</span>、<span style="color:red;">商业项目</span> 等 有保密要求的知识就不记了；
-2. 更多地记一些 毫无感情的、[技术](https://zh.wikipedia.org/wiki/%E6%8A%80%E6%9C%AF) 相关的笔记，带有个人经历色彩的文章会放在博客里；
+更多地记一些：
+
+1. [公有领域](https://zh.wikipedia.org/wiki/%E5%85%AC%E6%9C%89%E9%A2%86%E5%9F%9F) 的知识笔记；
+2. 毫无感情的 [技术](https://zh.wikipedia.org/wiki/%E6%8A%80%E6%9C%AF) 笔记。带有个人经历色彩的文章会放在博客里。
 
 ## 请突破网络审查后再来阅读
 
