@@ -9,6 +9,6 @@
     "vitepress": "^1.0.0-rc.10"
   },
   "dependencies": {
-    "git": "^0.1.5"
+    "markdown-it-katex": "^2.0.3"
   }
 }

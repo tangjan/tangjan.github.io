@@ -16,6 +16,7 @@
 
 - 9月5日
   - [GitHub-Style Table](/web-build/markdown/github-style-table.md)
+  - [VitePress 中使用 Katex](/web-build/vitepress/vitepress-katex.md)
 - 9月4日
   - [仿豆瓣主页静态页面](/web-build/fake-douban)
   - [url](/web-build/url)

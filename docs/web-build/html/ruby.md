@@ -28,7 +28,7 @@
     <rp>)</rp>
 </ruby>
 
-> [尾上 世莉架](https://zh.moegirl.org.cn/%E5%B0%BE%E4%B8%8A%E4%B8%96%E8%8E%89%E6%9E%B6)：《Cahos;Child》女主角。
+> [尾上 世莉架](https://zh.moegirl.org.cn/%E5%B0%BE%E4%B8%8A%E4%B8%96%E8%8E%89%E6%9E%B6)：《Chaos;Child》女主角。
 > ![onoe-serika](https://cdn.tangjiayan.com/notes/common/chara_serika.png)
 
 ### HTML

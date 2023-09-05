@@ -1,4 +1,93 @@
 import { defineConfig } from 'vitepress'
+import markdownItKatex from 'markdown-it-katex'
+
+const customElements = [
+  'math',
+  'maction',
+  'maligngroup',
+  'malignmark',
+  'menclose',
+  'merror',
+  'mfenced',
+  'mfrac',
+  'mi',
+  'mlongdiv',
+  'mmultiscripts',
+  'mn',
+  'mo',
+  'mover',
+  'mpadded',
+  'mphantom',
+  'mroot',
+  'mrow',
+  'ms',
+  'mscarries',
+  'mscarry',
+  'mscarries',
+  'msgroup',
+  'mstack',
+  'mlongdiv',
+  'msline',
+  'mstack',
+  'mspace',
+  'msqrt',
+  'msrow',
+  'mstack',
+  'mstack',
+  'mstyle',
+  'msub',
+  'msup',
+  'msubsup',
+  'mtable',
+  'mtd',
+  'mtext',
+  'mtr',
+  'munder',
+  'munderover',
+  'semantics',
+  'math',
+  'mi',
+  'mn',
+  'mo',
+  'ms',
+  'mspace',
+  'mtext',
+  'menclose',
+  'merror',
+  'mfenced',
+  'mfrac',
+  'mpadded',
+  'mphantom',
+  'mroot',
+  'mrow',
+  'msqrt',
+  'mstyle',
+  'mmultiscripts',
+  'mover',
+  'mprescripts',
+  'msub',
+  'msubsup',
+  'msup',
+  'munder',
+  'munderover',
+  'none',
+  'maligngroup',
+  'malignmark',
+  'mtable',
+  'mtd',
+  'mtr',
+  'mlongdiv',
+  'mscarries',
+  'mscarry',
+  'msgroup',
+  'msline',
+  'msrow',
+  'mstack',
+  'maction',
+  'semantics',
+  'annotation',
+  'annotation-xml'
+]
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -7,6 +96,20 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: 'https://cdn.tangjiayan.com/logo.svg' }]],
   lang: 'zh-CN',
   lastUpdated: true,
+
+  markdown: {
+    config: (md) => {
+      md.use(markdownItKatex)
+    }
+  },
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => customElements.includes(tag)
+      }
+    }
+  },
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
@@ -99,6 +202,7 @@ export default defineConfig({
             collapsed: true,
             items:[
               { text: 'VitePress 部署到 Github Pages', link: '/web-build/vitepress/vitepress-github-pages'},
+              { text: 'VitePress 中使用 Katex', link: '/w/web-build/vitepress/vitepress-katex.md'},
               { text: '设置 lastUpdated 时出现 spawn-git-ENOENT', link: '/web-build/vitepress/spawn-git-ENOENT'},
             ],
           },
