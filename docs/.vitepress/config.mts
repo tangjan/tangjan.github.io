@@ -202,7 +202,7 @@ export default defineConfig({
             collapsed: true,
             items:[
               { text: 'VitePress 部署到 Github Pages', link: '/web-build/vitepress/vitepress-github-pages'},
-              { text: 'VitePress 中使用 Katex', link: '/w/web-build/vitepress/vitepress-katex.md'},
+              { text: 'VitePress 中使用 Katex', link: '/web-build/vitepress/vitepress-katex'},
               { text: '设置 lastUpdated 时出现 spawn-git-ENOENT', link: '/web-build/vitepress/spawn-git-ENOENT'},
             ],
           },
