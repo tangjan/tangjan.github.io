@@ -14,6 +14,8 @@
 
 ::: details 2023.9
 
+- 9月6日
+  - [STM32 命名规则](/embeded/stm32-naming-rule)
 - 9月5日
   - [GitHub-Style Table](/web-build/markdown/github-style-table.md)
   - [VitePress 中使用 Katex](/web-build/vitepress/vitepress-katex.md)

@@ -255,6 +255,18 @@ export default defineConfig({
         ]
       },
       {
+        text: '嵌入式',
+        items:[
+          {
+            text: '嵌入式',
+            collapsed: true,
+            items:[
+              { text: 'STM32 命名规则', link: '/embeded/stm32-naming-rule'},
+            ]
+          }
+        ]
+      },
+      {
         text: 'ANTI',
         items:[
           { 

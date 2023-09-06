@@ -52,7 +52,7 @@ npx vitepress init
 npm run docs:dev
 ```
 
-然后按照 [官方手册](https://vitepress.dev/reference/default-theme-config) 配置 `congig.mts` 文件、写 markdown 文件就行了，推荐用 [VS Code](https://code.visualstudio.com/) 写。
+然后按照 [官方手册](https://vitepress.dev/reference/default-theme-config) 配置 `config.mts` 文件、写 markdown 文件就行了，推荐用 [VS Code](https://code.visualstudio.com/) 写。
 
 到这一步，在 VitePress 站点文件夹内应该是有 4 个项目的：
 
