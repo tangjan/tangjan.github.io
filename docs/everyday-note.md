@@ -16,6 +16,7 @@
 
 - 9月7日
   - [基于 Simulink 的 SVPWM 仿真](/unclassified/undergraduate/simulink-svpwm)
+  - [STM32 点灯大师](/embeded/stm32-light)
 - 9月6日
   - [STM32 命名规则](/embeded/stm32-naming-rule)
 - 9月5日
