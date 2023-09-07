@@ -159,6 +159,12 @@ export default defineConfig({
               { text: '用户管理', link: '/unclassified/linux/user' }
             ]
           },
+          { text: '本科',
+            collapsed: true,
+            items: [
+              { text: '基于 Simulink 的 SVPWM 仿真', link: '/unclassified/undergraduate/simulink-svpwm' },
+            ]
+          },
         ],
       },
       {
