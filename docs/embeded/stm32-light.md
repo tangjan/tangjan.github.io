@@ -83,7 +83,7 @@ Keil5 的安装和破解就不叙述了。
 
 点击魔术棒按钮  (`Options for Target`)
 
- ![light/magic-wand-button](https://cdn.tangjiayan.com/notes/embeded/light/magic-wand-button.png)
+ ![button-magic-wand](https://cdn.tangjiayan.com/notes/embeded/keil5/button-magic-wand.png)
 
 在 `C/C++` - `Include Paths` 中添加 `Startup` 文件夹。
 
@@ -115,7 +115,7 @@ Keil5 的安装和破解就不叙述了。
 
 - `Ctrl` + `鼠标滚轮` 可以放大/缩小编辑器文字大小。
 - 在 `configuration` 中，可以
-  ![configuration-button](https://cdn.tangjiayan.com/notes/embeded/stm32-light/configuration-button.png)
+  ![button-configuration](https://cdn.tangjiayan.com/notes/embeded/keil5/button-configuration.png)
   - 设置编码格式 `Encoding` 为 `UTF-8`
   - 设置 C/C++ 文件的 `Tab Size` 为 `4`
 
@@ -217,7 +217,7 @@ GPIOC->ODR = 0x00000000;
 
 点击魔术棒按钮  (`Options for Target`)
 
-![light/magic-wand-button](https://cdn.tangjiayan.com/notes/embeded/light/magic-wand-button.png)
+![button-magic-wand](https://cdn.tangjiayan.com/notes/embeded/keil5/button-magic-wand.png)
 
 在 `Debug` 中选择 `Use ST-Link Debugger`
 
@@ -233,7 +233,7 @@ GPIOC->ODR = 0x00000000;
 
 点击 `build` 按钮进行编译
 
-![build-button](https://cdn.tangjiayan.com/notes/embeded/stm32-light/build-button.png)
+![button-build](https://cdn.tangjiayan.com/notes/embeded/keil5/button-build.png)
 
 ```
 Build started: Project: Project
@@ -255,7 +255,7 @@ Build Time Elapsed:  00:00:00
 
 编译完成后点击 `Download` 即可烧录程序。
 
-![download-button](https://cdn.tangjiayan.com/notes/embeded/stm32-light/download-button.png)
+![button-download](https://cdn.tangjiayan.com/notes/embeded/keil5/button-download.png)
 
 ```
 Load "Y:\\repositories\\embeded\\keil5 projects\\stm32-light\\Objects\\Project.axf" 
