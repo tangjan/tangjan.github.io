@@ -16,9 +16,10 @@
 
 - 9月8日
   - [仿制图章工具](/unclassified/photoshop/clone-stamp)
+  - [使用库函数配置 STM32F103C8T6 最小系统板 PC13 端口 实现板载 LED 灯闪烁](embeded/stm32-blink)
 - 9月7日
   - [基于 Simulink 的 SVPWM 仿真](/unclassified/undergraduate/simulink-svpwm)
-  - [STM32 点灯大师](/embeded/stm32-light)
+  - [配置 STM32F103C8T6 最小系统板 PC13 寄存器点亮板载 LED 灯](/embeded/stm32-light)
 - 9月6日
   - [STM32 命名规则](/embeded/stm32-naming-rule)
 - 9月5日

@@ -275,6 +275,7 @@ export default defineConfig({
             items:[
               { text: 'STM32 命名规则', link: '/embeded/stm32-naming-rule'},
               { text: 'STM32 点灯大师', link: '/embeded/stm32-light'},
+              { text: 'STM32 点灯大大师', link: '/embeded/stm32-blink'},
             ]
           }
         ]
