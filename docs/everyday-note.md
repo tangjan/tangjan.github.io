@@ -14,6 +14,8 @@
 
 ::: details 2023.9
 
+- 9月8日
+  - [仿制图章工具](/unclassified/photoshop/clone-stamp)
 - 9月7日
   - [基于 Simulink 的 SVPWM 仿真](/unclassified/undergraduate/simulink-svpwm)
   - [STM32 点灯大师](/embeded/stm32-light)

@@ -152,11 +152,17 @@ export default defineConfig({
               { text: 'VS Code 插件 markdownlint 提示 “no-hard-tabs”', link: '/unclassified/vscode-hard-tab'},
             ]
           },
-          { text: 'Liunx',
+          { text: 'Linux',
             collapsed: true,
             items: [
               { text: '常见命令的全称', link: '/unclassified/linux/full-name' },
               { text: '用户管理', link: '/unclassified/linux/user' }
+            ]
+          },
+          { text: 'PhotoShop',
+            collapsed: true,
+            items: [
+              { text: '仿制图章工具', link: '/unclassified/photoshop/clone-stamp' },
             ]
           },
           { text: '本科',
