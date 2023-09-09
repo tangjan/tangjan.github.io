@@ -73,13 +73,13 @@ array<int, 5> nums = {1，2，3，4，5};
 ```cpp
 int main ()
 {
-    std::vector<int> vec{1, 2, 3, 4, 5};
+    array<int, 5> arr{1, 2, 3, 4, 5};
 
-    for (std::vector<int>::iterator iter = vec.begin(); iter != vec.end(); ++iter){
-        std::cout << "old:" << *iter;  // 打印元素
+    for (array<int, 5>::iterator iter = arr.begin(); iter != arr.end(); ++iter){
+        cout << "old:" << *iter;
 
-        (*iter) += 1;  // 通过迭代器修改对应元素
-        std::cout << ", new:" << *iter << std::endl;
+        (*iter) += 1;
+        cout << ", new:" << *iter << endl;
     }
 }
 ```
@@ -97,8 +97,28 @@ old:5, new:6
 ### array 降序排列
 
 ```cpp
-sort(nums.begin(), nums.end());
-reverse(nums.begin(), nums.begin());
+int main ()
+{
+    array<int, 5> arr{3, 1, 2, 5, 4};
+    
+    sort(arr.begin(), arr.end());
+    for(array<int, 5>::iterator iter=arr.begin(); iter!=arr.end(); ++iter){
+    cout << *iter << ' ';
+    }
+    cout << endl;
+ 
+    reverse(arr.begin(), arr.end());
+    for(array<int, 5>::iterator iter=arr.begin(); iter!=arr.end(); ++iter){
+     cout << *iter << ' ';
+    }
+}
+```
+
+输出：
+
+```
+1 2 3 4 5
+5 4 3 2 1
 ```
 
 ## 参考
