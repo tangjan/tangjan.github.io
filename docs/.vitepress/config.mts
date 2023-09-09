@@ -176,6 +176,7 @@ export default defineConfig({
             items: [
               { text: '基于 Simulink 的 SVPWM 仿真', link: '/unclassified/undergraduate/simulink-svpwm' },
               { text: 'MATLAB 拼图游戏设计', link: '/unclassified/undergraduate/matlab-jigsaw' },
+              { text: '基于机器视觉 YOLO 目标检测算法的绝缘子及缺陷识别', link: '/unclassified/undergraduate/yolo-insulator' },
             ]
           },
         ],
