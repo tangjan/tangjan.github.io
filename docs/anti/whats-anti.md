@@ -1,8 +1,10 @@
 # 什么是 ANTI
 
-「ANTI」取自 v2ray 运行时的提示
+ANTI 就是翻墙。
 
-><font color="red">anti</font>-censorship
+「ANTI」取自 v2ray 运行时的提示：
+
+><span style="color:red;">anti</span>-censorship
 
 ![anti](https://cdn.tangjiayan.com/reinstall-v2ray/anti-origin.png)
 

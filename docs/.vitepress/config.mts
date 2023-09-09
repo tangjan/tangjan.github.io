@@ -147,9 +147,15 @@ export default defineConfig({
           { text: '未分类',
             collapsed: true,
             items: [
-              { text: 'Git 指令速查表', link: '/unclassified/git/git-commands' },
               { text: '向 Hyper-V 虚拟机中传输文件', link: '/unclassified/hyper-v/transfer-files-to-vm' },
               { text: 'VS Code 插件 markdownlint 提示 “no-hard-tabs”', link: '/unclassified/vscode-hard-tab'},
+            ]
+          },
+          { text: 'Git',
+            collapsed: true,
+            items: [
+              { text: 'Git 指令速查表', link: '/unclassified/git/git-commands' },
+              { text: 'Git / GitHub 的基本使用', link: '/unclassified/git/git-github' },
             ]
           },
           { text: 'Linux',

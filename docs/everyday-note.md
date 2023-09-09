@@ -14,6 +14,8 @@
 
 ::: details 2023.9
 
+- 9月9日
+  - [Git / GitHub 的基本使用](/unclassified/git/git-github)
 - 9月8日
   - [仿制图章工具](/unclassified/photoshop/clone-stamp)
   - [使用库函数配置 STM32F103C8T6 最小系统板 PC13 端口 实现板载 LED 灯闪烁](embeded/stm32-blink)

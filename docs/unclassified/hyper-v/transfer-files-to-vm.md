@@ -2,7 +2,7 @@
 
 ## 序
 
-在淘宝花了6块钱买了个升级密钥，把系统升级为了Windwos专业版，可以使用 [Hyper-V](https://en.wikipedia.org/wiki/Hyper-V) 了。
+在淘宝花了6块钱买了个升级密钥，把系统升级为了Windows专业版，可以使用 [Hyper-V](https://en.wikipedia.org/wiki/Hyper-V) 了。
 
 在 [itellyou](https://msdn.itellyou.cn/) 下载了 Win7-Enterprise 镜像，然后参考
 
