@@ -149,6 +149,7 @@ export default defineConfig({
             items: [
               { text: '向 Hyper-V 虚拟机中传输文件', link: '/unclassified/hyper-v/transfer-files-to-vm' },
               { text: 'VS Code 插件 markdownlint 提示 “no-hard-tabs”', link: '/unclassified/vscode-hard-tab'},
+              { text: 'Bitvise Access Denied 问题', link: '/unclassified/bitvise-access-denied'},
             ]
           },
           { text: 'Git',

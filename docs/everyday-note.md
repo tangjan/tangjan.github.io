@@ -14,6 +14,8 @@
 
 ::: details 2023.9
 
+- 9月10日
+  - [Bitvise Access Denied 问题](/unclassified/bitvise-access-denied)
 - 9月9日
   - [Git / GitHub 的基本使用](/unclassified/git/git-github)
   - [MATLAB 拼图游戏设计](/unclassified/undergraduate/matlab-jigsaw)
