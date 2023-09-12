@@ -340,6 +340,7 @@ function showAnswer(){
     answer.textContent = randomNumber;
     // cheatButton += `${answer}`;
     document.body.append(answer);
+    cheatButton.disabled = true;
 }
 
 cheatButton.addEventListener("click", showAnswer);
@@ -349,6 +350,7 @@ cheatButton.addEventListener("click", showAnswer);
 
 ```js
 answer.textContent = "";
+cheatButton.disabled = false;
 ```
 
 ![cheat](https://cdn.tangjiayan.com/notes/web-build/js/cheat.png)
@@ -486,6 +488,7 @@ function resetGame() {
     }
 
     answer.textContent = "";
+    cheatButton.disabled = false;
   
     resetButton.parentNode.removeChild(resetButton);
   
@@ -506,6 +509,7 @@ function showAnswer(){
     answer.textContent = randomNumber;
     // cheatButton += `${answer}`;
     document.body.append(answer);
+    cheatButton.disabled = true;
 }
 
 cheatButton.addEventListener("click", showAnswer);
