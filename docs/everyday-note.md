@@ -14,6 +14,8 @@
 
 ::: details 2023.9
 
+- 9月12日
+  - [JavaScript 初探——猜数字小游戏](/web-build/js/js-number-guessing)
 - 9月11日
   - [Nginx 反向代理实现 VitePress 站点部署到腾讯云服务器](/web-build/vitepress/vitepress-tencent-cloud)
 - 9月10日

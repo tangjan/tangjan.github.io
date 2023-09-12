@@ -212,6 +212,13 @@ export default defineConfig({
             ],
           },
           {
+            text: 'JS',
+            collapsed: true,
+            items:[
+              { text: 'JavaScript 初探——猜数字小游戏', link: '/web-build/js/js-number-guessing'},
+            ],
+          },
+          {
             text: 'Markdown',
             collapsed: true,
             items:[
