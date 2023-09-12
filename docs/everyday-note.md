@@ -14,6 +14,8 @@
 
 ::: details 2023.9
 
+- 9月11日
+  - [Nginx 反向代理实现 VitePress 站点部署到腾讯云服务器](/web-build/vitepress/vitepress-tencent-cloud)
 - 9月10日
   - [Bitvise Access Denied 问题](/unclassified/bitvise-access-denied)
 - 9月9日
