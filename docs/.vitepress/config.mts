@@ -216,6 +216,7 @@ export default defineConfig({
             collapsed: true,
             items:[
               { text: 'JavaScript 初探——猜数字小游戏', link: '/web-build/js/js-number-guessing'},
+              { text: '将 url 中的 query 字段显示在网页中', link: '/web-build/js/query-display'},
             ],
           },
           {

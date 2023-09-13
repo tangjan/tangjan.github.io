@@ -14,6 +14,8 @@
 
 ::: details 2023.9
 
+- 9月13日
+  - [将 url 中的 query 字段显示在网页中](/web-build/js/query-display)
 - 9月12日
   - [JavaScript 初探——猜数字小游戏](/web-build/js/js-number-guessing)
 - 9月11日
