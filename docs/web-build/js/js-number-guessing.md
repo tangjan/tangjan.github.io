@@ -8,8 +8,8 @@ JavaScript 初探 !
 
 > 猜数字游戏。随机选择一个 1 ~ 100 之间的自然数，玩家在 10 轮以内猜这个数字。每轮后都告知玩家的答案正确与否。如果猜错了，则告诉他数字是小了还是大了。并且显示出玩家前一轮所猜的数字。一旦玩家猜对，或者用尽所有机会，游戏将结束。游戏结束后，可以让玩家选择重新开始。<br>添加作弊功能，点击 `作弊 !` 按钮显示答案。
 
-- [tangjan/javascript-number-guessing](https://github.com/tangjan/javascript-number-guessing)
-- [GitHub Pages 在线查看](https://notes.tangjiayan.cn/javascript-number-guessing/)
+- GitHub: [practices/javascript-number-guessing at main · tangjan/practices](https://github.com/tangjan/practices/tree/main/javascript-number-guessing)
+- GitHub Pages: [在线查看](https://notes.tangjiayan.cn/practices/javascript-number-guessing/)
 
 ## 目标拆解
 
