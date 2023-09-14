@@ -285,12 +285,24 @@ export default defineConfig({
         ]
       },
       {
+        text: '日语',
+        items:[
+          {
+            text: '五十音',
+            collapsed: true,
+            items: [
+              { text: '五十音图', link: '/japanese/gojuon/gojuon'}
+            ] 
+          }
+        ]
+      },
+      {
         text: '嵌入式',
         items:[
           {
             text: '嵌入式',
             collapsed: true,
-            items:[
+            items: [
               { text: 'STM32 命名规则', link: '/embeded/stm32-naming-rule'},
               { text: 'STM32 点灯大师', link: '/embeded/stm32-light'},
               { text: 'STM32 点灯大大师', link: '/embeded/stm32-blink'},
