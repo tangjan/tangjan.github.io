@@ -16,6 +16,7 @@
 
 - 9月14日
   - [日语五十音图](/japanese/gojuon/gojuon)
+  - [GitHub Connection timed out 问题](/unclassified/git/connection-timed-out)
 - 9月13日
   - [将 url 中的 query 字段显示在网页中](/web-build/js/query-display)
 - 9月12日

@@ -157,6 +157,7 @@ export default defineConfig({
             items: [
               { text: 'Git 指令速查表', link: '/unclassified/git/git-commands' },
               { text: 'Git / GitHub 的基本使用', link: '/unclassified/git/git-github' },
+              { text: 'GitHub Connection timed out 问题', link: '/unclassified/git/connection-timed-out'},
             ]
           },
           { text: 'Linux',
