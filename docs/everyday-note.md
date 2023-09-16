@@ -14,6 +14,9 @@
 
 ::: details 2023.9
 
+- 9月16日
+- 9月15日
+  - 食言啦 !
 - 9月14日
   - [日语五十音图](/japanese/gojuon/gojuon)
   - [GitHub Connection timed out 问题](/unclassified/git/connection-timed-out)
