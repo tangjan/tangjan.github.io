@@ -15,6 +15,7 @@
 ::: details 2023.9
 
 - 9月16日
+  - [使用 `npm run docs:dev` 开启 VitePress 本地服务器提示 `Error: listen EACCES`](/web-build/vitepress/debug/listen-EACCES)
 - 9月15日
   - 食言啦 !
 - 9月14日
@@ -52,7 +53,7 @@
   - 食言啦 !
 - 9月1日
   - [重装 v2ray - WS + TLS + Web + CloudFlare](/anti/reinstall-v2ray)
-  - [设置 lastUpdated 时出现 spawn-git-ENOENT](/web-build/vitepress/spawn-git-ENOENT)
+  - [设置 lastUpdated 时出现 spawn-git-ENOENT](/web-build/vitepress/debug/spawn-git-ENOENT)
 
 :::
 
