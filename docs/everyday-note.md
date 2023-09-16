@@ -16,6 +16,8 @@
 
 - 9月16日
   - [使用 `npm run docs:dev` 开启 VitePress 本地服务器提示 `Error: listen EACCES`](/web-build/vitepress/debug/listen-EACCES)
+  - [VS Code 配置 C++ 运行环境](/programming/vscode/vscode-cpp)
+  - [使用 VS Code 进行 commit 一直加载](/programming/vscode/commit-stuck)
 - 9月15日
   - 食言啦 !
 - 9月14日

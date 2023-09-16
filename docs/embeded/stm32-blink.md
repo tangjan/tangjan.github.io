@@ -258,5 +258,5 @@ int main(void){
         GPIO_SetBits(GPIOC, GPIO_Pin_13);
         Delay_ms(200);
     }
-
+}
 ```

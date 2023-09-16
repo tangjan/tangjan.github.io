@@ -147,7 +147,8 @@ import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.1fa2d359.js";const u=
 <span class="line"><span style="color:#E1E4E8;">        </span><span style="color:#B392F0;">Delay_ms</span><span style="color:#E1E4E8;">(</span><span style="color:#79B8FF;">200</span><span style="color:#E1E4E8;">);</span></span>
 <span class="line"><span style="color:#E1E4E8;">        </span><span style="color:#B392F0;">GPIO_SetBits</span><span style="color:#E1E4E8;">(GPIOC, GPIO_Pin_13);</span></span>
 <span class="line"><span style="color:#E1E4E8;">        </span><span style="color:#B392F0;">Delay_ms</span><span style="color:#E1E4E8;">(</span><span style="color:#79B8FF;">200</span><span style="color:#E1E4E8;">);</span></span>
-<span class="line"><span style="color:#E1E4E8;">    }</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#D73A49;">#include</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&quot;stm32f10x.h&quot;</span><span style="color:#24292E;">                  </span><span style="color:#6A737D;">// Device header</span></span>
+<span class="line"><span style="color:#E1E4E8;">    }</span></span>
+<span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#D73A49;">#include</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&quot;stm32f10x.h&quot;</span><span style="color:#24292E;">                  </span><span style="color:#6A737D;">// Device header</span></span>
 <span class="line"><span style="color:#D73A49;">#include</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&quot;Delay.h&quot;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#D73A49;">int</span><span style="color:#24292E;"> </span><span style="color:#6F42C1;">main</span><span style="color:#24292E;">(</span><span style="color:#D73A49;">void</span><span style="color:#24292E;">){</span></span>
@@ -162,4 +163,5 @@ import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.1fa2d359.js";const u=
 <span class="line"><span style="color:#24292E;">        </span><span style="color:#6F42C1;">Delay_ms</span><span style="color:#24292E;">(</span><span style="color:#005CC5;">200</span><span style="color:#24292E;">);</span></span>
 <span class="line"><span style="color:#24292E;">        </span><span style="color:#6F42C1;">GPIO_SetBits</span><span style="color:#24292E;">(GPIOC, GPIO_Pin_13);</span></span>
 <span class="line"><span style="color:#24292E;">        </span><span style="color:#6F42C1;">Delay_ms</span><span style="color:#24292E;">(</span><span style="color:#005CC5;">200</span><span style="color:#24292E;">);</span></span>
-<span class="line"><span style="color:#24292E;">    }</span></span></code></pre></div>`,59),e=[o];function c(t,r,i,y,E,d){return n(),a("div",null,e)}const m=s(p,[["render",c]]);export{u as __pageData,m as default};
+<span class="line"><span style="color:#24292E;">    }</span></span>
+<span class="line"><span style="color:#24292E;">}</span></span></code></pre></div>`,59),e=[o];function c(t,r,i,y,E,d){return n(),a("div",null,e)}const m=s(p,[["render",c]]);export{u as __pageData,m as default};

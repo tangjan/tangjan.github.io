@@ -289,7 +289,15 @@ export default defineConfig({
                 ]
               }
             ]
-          }
+          },
+          {
+            text: 'VS Code',
+            collapsed: true,
+            items: [
+              { text: 'VS Code 配置 C++ 运行环境', link: '/programming/vscode/vscode-cpp' },
+              { text: '使用 VS Code 进行 git commit 一直加载', link: '/programming/vscode/commit-stuck' },
+            ]
+          },
         ]
       },
       {
