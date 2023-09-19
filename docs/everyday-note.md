@@ -1,25 +1,29 @@
-# 每天都要写笔记
+# 糖加盐的学习日志
 
-原因：
+每天都要进步，并且在这个世界上留下一点自己的痕迹。
 
-1. 产出效率低。经常是这开一篇新笔记，那开一篇新笔记；这篇写一点，那篇写一点，不够专注。
-2. 构筑信心。每天发表笔记，形成固定的成就感。
-3. 可视化量变积聚。
+::: details 信念
 
-对策：
+- 至少在我的有生之年，微软旗下的 GitHub 的 [GitHub Pages](https://pages.github.com/) 是不太可能停运的。所以不出意外的话，这篇笔记会贯穿我的一生吧 ~
 
-- 每天发表 <span style="color:red;">至少一篇</span> 笔记初版。
+- [https://www.zhihu.com/question/26662321/answer/137729241](https://www.zhihu.com/question/26662321/answer/137729241)
 
-## 记录
+:::
+
+## 日志
+
+以日为单位记录自己的进步。
 
 ::: details 2023.9
 
+- 9月19日
+  - 建立 [cpp-practice](https://github.com/tangjan/cpp-practice) GitHub 仓库，专攻 Cpp。
+- 9月17 ~ 18日
+  - 第一份工作辞职啦。
 - 9月16日
   - [使用 `npm run docs:dev` 开启 VitePress 本地服务器提示 `Error: listen EACCES`](/web-build/vitepress/debug/listen-EACCES)
   - [VS Code 配置 C++ 运行环境](/programming/vscode/vscode-cpp)
   - [使用 VS Code 进行 commit 一直加载](/programming/vscode/commit-stuck)
-- 9月15日
-  - 食言啦 !
 - 9月14日
   - [日语五十音图](/japanese/gojuon/gojuon)
   - [GitHub Connection timed out 问题](/unclassified/git/connection-timed-out)
@@ -51,8 +55,6 @@
   - [url](/web-build/url)
 - 9月3日
   - [注音元素 &lt;ruby&gt;](/web-build/html/ruby)
-- 9月2日
-  - 食言啦 !
 - 9月1日
   - [重装 v2ray - WS + TLS + Web + CloudFlare](/anti/reinstall-v2ray)
   - [设置 lastUpdated 时出现 spawn-git-ENOENT](/web-build/vitepress/debug/spawn-git-ENOENT)
@@ -74,3 +76,26 @@
   - [VS Code 插件 markdownlint 提示 “no-hard-tabs”](/unclassified/vscode-hard-tab)
 
 :::
+
+## 时间线
+
+以月为单位记录自己的成长。
+
+::: details 时间线
+
+- 2023.2 - 2023.9
+  - 首次参加工作，建立起基本工作观。
+- 2022.8 - 2023.1
+  - Gap。
+- 2022 年 7 月
+  - 本科毕业于 `中国矿业大学` `电气工程及其自动化`。
+  
+  ::: details 毕业证书
+
+  ![diploma](https://cdn.tangjiayan.com/notes/common/diploma.png)
+  - 想一睹本人真容请自行查询吧 ~
+  - 证书编号：`102901202205005505` 姓名：`唐家琰`
+  - 查询网址：[学历查询_中国高等教育学生信息网(学信网)](https://www.chsi.com.cn/xlcx/lscx/query.do)
+  - [教育部:高校毕业证编号可免费查询 没有贩卖价值](https://www.gov.cn/gzdt/2009-08/20/content_1397806.htm)
+
+  :::

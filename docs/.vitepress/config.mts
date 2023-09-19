@@ -138,7 +138,7 @@ export default defineConfig({
         link: '/index.md'
       },
       {
-        text: '每天都要写笔记',
+        text: '学习日志',
         link: '/everyday-note'
       },
       {
