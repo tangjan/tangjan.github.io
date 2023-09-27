@@ -6,6 +6,8 @@
 
 ::: -->
 
+横为<span style="color:red">行</span>，竖为<span style="color:red">段</span>。
+
 ## 五十音图
 
 <table>

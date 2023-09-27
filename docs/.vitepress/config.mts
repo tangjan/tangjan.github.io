@@ -307,7 +307,8 @@ export default defineConfig({
             text: '五十音',
             collapsed: true,
             items: [
-              { text: '五十音图', link: '/japanese/gojuon/gojuon'}
+              { text: '五十音图', link: '/japanese/gojuon/gojuon'},
+              { text: '浊音/半浊音', link: '/japanese/gojuon/voiced'},
             ] 
           }
         ]

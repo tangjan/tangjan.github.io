@@ -16,8 +16,13 @@
 
 ::: details 2023.9
 
+- 9月27日
+  - [日语 浊音/半浊音](/japanese/gojuon/voiced)
+- 9月20 ~ 26日
+  - 打包整理物品，从 江苏扬州 搬至 浙江余姚，安顿下来。<br>[中铁快运](http://www.95572.com/) 邮自行车好方便 !
+  - 初探 [Apex](https://www.ea.com/games/apex-legends)。我真是太菜了，可能因为是用手柄玩的吧。
 - 9月19日
-  - 建立 [cpp-practice](https://github.com/tangjan/cpp-practice) GitHub 仓库，专攻 Cpp。
+  - 建立 [Programming-Practice](https://github.com/tangjan/Programming-Practice) GitHub 仓库，用于练习编程语言。
 - 9月17 ~ 18日
   - 第一份工作辞职啦。
 - 9月16日
@@ -84,7 +89,7 @@
 ::: details 时间线
 
 - 2023.2 - 2023.9
-  - 首次参加工作，建立起基本工作观。
+  - 首次参加工作于江苏扬州，建立起基本工作观。
 - 2022.8 - 2023.1
   - Gap。
 - 2022 年 7 月
