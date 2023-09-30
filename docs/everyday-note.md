@@ -78,7 +78,7 @@
 - 8月28日
   - [XAMPP - phpmyadmin：Error establishing a database connection](/web-build/debug/Error-establishing-a-database-connection)
 - 8月27日
-  - [VS Code 插件 markdownlint 提示 “no-hard-tabs”](/unclassified/vscode-hard-tab)
+  - [VS Code 插件 markdownlint 提示 “no-hard-tabs”](/programming/vscode/vscode-hard-tab)
 
 :::
 

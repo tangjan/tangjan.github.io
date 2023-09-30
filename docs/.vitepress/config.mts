@@ -148,7 +148,6 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: '向 Hyper-V 虚拟机中传输文件', link: '/unclassified/hyper-v/transfer-files-to-vm' },
-              { text: 'VS Code 插件 markdownlint 提示 “no-hard-tabs”', link: '/unclassified/vscode-hard-tab'},
               { text: 'Bitvise Access Denied 问题', link: '/unclassified/bitvise-access-denied'},
             ]
           },
@@ -296,6 +295,7 @@ export default defineConfig({
             items: [
               { text: 'VS Code 配置 C++ 运行环境', link: '/programming/vscode/vscode-cpp' },
               { text: '使用 VS Code 进行 git commit 一直加载', link: '/programming/vscode/commit-stuck' },
+              { text: 'VS Code 插件 markdownlint 提示 “no-hard-tabs”', link: '/vscode/vscode-hard-tab'},
             ]
           },
         ]
@@ -345,7 +345,7 @@ export default defineConfig({
         text: `www.tangjiayan.com`, link: 'https://www.tangjiayan.com',
       },
       {
-        text: `CC BY-NC-SA 4.0`, link: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh',
+        text: `CC BY-NC-SA 4.0`, link: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
       },
     ],
   }

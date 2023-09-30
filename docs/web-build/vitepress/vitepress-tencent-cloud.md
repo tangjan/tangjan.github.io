@@ -231,7 +231,7 @@ tcp        0      0 127.0.0.1:5173          0.0.0.0:*               LISTEN      
 
 为什么用守护进程的方法，而不是指向静态资源？
 
-答：我试过将 VitePress `/.vitepress/dist` 文件夹上传到服务器，然后设置 [location](http://nginx.org/en/docs/http/ngx_http_core_module.html#location) 指向这个文件夹：
+答：我试过将 VitePress `/.vitepress/dist` 文件夹上传到服务器，然后设置 `nginx.conf` 的 [location](http://nginx.org/en/docs/http/ngx_http_core_module.html#location) 指向这个文件夹：
 
 ```
 location / {

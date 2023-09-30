@@ -2,7 +2,7 @@
 
 本站是「糖加盐的笔记站」，用来记录个人学习笔记。
 
->书到用时方恨少，事非经过不知难。——[《增广贤文 · 上集》](https://so.gushiwen.cn/guwen/bookv_46653FD803893E4F35AFA373664DFAE0.aspx)
+<!-- >书到用时方恨少，事非经过不知难。——[《增广贤文 · 上集》](https://so.gushiwen.cn/guwen/bookv_46653FD803893E4F35AFA373664DFAE0.aspx) -->
 
 ## 为什么要记笔记，直接看资料学习不行吗？
 
