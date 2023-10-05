@@ -41,7 +41,7 @@
 
 <figure><img src="https://cdn.tangjiayan.com/notes/hyper-v/transfer-files-to-virtual-machine/lan-ip.png" alt="" width="563"><figcaption></figcaption></figure>
 
-在 Win7 虚拟机中 `Win`+`R` → `\\IP地址` 回车，就能打开局域网文件共享窗口了。
+在 Win7 虚拟机中 `Win`+`R` → `\\IP地址` 回车 (或者在文件浏览器的地址栏)，就能打开局域网文件共享窗口了。
 
 <figure><img src="https://cdn.tangjiayan.com/notes/hyper-v/transfer-files-to-virtual-machine/vm-run-lan-ip.png" alt="" width="375"><figcaption></figcaption></figure>
 

@@ -14,6 +14,14 @@
 
 以日为单位记录自己的进步。
 
+::: details 2023.10
+
+- 9月28日 ~ 10月3日
+  - 基于 [HEXO](https://hexo.io/zh-cn/) 的 [Butterfly](https://butterfly.js.org/) 主题建设 [个人博客](https://blog.tangjiayan.cn/)，撰写博客 [《个人小站开张》](https://blog.tangjiayan.cn/2023/web-open/)
+  - 将 [腾讯云服务器上的 VitePress 站点](https://notes.tangjiayan.cn/web-build/vitepress/vitepress-tencent-cloud.html) 迁移至 GitHub Pages，[配置 apex 域](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain) 使 [tangjiayan.cn](https://www.tangjiayan.cn/) 指向此站点
+
+:::
+
 ::: details 2023.9
 
 - 9月27日

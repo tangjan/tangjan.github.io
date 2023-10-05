@@ -342,7 +342,7 @@ export default defineConfig({
         ]
       },
       {
-        text: `www.tangjiayan.com`, link: 'https://www.tangjiayan.com',
+        text: `www.tangjiayan.cn`, link: 'https://www.tangjiayan.cn',
       },
       {
         text: `CC BY-NC-SA 4.0`, link: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
