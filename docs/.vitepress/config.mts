@@ -308,6 +308,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: '五十音图', link: '/japanese/gojuon/gojuon'},
+              { text: '五十音笔顺', link: '/japanese/gojuon/gojuon-stroke-order'},
               { text: '浊音/半浊音', link: '/japanese/gojuon/voiced'},
             ] 
           }
@@ -343,6 +344,9 @@ export default defineConfig({
       },
       {
         text: `www.tangjiayan.cn`, link: 'https://www.tangjiayan.cn',
+      },
+      {
+        text: '旧笔记站', link: 'https://old-notes.tangjiayan.cn',
       },
       {
         text: `CC BY-NC-SA 4.0`, link: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
