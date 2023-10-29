@@ -16,6 +16,8 @@
 
 ::: details 2023.10
 
+- 10月29日
+  - [jekyll 个人在线简历](/web-build/jekyll-cv.md)
 - 10月6日
   - [五十音笔顺](/japanese/gojuon/gojuon-stroke-order)
 - 9月28日 ~ 10月3日

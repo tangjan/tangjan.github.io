@@ -195,6 +195,7 @@ export default defineConfig({
               { text: 'CAA 类型解析记录会影响 SSL 证书的申请', link: '/web-build/caa-ssl'},
               { text: 'XAMPP - phpmyadmin：Error establishing a database connection', link: '/web-build/debug/Error-establishing-a-database-connection'},
               { text: 'url', link: '/web-build/url'},
+              { text: 'jekyll 个人在线简历', link: '/web-build/jekyll-cv.md'},
             ]
           },
           {

@@ -1,6 +1,6 @@
 # 使用库函数配置 STM32F103C8T6 最小系统板 PC13 端口 实现板载 LED 灯闪烁
 
-承 [配置 STM32F103C8T6 最小系统板 PC13 寄存器点亮板载 LED 灯](/embeded/stm32-blink)，本笔记通过库函数配置 PC13 引脚，控制其交替输出高低电平实现控制 LED 灯闪烁，用来复习库函数的基本使用。
+承 [配置 STM32F103C8T6 最小系统板 PC13 寄存器点亮板载 LED 灯](/embeded/stm32-light)，本笔记通过库函数配置 PC13 引脚，控制其交替输出高低电平实现控制 LED 灯闪烁，用来复习库函数的基本使用。
 
 参考自：[STM32入门教程-2023持续更新中_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1th411z7sn)
 
