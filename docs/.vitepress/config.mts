@@ -118,6 +118,14 @@ export default defineConfig({
     //   // { text: '学习笔记', link: '/markdown-examples' }
     // ],
 
+    editLink: {
+        pattern: "https://github.com/tangjan/tangjan.github.io/edit/main/docs/:path",
+        text: "在 GitHub 上编辑此页面",
+
+    },
+
+    lastUpdatedText: "最后更新于",
+
     logo: 'https://cdn.tangjiayan.com/logo.svg',
 
     // footer:{
@@ -134,7 +142,7 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'README',
+        text: 'WELCOME',
         link: '/index.md'
       },
       {

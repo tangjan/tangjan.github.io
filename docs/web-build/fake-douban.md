@@ -11,7 +11,7 @@
 链接：
 
 - [GitHub](https://github.com/tangjan/practices/tree/main/static-page-douban/)
-- [GitHub Pages 在线查看](https://notes.tangjiayan.cn/practices/static-page-douban/)
+- [GitHub Pages 在线查看](https://notes.tangjiayan.cn/Online-Displayable-Practices/static-page-douban/)
 
 ## 著作权声明
 
