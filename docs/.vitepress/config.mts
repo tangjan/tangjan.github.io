@@ -235,6 +235,13 @@ export default defineConfig({
             ],
           },
           {
+            text: 'Typecho',
+            collapsed: true,
+            items:[
+              { text: 'Debian 10 部署 Typecho', link: '/web-build/typecho/debian10-typecho'},
+            ],
+          },
+          {
             text: 'VitePress',
             collapsed: true,
             items:[
