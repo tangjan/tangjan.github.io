@@ -69,6 +69,14 @@ npm run docs:dev
 
 ## 创建 `deploy.yml` GitHub 工作流文件
 
+::: tip 最新文件内容请参阅官方手册
+
+VitePress 的 GitHub 工作流文件内容会随时间更新，这里写的不一定是最新的。
+
+最新的文件内容请参阅 [VitePress 官方手册](https://vitepress.dev/guide/deploy#github-pages) 。
+
+:::
+
 在本地的 VitePress 站点文件夹 `.github/workflows` 下建立 名为 `deploy.yml` 的文件，内容如下：
 
 ::: details `deploy.yml` 文件的内容
@@ -105,18 +113,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Not needed if lastUpdated is not enabled
       # - uses: pnpm/action-setup@v2 # Uncomment this if you're using pnpm
       # - uses: oven-sh/setup-bun@v1 # Uncomment this if you're using Bun
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: npm # or pnpm / yarn
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v4
       - name: Install dependencies
         run: npm ci # or pnpm install / yarn install / bun install
       - name: Build with VitePress
@@ -124,7 +132,7 @@ jobs:
           npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
           touch docs/.vitepress/dist/.nojekyll
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
 
@@ -139,7 +147,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
 ```
 
 :::
