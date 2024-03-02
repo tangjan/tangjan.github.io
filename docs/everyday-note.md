@@ -18,6 +18,7 @@
 
 - 3月1日
   - [Debian 10 部署 Typecho](/web-build/typecho/debian10-typecho)
+  - [Typecho首页文章没排满就换页](/web-build/typecho/typecho-page-change)
 
 :::
 

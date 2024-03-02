@@ -239,6 +239,7 @@ export default defineConfig({
             collapsed: true,
             items:[
               { text: 'Debian 10 部署 Typecho', link: '/web-build/typecho/debian10-typecho'},
+              { text: 'Typecho首页文章没排满就换页', link: '/web-build/typecho/typecho-page-change'},
             ],
           },
           {

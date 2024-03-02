@@ -58,7 +58,7 @@
 
 事实上，我目前有两台闲置的服务器，一台是 [RackNerd](https://www.racknerd.com/) 的，25 年 3 月才到期；还有一台是 [腾讯云](https://cloud.tencent.com/) 的，不过今年12月就要到期了。
 
-![RackNerd和腾讯云服务器](https://cdn.tangjiayan.com/notes/web-build/typecho/racknerd%26tencent-cloud.png)
+![RackNerd和腾讯云服务器](https://cdn.tangjiayan.com/notes/web-build/typecho/debian10-typecho/racknerd%26tencent-cloud.png)
 
 所以我不需要买新的服务器，用它们就行。
 
@@ -342,15 +342,15 @@ systemctl restart mariadb.service
 
 我给网站取的域名是 `story.tangjiayan.cn`，所以在 `/www/wwwroot` 下建立一个名为 `story.tangjiayan.cn` 的文件夹。
 
-![story.tangjiayan.cn 文件夹](https://cdn.tangjiayan.com/notes/web-build/typecho/site-folder.png)
+![story.tangjiayan.cn 文件夹](https://cdn.tangjiayan.com/notes/web-build/typecho/debian10-typecho/site-folder.png)
 
 ::: details 站点文件夹名称不一定非得与网站域名相同
 
 站点文件夹名称不一定非得与网站域名相同，不信你问 ChatGPT ╰(°▽°)╯
 
-![chatgpt_site-folder-name-1](https://cdn.tangjiayan.com/notes/web-build/typecho/site-folder-name_chatgpt-1.png)
+![chatgpt_site-folder-name-1](https://cdn.tangjiayan.com/notes/web-build/typecho/debian10-typecho/site-folder-name_chatgpt-1.png)
 
-![chatgpt_site-folder-name-2](https://cdn.tangjiayan.com/notes/web-build/typecho/site-folder-name_chatgpt-2.png)
+![chatgpt_site-folder-name-2](https://cdn.tangjiayan.com/notes/web-build/typecho/debian10-typecho/site-folder-name_chatgpt-2.png)
 
 :::
 
@@ -451,7 +451,7 @@ server {
 
 在 [这里](https://typecho.org/download) 下载最新版本的 Typecho，解压后用 Bitvise 将其内容都上传到 `/www/wwwroot/blog.tangjiayan.cn` 路径下。
 
-![upload-typecho](https://cdn.tangjiayan.com/notes/web-build/typecho/upload-typecho.png)
+![upload-typecho](https://cdn.tangjiayan.com/notes/web-build/typecho/debian10-typecho/upload-typecho.png)
 
 ### 打开浏览器，进入网站后台进行配置
 
@@ -461,7 +461,7 @@ server {
 
 ::: details 上传目录无法写入
 
-![upload-cannot-wirte](https://cdn.tangjiayan.com/notes/web-build/typecho/upload-cannot-wirte.png)
+![upload-cannot-wirte](https://cdn.tangjiayan.com/notes/web-build/typecho/debian10-typecho/upload-cannot-wirte.png)
 
 解决：
 
@@ -473,7 +473,7 @@ chmod -R 777 /www/wwwroot/story.tangjiayan.cn/usr/uploads
 
 ::: details 无法连接数据库
 
-![unable-open-database](https://cdn.tangjiayan.com/notes/web-build/typecho/unable-open-database.png)
+![unable-open-database](https://cdn.tangjiayan.com/notes/web-build/typecho/debian10-typecho/unable-open-database.png)
 
 解决：
 
@@ -487,7 +487,7 @@ chmod -R 777 /www/wwwroot
 
 最后安装好了。
 
-![typecho-success](https://cdn.tangjiayan.com/notes/web-build/typecho/typecho-success.png)
+![typecho-success](https://cdn.tangjiayan.com/notes/web-build/typecho/debian10-typecho/typecho-success.png)
 
 ### 更换为 Story 主题
 
@@ -497,7 +497,7 @@ chmod -R 777 /www/wwwroot
 
 解压后把文件夹改名为 `Story`，通过 Bitvise 把整个文件夹上传到 `/www/wwwroot/www.tangjiayan.cn/usr/themes` 路径下。
 
-![story](https://cdn.tangjiayan.com/notes/web-build/typecho/story.png)
+![story](https://cdn.tangjiayan.com/notes/web-build/typecho/debian10-typecho/story.png)
 
 然后在 Typecho 后台启用 Story，根据 [README](https://github.com/txperl/Story-for-Typecho) 自定义主题就好。
 
