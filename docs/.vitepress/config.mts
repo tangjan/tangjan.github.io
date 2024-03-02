@@ -252,6 +252,7 @@ export default defineConfig({
                 items:[
                   { text: 'spawn-git-ENOENT', link: '/web-build/vitepress/debug/spawn-git-ENOENT'},
                   { text: 'Error: listen EACCES', link: '/web-build/vitepress/debug/listen-EACCES'},
+                  { text: 'ERR_TTY_INIT_FAILED', link: '/web-build/vitepress/debug/ERR_TTY_INIT_FAILED'},
                 ]
               },
               { text: 'VitePress 部署到 Github Pages', link: '/web-build/vitepress/vitepress-github-pages'},

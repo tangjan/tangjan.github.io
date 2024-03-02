@@ -16,9 +16,12 @@
 
 ::: details 2024.3
 
+- 3月2日
+  - [Typecho首页文章没排满就换页](/web-build/typecho/typecho-page-change)
+  - [运行 `npx vitepress init` 时出现 `ERR_TTY_INIT_FAILED`](/web-build/vitepress/debug/ERR_TTY_INIT_FAILED)
 - 3月1日
   - [Debian 10 部署 Typecho](/web-build/typecho/debian10-typecho)
-  - [Typecho首页文章没排满就换页](/web-build/typecho/typecho-page-change)
+  
 
 :::
 
