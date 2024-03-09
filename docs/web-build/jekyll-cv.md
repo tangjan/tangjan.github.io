@@ -962,3 +962,5 @@ Configuration file: Y:/repositories/Github-Repos/online-cv/_config.yml
 ![localhost](https://cdn.tangjiayan.com/notes/web-build/jekyll/jekyll-cv/localhost.png)
 
 编辑好了 push 到 GitHub 就行了。
+
+求职中往往需要 `pdf` 格式的文件，HTML 转 PDF 的在线工具有很多，试了好几个，觉得 [这个](https://www.sejda.com/html-to-pdf) 好用些，它能生成完整的一大长页的 pdf。
