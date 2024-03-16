@@ -146,8 +146,8 @@ export default defineConfig({
         link: '/index.md'
       },
       {
-        text: '学习日志',
-        link: '/everyday-note'
+        text: '更新日志',
+        link: '/update-log'
       },
       {
         text: '未分类',
