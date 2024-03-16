@@ -203,6 +203,7 @@ export default defineConfig({
               { text: 'XAMPP - phpmyadmin：Error establishing a database connection', link: '/web-build/debug/Error-establishing-a-database-connection'},
               { text: 'url', link: '/web-build/url'},
               { text: 'jekyll 个人在线简历', link: '/web-build/jekyll-cv.md'},
+              { text: 'WebStackPage 个人导航站', link: '/web-build/webstackpage.md'},
             ]
           },
           {

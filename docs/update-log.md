@@ -6,6 +6,8 @@
 
 ::: details 2024.3
 
+- 3月16日
+  - [WebStackPage 个人导航站](/web-build/webstackpage)
 - 3月2日
   - [Typecho首页文章没排满就换页](/web-build/typecho/typecho-page-change)
   - [运行 `npx vitepress init` 时出现 `ERR_TTY_INIT_FAILED`](/web-build/vitepress/debug/ERR_TTY_INIT_FAILED)
