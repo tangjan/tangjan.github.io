@@ -96,6 +96,7 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: 'https://cdn.tangjiayan.com/logo.svg' }]],
   lang: 'zh-CN',
   lastUpdated: true,
+  srcDir: './src',
 
   markdown: {
     config: (md) => {
@@ -313,7 +314,7 @@ export default defineConfig({
             items: [
               { text: 'VS Code 配置 C++ 运行环境', link: '/programming/vscode/vscode-cpp' },
               { text: '使用 VS Code 进行 git commit 一直加载', link: '/programming/vscode/commit-stuck' },
-              { text: 'VS Code 插件 markdownlint 提示 “no-hard-tabs”', link: '/vscode/vscode-hard-tab'},
+              { text: 'VS Code 插件 markdownlint 提示 “no-hard-tabs”', link: '/programming/vscode/vscode-hard-tab'},
             ]
           },
         ]
@@ -326,6 +327,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: '五十音图', link: '/japanese/gojuon/gojuon'},
+              { text: '五十音图-易混淆标色版', link: '/japanese/gojuon/confusing-gojuon'},
               { text: '五十音笔顺', link: '/japanese/gojuon/gojuon-stroke-order'},
               { text: '浊音/半浊音', link: '/japanese/gojuon/voiced'},
             ] 
