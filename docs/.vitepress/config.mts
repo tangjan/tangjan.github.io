@@ -303,7 +303,6 @@ export default defineConfig({
                     ]
                   },
                   { text: '格式说明符', link: '/programming/c++/format-specifier'},
-                  { text: 'default - C++', link: '/programming/c++/default'}
                 ]
               }
             ]

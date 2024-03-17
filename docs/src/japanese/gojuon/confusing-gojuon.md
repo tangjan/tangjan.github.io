@@ -34,7 +34,7 @@
         <tr>
             <td rowspan="2">K</td>
             <td>か</td><td>カ</td>
-            <td>き</td><td>キ</td>
+            <td style="background:#00FFFF;">き</td><td>キ</td>
             <td>く</td><td style="color:white; background:#0197bc;">ク</td>
             <td style="color:white; background:#2572b1;">け</td><td style="color:white; background:#424d9a;">ケ</td>
             <td style="color:white; background:#6d368c;">こ</td><td style="color:white; background:#c5007e;">コ</td>
@@ -48,7 +48,7 @@
         </tr>
         <tr>
             <td rowspan="2">S</td>
-            <td>さ</td><td>サ</td>
+            <td  style="background:#00FFFF;">さ</td><td>サ</td>
             <td>し</td><td style="color:white; background:#e41e1c;">シ</td>
             <td>す</td><td style="color:white; background:#eb6219;">ス</td>
             <td>せ</td><td style="background:#f8c78a;">セ</td>
