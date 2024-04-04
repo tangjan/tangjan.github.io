@@ -4,7 +4,7 @@
 
 ::: details 2024.4
 
-- 4月15日
+- 4月5日
   - [安装 curl 时遇到的软件源问题](/unclassified/linux/debug/curl-repo)
 
 :::
