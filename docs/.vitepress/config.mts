@@ -170,8 +170,14 @@ export default defineConfig({
           { text: 'Linux',
             collapsed: true,
             items: [
+              {
+                text: 'debug',
+                collapsed: true,
+                items:[
+                  { text: '安装 curl 时遇到的软件源问题', link: '/unclassified/linux/debug/curl-repo'},
+                ]
+              },
               { text: '常见命令的全称', link: '/unclassified/linux/full-name' },
-              { text: '用户管理', link: '/unclassified/linux/user' }
             ]
           },
           { text: 'PhotoShop',

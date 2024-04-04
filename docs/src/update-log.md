@@ -2,6 +2,13 @@
 
 ## 日志
 
+::: details 2024.4
+
+- 4月15日
+  - [安装 curl 时遇到的软件源问题](/unclassified/linux/debug/curl-repo)
+
+:::
+
 ::: details 2024.3
 
 - 3月17日
