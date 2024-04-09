@@ -225,6 +225,7 @@ export default defineConfig({
             collapsed: true,
             items:[
               { text: 'HTML 注音元素 &lt;ruby&gt;', link: '/web-build/html/ruby'},
+              { text: 'svg 图标大小不对齐问题', link: '/web-build/html/svg-misaligned'},
             ],
           },
           {
