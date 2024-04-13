@@ -1,3 +1,5 @@
+/* BEGIN CSS 渐变色 */
+
 .miku{
     display: inline-block;
     width: 15px;
@@ -19,9 +21,26 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+
+/* END CSS 渐变色 */
+
+/* BEGIN 日语注音 */
+
 .ruby-ja{
     font-size: 0.8em;
 }
+
+.ruby {
+    font-size: 25px;
+}
+
+.tr {
+    text-align: center;
+}
+
+/* END 日语注音 */
+
+/* BEGIN 文字渐变遮罩 */
 
 .mask {
     background-color: #252525;
@@ -32,6 +51,8 @@
 .mask:hover {
     color: #ffffff;
 }
+
+/* END 文字渐变遮罩 */
     
 /* code {
     white-space: pre-wrap !important;

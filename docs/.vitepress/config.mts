@@ -197,11 +197,11 @@ export default defineConfig({
         ],
       },
       {
-        text: '建站',
+        text: '网站',
         // collapsed: true,
         items: [
           {
-            text: '建站',
+            text: '网站',
             collapsed: true,
             items: [
               { text: '仿豆瓣主页静态页面', link: '/web-build/fake-douban'},
@@ -337,7 +337,14 @@ export default defineConfig({
               { text: '五十音笔顺', link: '/japanese/gojuon/gojuon-stroke-order'},
               { text: '浊音/半浊音', link: '/japanese/gojuon/voiced'},
             ] 
-          }
+          },
+          {
+            text: 'ACGN',
+            collapsed: true,
+            items: [
+              { text: '欢迎来带实力至上主义教室 CHARACTER', link: '/japanese/acgn/shi-jiao' },
+            ]
+          },
         ]
       },
       {
