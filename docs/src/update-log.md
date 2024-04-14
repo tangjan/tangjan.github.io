@@ -10,6 +10,8 @@
   - [svg 图标大小不对齐问题](/web-build/html/svg-misaligned)
 - 4月13日
   - [欢迎来到实力至上主义教室 CHARACTER](/japanese/acgn/shi-jiao)
+- 4月14日
+  - [CHAOS;CHILD CHARACTER](/japanese/acgn/chaos-child)
 
 :::
 
