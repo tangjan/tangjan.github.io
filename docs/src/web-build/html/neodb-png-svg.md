@@ -174,11 +174,11 @@
 icon: {
   svg: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
   <title>NeoDB: jantang</title>
-  <image href="/public/NeoDB.png" width="20" height="20" />
+  <image href="/NeoDB.png" width="20" height="20" />
   </svg>`
 },
 link: `https://neodb.social/users/jantang/`,
 ariaLabel: 'NeoDB'
 ```
 
-OK 了。
+这里需要注意的是 `<image>` 的 `href` 不能写为 `/public/NeoDB.png`，而是要直接写为 `/NeoDB.png`，参见 [The Public Directory](https://vitepress.dev/guide/asset-handling#the-public-directory) 。
