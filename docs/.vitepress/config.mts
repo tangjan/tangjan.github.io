@@ -226,6 +226,8 @@ export default defineConfig({
             items:[
               { text: 'HTML 注音元素 &lt;ruby&gt;', link: '/web-build/html/ruby'},
               { text: 'svg 图标大小不对齐问题', link: '/web-build/html/svg-misaligned'},
+              { text: '用 png 图片代替 svg 的图形元素', link: '/web-build/html/neodb-png-svg'},
+              
             ],
           },
           {

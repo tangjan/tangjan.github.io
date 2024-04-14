@@ -12,6 +12,7 @@
   - [欢迎来到实力至上主义教室 CHARACTER](/japanese/acgn/shi-jiao)
 - 4月14日
   - [CHAOS;CHILD CHARACTER](/japanese/acgn/chaos-child)
+  - [用 png 图片代替 svg 的图形元素](/web-build/html/neodb-png-svg)
 
 :::
 
