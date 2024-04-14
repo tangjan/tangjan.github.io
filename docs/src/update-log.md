@@ -1,18 +1,20 @@
 # 更新日志
 
+<!-- 注意日期倒序排序 -->
+
 ## 日志
 
 ::: details 2024.4
 
-- 4月5日
-  - [安装 curl 时遇到的软件源问题](/unclassified/linux/debug/curl-repo)
-- 4月10日
-  - [svg 图标大小不对齐问题](/web-build/html/svg-misaligned)
-- 4月13日
-  - [欢迎来到实力至上主义教室 CHARACTER](/japanese/acgn/shi-jiao)
 - 4月14日
   - [CHAOS;CHILD CHARACTER](/japanese/acgn/chaos-child)
   - [用 png 图片代替 svg 的图形元素](/web-build/html/neodb-png-svg)
+- 4月13日
+  - [欢迎来到实力至上主义教室 CHARACTER](/japanese/acgn/shi-jiao)
+- 4月10日
+  - [svg 图标大小不对齐问题](/web-build/html/svg-misaligned)
+- 4月5日
+  - [安装 curl 时遇到的软件源问题](/unclassified/linux/debug/curl-repo)
 
 :::
 
