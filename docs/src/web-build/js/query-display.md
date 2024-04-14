@@ -10,8 +10,8 @@
 
 ![URI_syntax_diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/URI_syntax_diagram.svg/1602px-URI_syntax_diagram.svg.png)
 
-- GitHub: [practices/query-display at main · tangjan/practices](https://github.com/tangjan/practices/tree/main/query-display)
-- GitHub Pages: [在线查看](https://notes.tangjiayan.cn/practices/query-display/)
+- [GitHub 源码](https://github.com/tangjan/online-demos/tree/main/query-display)
+- [在线查看](https://notes.tangjiayan.cn/online-demos/query-display/?digit=1234567890)
 
 ## 初始化 query 键值对，显示在 HTML
 

@@ -342,7 +342,8 @@ export default defineConfig({
             text: 'ACGN',
             collapsed: true,
             items: [
-              { text: '欢迎来带实力至上主义教室 CHARACTER', link: '/japanese/acgn/shi-jiao' },
+              { text: '欢迎来到实力至上主义教室 CHARACTER', link: '/japanese/acgn/shi-jiao' },
+              { text: 'CHAOS;CHILD CHARACTER', link: '/japanese/acgn/chaos-child' },
             ]
           },
         ]

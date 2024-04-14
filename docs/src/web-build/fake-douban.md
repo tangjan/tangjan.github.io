@@ -10,8 +10,8 @@
 
 链接：
 
-- [GitHub](https://github.com/tangjan/practices/tree/main/static-page-douban/)
-- [GitHub Pages 在线查看](https://notes.tangjiayan.cn/Online-Displayable-Practices/static-page-douban/)
+- [GitHub 源码](https://github.com/tangjan/online-demos/tree/main/static-page-douban)
+- [在线查看](https://notes.tangjiayan.cn/online-demos/static-page-douban/)
 
 ## 著作权声明
 
