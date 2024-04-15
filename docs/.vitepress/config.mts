@@ -346,6 +346,7 @@ export default defineConfig({
             items: [
               { text: '欢迎来到实力至上主义教室 CHARACTER', link: '/japanese/acgn/shi-jiao' },
               { text: 'CHAOS;CHILD CHARACTER', link: '/japanese/acgn/chaos-child' },
+              { text: '魔法使之夜 CHARACTER', link: '/japanese/acgn/chaos-child' },
             ]
           },
         ]
