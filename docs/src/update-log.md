@@ -6,6 +6,8 @@
 
 ::: details 2024.4
 
+- 4月17日
+  - [Summer Pockets CHARACTER](/japanese/acgn/summer-pockets)
 - 4月15日
   - [魔法师之夜 CHARACTER](/japanese/acgn/maho-yoru)
 - 4月14日
