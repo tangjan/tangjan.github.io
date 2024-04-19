@@ -1,3 +1,27 @@
+<style>
+.miku{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #39C5BB;
+    vertical-align: middle;
+}
+.yzl{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #EE0000;
+    vertical-align: middle;
+}
+.jan{
+    font-size: 30px;
+    display: inline-block;
+    background: linear-gradient(to right, #39C5BB, #EE0000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+</style>
+
 # CSS linear-gradient 渐变色
 
 偶然了解到了 CSS 的 [linear-gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images/Using_CSS_gradients)，于是想用它将「糖加盐」进行字体渐变渲染。

@@ -6,25 +6,25 @@
 
 <br>
 
-<ruby style="font-size: 25px;">
+<ruby class="ruby">
     <span>尾 上</span>
     <rp>(</rp>
-    <rt class="ruby-ja">おのえ</rt>
+    <rt>おのえ</rt>
     <rp>)</rp>
 </ruby>
 <span>&nbsp;&nbsp;</span>
-<ruby style="font-size: 25px;">
+<ruby class="ruby">
     世
     <rp>(</rp>
-    <rt class="ruby-ja">せ</rt>
+    <rt>せ</rt>
     <rp>)</rp>
     莉
     <rp>(</rp>
-    <rt class="ruby-ja">り</rt>
+    <rt>り</rt>
     <rp>)</rp>
     架
     <rp>(</rp>
-    <rt class="ruby-ja">か</rt>
+    <rt>か</rt>
     <rp>)</rp>
 </ruby>
 
@@ -34,34 +34,38 @@
 ### HTML
 
 ```html
-<ruby style="font-size: 25px;">
+<ruby class="ruby">
     <span>尾 上</span>
-    <rp>(</rp>
-    <rt class="ruby-ja">おのえ</rt>
-    <rp>)</rp>
+    <rp>（</rp>
+    <rt>おのえ</rt>
+    <rp>）</rp>
 </ruby>
-<span>&nbsp;&nbsp;</span>
-<ruby style="font-size: 25px;">
+<span>&nbsp;</span>
+<ruby class="ruby">
     世
-    <rp>(</rp>
-    <rt class="ruby-ja">せ</rt>
+    <rp>（</rp>
+    <rt>せ</rt>
     <rp>）</rp>
     莉
-    <rp>)</rp>
-    <rt class="ruby-ja">り</rt>
+    <rp>（</rp>
+    <rt>り</rt>
     <rp>）</rp>
     架
-    <rp>(</rp>
-    <rt class="ruby-ja">か</rt>
-    <rp>)</rp>
+    <rp>（</rp>
+    <rt>か</rt>
+    <rp>）</rp>
 </ruby>
 ```
 
 ### CSS
 
 ```css
-.ruby-ja{
+.ruby rt {
     font-size: 0.8em;
+}
+
+.ruby {
+    font-size: 25px;
 }
 ```
 
@@ -72,25 +76,25 @@
 
 以
 
-<ruby>
+<ruby class="ruby">
     <span>尾 上</span>
     <rp>（</rp>
-    <rt class="ruby-ja">おのえ</rt>
+    <rt>おのえ</rt>
     <rp>）</rp>
 </ruby>
 <span>&nbsp;</span>
-<ruby>
+<ruby class="ruby">
     世
     <rp>（</rp>
-    <rt class="ruby-ja">せ</rt>
+    <rt>せ</rt>
     <rp>）</rp>
     莉
     <rp>（</rp>
-    <rt class="ruby-ja">り</rt>
+    <rt>り</rt>
     <rp>）</rp>
     架
     <rp>（</rp>
-    <rt class="ruby-ja">か</rt>
+    <rt>か</rt>
     <rp>）</rp>
 </ruby>
 

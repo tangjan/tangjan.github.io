@@ -1,32 +1,6 @@
-/* BEGIN CSS 渐变色 */
-
-.miku{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-color: #39C5BB;
-    vertical-align: middle;
-}
-.yzl{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-color: #EE0000;
-    vertical-align: middle;
-}
-.jan{
-    font-size: 30px;
-    display: inline-block;
-    background: linear-gradient(to right, #39C5BB, #EE0000);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-/* END CSS 渐变色 */
-
 /* BEGIN 日语注音 */
 
-.ruby-ja{
+.ruby rt {
     font-size: 0.8em;
 }
 
