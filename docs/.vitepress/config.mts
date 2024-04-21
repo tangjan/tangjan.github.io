@@ -369,15 +369,14 @@ export default defineConfig({
       {
         text: 'ANTI',
         items:[
+          { text: 'ANTI 是什么', link: '/anti/whats-anti'},
           { 
-            text: 'ANTI',
+            text: 'v2ray',
             collapsed: true,
             items:[
-              { text: 'ANTI 是什么', link: '/anti/whats-anti'},
-              { text: '重装 v2ray - WS + TLS + Web + CloudFlare', link: '/anti/reinstall-v2ray' }
+              { text: '重装 v2ray - WS + TLS + Web + CloudFlare', link: '/anti/v2ray/reinstall-v2ray' },
             ]
-          
-          }
+          },
         ]
       },
       {
