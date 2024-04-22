@@ -348,6 +348,7 @@ export default defineConfig({
               { text: 'CHAOS;CHILD CHARACTER', link: '/japanese/acgn/chaos-child' },
               { text: '魔法使之夜 CHARACTER', link: '/japanese/acgn/maho-yoru' },
               { text: 'Summer Pockets CHARACTER', link: '/japanese/acgn/summer-pockets' },
+              { text: '金辉恋曲四重奏 CHARACTER', link: '/japanese/acgn/kiniro' },
             ]
           },
         ]
