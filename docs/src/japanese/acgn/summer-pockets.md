@@ -2,17 +2,17 @@
 
 <table>
     <tbody>
-        <tr class="tr">
+        <tr>
             <td>
                 <br>
-                <ruby class="ruby">
+                <ruby>
                     <span>鷹原</span>
                     <rp>(</rp>
                     <rt>たかはら</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     <span>羽依里</span>
                     <rp>(</rp>
                     <rt>はいり</rt>
@@ -23,49 +23,49 @@
                 <br>
             </td>
             <td>
-                <ruby class="ruby">
+                <ruby>
                     た
                     <rp>(</rp>
                     <rt>ta</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     か
                     <rp>(</rp>
                     <rt>ka</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     は
                     <rp>(</rp>
                     <rt>ha</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ら
                     <rp>(</rp>
                     <rt>ra</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     は
                     <rp>(</rp>
                     <rt>ha</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     い
                     <rp>(</rp>
                     <rt>i</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     り
                     <rp>(</rp>
                     <rt>ri</rt>
@@ -73,17 +73,17 @@
                 </ruby>
             </td>
         </tr>
-        <tr class="tr">
+        <tr>
             <td>
                 <br>
-                <ruby class="ruby">
+                <ruby>
                     <span>鳴瀬</span>
                     <rp>(</rp>
                     <rt>なるせ</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     <span>白羽</span>
                     <rp>(</rp>
                     <rt>しろは</rt>
@@ -94,42 +94,42 @@
                 <br>
             </td>
             <td>
-                <ruby class="ruby">
+                <ruby>
                     な
                     <rp>(</rp>
                     <rt>na</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     る
                     <rp>(</rp>
                     <rt>ru</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     せ
                     <rp>(</rp>
                     <rt>se</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     し
                     <rp>(</rp>
                     <rt>shi</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ろ
                     <rp>(</rp>
                     <rt>ro</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     は
                     <rp>(</rp>
                     <rt>ha</rt>
@@ -137,17 +137,17 @@
                 </ruby>
             </td>
         </tr>
-        <tr class="tr">
+        <tr>
             <td>
                 <br>
-                <ruby class="ruby">
+                <ruby>
                     <span>空門</span>
                     <rp>(</rp>
                     <rt>そらかど</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     <span>蒼</span>
                     <rp>(</rp>
                     <rt>あお</rt>
@@ -158,42 +158,42 @@
                 <br>
             </td>
             <td>
-                <ruby class="ruby">
+                <ruby>
                     そ
                     <rp>(</rp>
                     <rt>so</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ら
                     <rp>(</rp>
                     <rt>ra</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     か
                     <rp>(</rp>
                     <rt>ka</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ど
                     <rp>(</rp>
                     <rt>do</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     あ
                     <rp>(</rp>
                     <rt>a</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     お
                     <rp>(</rp>
                     <rt>o</rt>
@@ -201,17 +201,17 @@
                 </ruby>
             </td>
         </tr>
-        <tr class="tr">
+        <tr>
             <td>
                 <br>
-                <ruby class="ruby">
+                <ruby>
                     <span>久島</span>
                     <rp>(</rp>
                     <rt>くしま</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     <span>鴎</span>
                     <rp>(</rp>
                     <rt>かもめ</rt>
@@ -222,42 +222,42 @@
                 <br>
             </td>
             <td>
-                <ruby class="ruby">
+                <ruby>
                     く
                     <rp>(</rp>
                     <rt>ku</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     し
                     <rp>(</rp>
                     <rt>shi</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ま
                     <rp>(</rp>
                     <rt>ma</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     か
                     <rp>(</rp>
                     <rt>ka</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     も
                     <rp>(</rp>
                     <rt>mo</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     め
                     <rp>(</rp>
                     <rt>me</rt>
@@ -265,17 +265,17 @@
                 </ruby>
             </td>
         </tr>
-        <tr class="tr">
+        <tr>
             <td>
                 <br>
-                <ruby class="ruby">
+                <ruby>
                     <span>紬</span>
                     <rp>(</rp>
                     <rt>つむぎ</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     <span>文德斯</span>
                     <rp>(</rp>
                     <rt>ヴェンダース</rt>
@@ -286,56 +286,56 @@
                 <br>
             </td>
             <td>
-                <ruby class="ruby">
+                <ruby>
                     つ
                     <rp>(</rp>
                     <rt>tsu</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     む
                     <rp>(</rp>
                     <rt>mu</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ぎ
                     <rp>(</rp>
                     <rt>gi</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ヴェ
                     <rp>(</rp>
                     <rt>be</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ン
                     <rp>(</rp>
                     <rt>n</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ダ
                     <rp>(</rp>
                     <rt>da</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ー
                     <rp>(</rp>
                     <rt></rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ス
                     <rp>(</rp>
                     <rt>su</rt>
@@ -343,17 +343,17 @@
                 </ruby>
             </td>
         </tr>
-        <tr class="tr">
+        <tr>
             <td>
                 <br>
-                <ruby class="ruby">
+                <ruby>
                     <span>野村</span>
                     <rp>(</rp>
                     <rt>のむら</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     <span>美希</span>
                     <rp>(</rp>
                     <rt>みき</rt>
@@ -364,35 +364,35 @@
                 <br>
             </td>
             <td>
-                <ruby class="ruby">
+                <ruby>
                     の
                     <rp>(</rp>
                     <rt>no</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     む
                     <rp>(</rp>
                     <rt>mu</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ら
                     <rp>(</rp>
                     <rt>ra</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     み
                     <rp>(</rp>
                     <rt>mi</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     き
                     <rp>(</rp>
                     <rt>ki</rt>
@@ -400,17 +400,17 @@
                 </ruby>
             </td>
         </tr>
-        <tr class="tr">
+        <tr>
             <td>
                 <br>
-                <ruby class="ruby">
+                <ruby>
                     <span>水織</span>
                     <rp>(</rp>
                     <rt>みずおり</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     <span>静久</span>
                     <rp>(</rp>
                     <rt>しずく</rt>
@@ -421,49 +421,49 @@
                 <br>
             </td>
             <td>
-                <ruby class="ruby">
+                <ruby>
                     み
                     <rp>(</rp>
                     <rt>mi</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ず
                     <rp>(</rp>
                     <rt>zu</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     お
                     <rp>(</rp>
                     <rt>o</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     り
                     <rp>(</rp>
                     <rt>ri</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     し
                     <rp>(</rp>
                     <rt>shi</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ず
                     <rp>(</rp>
                     <rt>zu</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     く
                     <rp>(</rp>
                     <rt>ku</rt>
@@ -471,17 +471,17 @@
                 </ruby>
             </td>
         </tr>
-        <tr class="tr">
+        <tr>
             <td>
                 <br>
-                <ruby class="ruby">
+                <ruby>
                     <span>加藤</span>
                     <rp>(</rp>
                     <rt>かとう</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     <span>羽未</span>
                     <rp>(</rp>
                     <rt>うみ</rt>
@@ -492,35 +492,35 @@
                 <br>
             </td>
             <td>
-                <ruby class="ruby">
+                <ruby>
                     か
                     <rp>(</rp>
                     <rt>ka</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     と
                     <rp>(</rp>
                     <rt>to</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     う
                     <rp>(</rp>
                     <rt>u</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     う
                     <rp>(</rp>
                     <rt>u</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     み
                     <rp>(</rp>
                     <rt>mi</rt>
@@ -528,10 +528,10 @@
                 </ruby>
             </td>
         </tr>
-        <tr class="tr">
+        <tr>
             <td>
                 <br>
-                <ruby class="ruby">
+                <ruby>
                     <span>稻荷</span>
                     <rp>(</rp>
                     <rt>イナリ</rt>
@@ -542,21 +542,21 @@
                 <br>
             </td>
             <td>
-                <ruby class="ruby">
+                <ruby>
                     イ
                     <rp>(</rp>
                     <rt>i</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ナ
                     <rp>(</rp>
                     <rt>na</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     リ
                     <rp>(</rp>
                     <rt>ri</rt>
@@ -564,17 +564,17 @@
                 </ruby>
             </td>
         </tr>
-        <tr class="tr">
+        <tr>
             <td>
                 <br>
-                <ruby class="ruby">
+                <ruby>
                     <span>三谷</span>
                     <rp>(</rp>
                     <rt>みたに</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     <span>良一</span>
                     <rp>(</rp>
                     <rt>りょういち</rt>
@@ -585,49 +585,49 @@
                 <br>
             </td>
             <td>
-                <ruby class="ruby">
+                <ruby>
                     み
                     <rp>(</rp>
                     <rt>mi</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     た
                     <rp>(</rp>
                     <rt>ta</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     に
                     <rp>(</rp>
                     <rt>ni</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     りょ
                     <rp>(</rp>
                     <rt>ryo</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     う
                     <rp>(</rp>
                     <rt>u</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     い
                     <rp>(</rp>
                     <rt>i</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ち
                     <rp>(</rp>
                     <rt>chi</rt>
@@ -635,17 +635,17 @@
                 </ruby>
             </td>
         </tr>
-        <tr class="tr">
+        <tr>
             <td>
                 <br>
-                <ruby class="ruby">
+                <ruby>
                     <span>加纳</span>
                     <rp>(</rp>
                     <rt>かのう</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     <span>天善</span>
                     <rp>(</rp>
                     <rt>てんざん</rt>
@@ -656,49 +656,49 @@
                 <br>
             </td>
             <td>
-                <ruby class="ruby">
+                <ruby>
                     か
                     <rp>(</rp>
                     <rt>ka</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     の
                     <rp>(</rp>
                     <rt>no</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     う
                     <rp>(</rp>
                     <rt>u</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&emsp;&emsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     て
                     <rp>(</rp>
                     <rt>te</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ん
                     <rp>(</rp>
                     <rt>n</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ざ
                     <rp>(</rp>
                     <rt>ze</rt>
                     <rp>)</rp>
                 </ruby>
                 <span>&nbsp;&nbsp;</span>
-                <ruby class="ruby">
+                <ruby>
                     ん
                     <rp>(</rp>
                     <rt>n</rt>

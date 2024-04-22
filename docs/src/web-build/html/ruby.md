@@ -6,14 +6,14 @@
 
 <br>
 
-<ruby class="ruby">
+<ruby>
     <span>尾 上</span>
     <rp>(</rp>
     <rt>おのえ</rt>
     <rp>)</rp>
 </ruby>
 <span>&nbsp;&nbsp;</span>
-<ruby class="ruby">
+<ruby>
     世
     <rp>(</rp>
     <rt>せ</rt>
@@ -34,14 +34,14 @@
 ### HTML
 
 ```html
-<ruby class="ruby">
+<ruby>
     <span>尾 上</span>
     <rp>（</rp>
     <rt>おのえ</rt>
     <rp>）</rp>
 </ruby>
 <span>&nbsp;</span>
-<ruby class="ruby">
+<ruby>
     世
     <rp>（</rp>
     <rt>せ</rt>
@@ -76,14 +76,14 @@
 
 以
 
-<ruby class="ruby">
+<ruby>
     <span>尾 上</span>
     <rp>（</rp>
     <rt>おのえ</rt>
     <rp>）</rp>
 </ruby>
 <span>&nbsp;</span>
-<ruby class="ruby">
+<ruby>
     世
     <rp>（</rp>
     <rt>せ</rt>
