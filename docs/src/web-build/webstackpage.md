@@ -321,6 +321,8 @@ VS Code 使用 [Live Server](https://marketplace.visualstudio.com/items?itemName
 
 ## 根目录下 `index.html` 的修改
 
+这个 HTML 是用来 [重定向](https://en.wikipedia.org/wiki/URL_redirection) 的。
+
 ::: details `index.html`
 
 ```html
@@ -416,13 +418,9 @@ VS Code 使用 [Live Server](https://marketplace.visualstudio.com/items?itemName
 
 :::
 
-## `about.html` 文件的修改
+## `/cn/about.html` 和 `/en/about.html`
 
-有两个 `about.html` 文件，分别是 `cn/about.html` 和 `en/about.html`。
-
-这两个文件的内容差不多，修改完 `cn/about.html` 后可以直接复制粘贴到 `en/about.html` 里，然后把中文改为英文，把 `<html lang="zh">` 改为 `<html lang="en-US">`。
-
-这里只展示我对 `cn/about.html` 的修改。
+首先修改 `cn/about.html`：
 
 ::: details `cn/about.html`
 
@@ -596,23 +594,87 @@ VS Code 使用 [Live Server](https://marketplace.visualstudio.com/items?itemName
 
 :::
 
+然后，直接将 `cn/about.html` 的内容复制粘贴到 `en/about.html` 里，在 `en/about.html` 里修改以下内容：
+
+::: details [lang](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang)
+
+```html
+<html lang="zh">     // [!code --]
+<html lang="en-US">  // [!code ++]
+```
+
+:::
+
+::: details 网页标题
+
+```html
+<title>糖加盐的导航站</title>     // [!code --]
+<title>Jan's Navigation</title>  // [!code ++]
+```
+
+:::
+
+::: details 关于本站
+
+```html
+<h4 class="text-gray">关于本站</h4>          // [!code --]
+<h4 class="text-gray">About this site</h4>  // [!code ++]
+```
+
+---
+
+```html
+<div class="row">
+    <div class="col-sm-12">
+        <blockquote>
+            <p>浏览器书签太多了，把一些公用网站放在这。</p> // [!code --]
+            <p>I have too many browser bookmarks and put some public websites on this navigation site.</p> // [!code ++]
+        </blockquote>
+    </div>
+</div>
+```
+
+:::
+
+::: details 关于我
+
+```html
+<h4 class="text-gray">关于我</h4>    // [!code --]
+<h4 class="text-gray">About me</h4>  // [!code ++]
+```
+
+---
+
+```html
+<div class="xe-comment">
+    <a href="#" class="xe-user-name overflowClip_1">
+        <strong>糖加盐</strong>    // [!code --]
+        <strong>Jan Tang</strong>  // [!code ++]
+    </a>
+</div>
+```
+
+:::
+
+::: details 页脚
+
+```html
+<div class="footer-text">
+    2024 &copy; <a href="https://www.tangjiayan.cn" target="_blank"><strong>糖加盐</strong></a>  // [!code --]
+    2024 &copy; <a href="https://www.tangjiayan.cn" target="_blank"><strong>Jan Tang</strong></a>     // [!code ++]
+    <br>Using <a href="https://github.com/WebStackPage/WebStackPage.github.io" target="_blank"><strong>WebStack</strong></a>
+</div>
+```
+
+:::
+
 ## `/cn/index.html` 和 `/en/index.html`
 
 这两个 `index.html` 文件就是网站的主体了。
 
-同理，可以先修改 `/cn/index.html`，然后整个复制粘贴到 `/en/index.html` 中，中文改为英文，`<html lang="zh">` 改为 `<html lang="en-US">`，把 `flag-cn.png` 改为  `flag-us.png`，`Chinese` 改为 `English`。
+先修改 `/cn/index.html`。
 
-`page-container` 类的内容就是导航站的书签主体内容了，修改太多了，就不展示了，可以在 [github](https://github.com/tangjan/nav) 看完整代码。
-
-有些网站的图标原本是方形的，圆形不好看，比如 Instagram、StackOverflow、YouTube。
-
-所以我在 `/assets/css/nav.css` 里加了个 `image-square` 类，需要显示为正方形的就用这个类。
-
-```css
-.img-square {
-    padding: 7px 0;
-}
-```
+其中，`page-container` 类的内容就是导航站的书签主体内容了，修改太多了，就不展示了，可以在 [github](https://github.com/tangjan/nav) 看完整代码。
 
 ::: details `cn/index.html`
 
@@ -684,8 +746,9 @@ VS Code 使用 [Live Server](https://marketplace.visualstudio.com/items?itemName
 
 <body class="page-body">
     <!-- skin-white -->
-    <div class="page-container">...
-    </div>
+    <div class="page-container">  // [!code warning]
+        ...                       // [!code warning]
+    </div>                        // [!code warning]
 
     <!-- 锚点平滑移动 -->
     <script type="text/javascript">
@@ -767,6 +830,59 @@ VS Code 使用 [Live Server](https://marketplace.visualstudio.com/items?itemName
 ```
 
 :::
+
+同理，修改好后将其整个复制粘贴到 `/en/index.html` 中，修改 `/en/index.html` 的以下内容：
+
+::: details lang
+
+```html
+<html lang="zh">     // [!code --]
+<html lang="en-US">  // [!code ++]
+```
+
+:::
+
+::: details 网页标题
+
+```html
+<title>糖加盐的导航站</title>     // [!code --]
+<title>Jan's Navigation</title>  // [!code ++]
+```
+
+:::
+
+::: details 切换语言按钮
+
+```html
+<a href="../cn/index.html" class="dropdown-toggle" data-toggle="dropdown">
+    <img src="../assets/images/flags/flag-cn.png" alt="flag-cn" /> Chinese  // [!code --]
+    <img src="../assets/images/flags/flag-us.png" alt="flag-cn" /> English  // [!code ++]
+</a>
+```
+
+::: 
+
+::: details 页脚
+
+```html
+<div class="footer-text">
+    2024 &copy; <a href="https://www.tangjiayan.cn" target="_blank"><strong>糖加盐</strong></a>  // [!code --]
+    2024 &copy; <a href="https://www.tangjiayan.cn" target="_blank"><strong>Jan Tang</strong></a>     // [!code ++]
+    <br>Using <a href="https://github.com/WebStackPage/WebStackPage.github.io" target="_blank"><strong>WebStack</strong></a>
+</div>
+```
+
+:::
+
+另外，在给书签添加图标的过程中，发现有些网站的图标原本是方形的（比如 [Instagram](https://www.instagram.com/)、[StackOverflow](https://stackoverflow.com/)、[YouTube](https://www.youtube.com/)），用默认的圆形类 `img-circle` 会被裁剪掉一部分，不好看。
+
+所以我在 `/assets/css/nav.css` 里加了个 `image-square` 类，需要显示为正方形的就用这个类。
+
+```css
+.img-square {
+    padding: 7px 0;
+}
+```
 
 ## 参考
 
