@@ -6,6 +6,8 @@
 
 ::: details 2024.4
 
+- 4月28日
+  - [VS Code 同步扩展](/programming/vscode/sync-extensions)
 - 4月22日
   - [金辉恋曲四重奏 CHARACTER](/japanese/acgn/kiniro)
 - 4月17日

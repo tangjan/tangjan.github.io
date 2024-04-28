@@ -323,6 +323,7 @@ export default defineConfig({
               { text: 'VS Code 配置 C++ 运行环境', link: '/programming/vscode/vscode-cpp' },
               { text: '使用 VS Code 进行 git commit 一直加载', link: '/programming/vscode/commit-stuck' },
               { text: 'VS Code 插件 markdownlint 提示 “no-hard-tabs”', link: '/programming/vscode/vscode-hard-tab'},
+              { text: '同步扩展', link: '/programming/vscode/sync-extensions'},
             ]
           },
         ]
