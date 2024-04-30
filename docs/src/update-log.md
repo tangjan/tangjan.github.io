@@ -13,7 +13,7 @@
 - 4月17日
   - [Summer Pockets CHARACTER](/japanese/acgn/summer-pockets)
 - 4月15日
-  - [魔法师之夜 CHARACTER](/japanese/acgn/maho-yoru)
+  - [魔法使之夜 CHARACTER](/japanese/acgn/maho-yoru)
 - 4月14日
   - [CHAOS;CHILD CHARACTER](/japanese/acgn/chaos-child)
   - [用 png 图片代替 svg 的图形元素](/web-build/html/neodb-png-svg)
