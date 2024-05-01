@@ -6,6 +6,8 @@
 
 ::: details 2024.5
 
+- 5月2日
+  - [运行 `hexo server` 时提示 `此系统上禁止运行脚本`](ssg/hexo/debug/script-forbidden)
 - 5月1日
   - [Recv failure: Connection was reset](/unclassified/git/debug/connection-timed-out)
 
@@ -50,7 +52,7 @@
 ::: details 2023.10
 
 - 10月29日
-  - [jekyll 个人在线简历](/web/jekyll-cv.md)
+  - [jekyll 个人在线简历](/ssg/jekyll/jekyll-cv.md)
 - 10月6日
   - [五十音笔顺](/japanese/gojuon/gojuon-stroke-order)
 - 9月28日 ~ 10月3日
