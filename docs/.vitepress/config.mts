@@ -212,29 +212,29 @@ export default defineConfig({
             text: '网站',
             collapsed: true,
             items: [
-              { text: '仿豆瓣主页静态页面', link: '/web-build/fake-douban'},
-              { text: 'Windows 本地 Wordpress CMS 搭建', link: '/web-build/wordpress/windows-local-wordpress'},
-              { text: 'CAA 类型解析记录会影响 SSL 证书的申请', link: '/web-build/caa-ssl'},
-              { text: 'XAMPP - phpmyadmin：Error establishing a database connection', link: '/web-build/debug/Error-establishing-a-database-connection'},
-              { text: 'url', link: '/web-build/url'},
-              { text: 'jekyll 个人在线简历', link: '/web-build/jekyll-cv.md'},
-              { text: 'WebStackPage 个人导航站', link: '/web-build/webstackpage.md'},
+              { text: '仿豆瓣主页静态页面', link: '/web/fake-douban'},
+              { text: 'Windows 本地 Wordpress CMS 搭建', link: '/web/wordpress/windows-local-wordpress'},
+              { text: 'CAA 类型解析记录会影响 SSL 证书的申请', link: '/web/caa-ssl'},
+              { text: 'XAMPP - phpmyadmin：Error establishing a database connection', link: '/web/debug/Error-establishing-a-database-connection'},
+              { text: 'url', link: '/web/url'},
+              { text: 'jekyll 个人在线简历', link: '/web/jekyll-cv.md'},
+              { text: 'WebStackPage 个人导航站', link: '/web/webstackpage.md'},
             ]
           },
           {
             text: 'CSS',
             collapsed: true,
             items:[
-              { text: 'linear-gradient 渐变色', link: '/web-build/css/linear-gradient-tangjiayan'},
+              { text: 'linear-gradient 渐变色', link: '/web/css/linear-gradient-tangjiayan'},
             ],
           },
           {
             text: 'HTML',
             collapsed: true,
             items:[
-              { text: 'HTML 注音元素 &lt;ruby&gt;', link: '/web-build/html/ruby'},
-              { text: 'svg 图标大小不对齐问题', link: '/web-build/html/svg-misaligned'},
-              { text: '用 png 图片代替 svg 的图形元素', link: '/web-build/html/neodb-png-svg'},
+              { text: 'HTML 注音元素 &lt;ruby&gt;', link: '/web/html/ruby'},
+              { text: 'svg 图标大小不对齐问题', link: '/web/html/svg-misaligned'},
+              { text: '用 png 图片代替 svg 的图形元素', link: '/web/html/neodb-png-svg'},
               
             ],
           },
@@ -242,23 +242,23 @@ export default defineConfig({
             text: 'JS',
             collapsed: true,
             items:[
-              { text: 'JavaScript 初探——猜数字小游戏', link: '/web-build/js/js-number-guessing'},
-              { text: '将 url 中的 query 字段显示在网页中', link: '/web-build/js/query-display'},
+              { text: 'JavaScript 初探——猜数字小游戏', link: '/web/js/js-number-guessing'},
+              { text: '将 url 中的 query 字段显示在网页中', link: '/web/js/query-display'},
             ],
           },
           {
             text: 'Markdown',
             collapsed: true,
             items:[
-              { text: 'GitHub-Style Table', link: '/web-build/markdown/github-style-table'},
+              { text: 'GitHub-Style Table', link: '/web/markdown/github-style-table'},
             ],
           },
           {
             text: 'Typecho',
             collapsed: true,
             items:[
-              { text: 'Debian 10 部署 Typecho', link: '/web-build/typecho/debian10-typecho'},
-              { text: 'Typecho首页文章没排满就换页', link: '/web-build/typecho/typecho-page-change'},
+              { text: 'Debian 10 部署 Typecho', link: '/web/typecho/debian10-typecho'},
+              { text: 'Typecho首页文章没排满就换页', link: '/web/typecho/typecho-page-change'},
             ],
           },
           {
@@ -269,21 +269,21 @@ export default defineConfig({
                 text: 'debug',
                 collapsed: true,
                 items:[
-                  { text: 'spawn-git-ENOENT', link: '/web-build/vitepress/debug/spawn-git-ENOENT'},
-                  { text: 'Error: listen EACCES', link: '/web-build/vitepress/debug/listen-EACCES'},
-                  { text: 'ERR_TTY_INIT_FAILED', link: '/web-build/vitepress/debug/ERR_TTY_INIT_FAILED'},
+                  { text: 'spawn-git-ENOENT', link: '/web/vitepress/debug/spawn-git-ENOENT'},
+                  { text: 'Error: listen EACCES', link: '/web/vitepress/debug/listen-EACCES'},
+                  { text: 'ERR_TTY_INIT_FAILED', link: '/web/vitepress/debug/ERR_TTY_INIT_FAILED'},
                 ]
               },
-              { text: 'VitePress 部署到 Github Pages', link: '/web-build/vitepress/vitepress-github-pages'},
-              { text: 'Nginx 反向代理实现 VitePress 站点部署到腾讯云服务器', link: '/web-build/vitepress/vitepress-tencent-cloud'},
-              { text: 'VitePress 中使用 Katex', link: '/web-build/vitepress/vitepress-katex'},
+              { text: 'VitePress 部署到 Github Pages', link: '/web/vitepress/vitepress-github-pages'},
+              { text: 'Nginx 反向代理实现 VitePress 站点部署到腾讯云服务器', link: '/web/vitepress/vitepress-tencent-cloud'},
+              { text: 'VitePress 中使用 Katex', link: '/web/vitepress/vitepress-katex'},
             ],
           },
           {
             text: 'WordPress',
             collapsed: true,
             items:[
-              { text: 'Windows 本地 Wordpress CMS 搭建', link: '/web-build/wordpress/windows-local-wordpress'},
+              { text: 'Windows 本地 Wordpress CMS 搭建', link: '/web/wordpress/windows-local-wordpress'},
             ],
           },
         ]
