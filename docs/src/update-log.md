@@ -98,7 +98,6 @@
 - 9月6日
   - [STM32 命名规则](/embeded/stm32-naming-rule)
 - 9月5日
-  - [GitHub-Style Table](/web/markdown/github-style-table.md)
   - [VitePress 中使用 Katex](/web/vitepress/vitepress-katex.md)
 - 9月4日
   - [仿豆瓣主页静态页面](/web/fake-douban)
@@ -118,8 +117,6 @@
   - [CSS linear-gradient 渐变色](/web/css/linear-gradient-tangjiayan)
 - 8月30日
   - 将笔记从 [GitBook](https://www.gitbook.com/) 迁移至 [Vitepress](https://vitepress.dev/)
-- 8月29日
-  - [array](/programming/c++/containers/array)
 - 8月28日
   - [XAMPP - phpmyadmin：Error establishing a database connection](/web/debug/Error-establishing-a-database-connection)
 - 8月27日

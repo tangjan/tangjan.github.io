@@ -165,7 +165,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: 'DeBug',
+                text: 'debug',
                 collapsed: true,
                 items: [
                     { text: 'Connection timed out', link: '/unclassified/git/debug/connection-timed-out'},
@@ -182,7 +182,7 @@ export default defineConfig({
                 text: 'debug',
                 collapsed: true,
                 items:[
-                  { text: '安装 curl 时遇到的软件源问题', link: '/unclassified/linux/debug/curl-repo'},
+                  { text: 'curl 安装的软件源问题', link: '/unclassified/linux/debug/curl-repo'},
                 ]
               },
               { text: '常见命令的全称', link: '/unclassified/linux/full-name' },
@@ -197,9 +197,9 @@ export default defineConfig({
           { text: '本科',
             collapsed: true,
             items: [
-              { text: '基于 Simulink 的 SVPWM 仿真', link: '/unclassified/undergraduate/simulink-svpwm' },
-              { text: 'MATLAB 拼图游戏设计', link: '/unclassified/undergraduate/matlab-jigsaw' },
-              { text: '基于机器视觉 YOLO 目标检测算法的绝缘子及缺陷识别', link: '/unclassified/undergraduate/yolo-insulator' },
+              { text: 'Simulink SVPWM 仿真', link: '/unclassified/undergraduate/simulink-svpwm' },
+              { text: 'MATLAB 拼图游戏', link: '/unclassified/undergraduate/matlab-jigsaw' },
+              { text: 'YOLO 绝缘子及缺陷识别', link: '/unclassified/undergraduate/yolo-insulator' },
             ]
           },
         ],
@@ -209,15 +209,13 @@ export default defineConfig({
         // collapsed: true,
         items: [
           {
-            text: '网站',
+            text: '未分类',
             collapsed: true,
             items: [
               { text: '仿豆瓣主页静态页面', link: '/web/fake-douban'},
-              { text: 'Windows 本地 Wordpress CMS 搭建', link: '/web/wordpress/windows-local-wordpress'},
               { text: 'CAA 类型解析记录会影响 SSL 证书的申请', link: '/web/caa-ssl'},
               { text: 'XAMPP - phpmyadmin：Error establishing a database connection', link: '/web/debug/Error-establishing-a-database-connection'},
               { text: 'url', link: '/web/url'},
-              { text: 'jekyll 个人在线简历', link: '/web/jekyll-cv.md'},
               { text: 'WebStackPage 个人导航站', link: '/web/webstackpage.md'},
             ]
           },
@@ -246,19 +244,49 @@ export default defineConfig({
               { text: '将 url 中的 query 字段显示在网页中', link: '/web/js/query-display'},
             ],
           },
-          {
-            text: 'Markdown',
-            collapsed: true,
-            items:[
-              { text: 'GitHub-Style Table', link: '/web/markdown/github-style-table'},
-            ],
-          },
+        ]
+      },
+      {
+        text: 'CMS',
+        items: [
           {
             text: 'Typecho',
             collapsed: true,
             items:[
-              { text: 'Debian 10 部署 Typecho', link: '/web/typecho/debian10-typecho'},
-              { text: 'Typecho首页文章没排满就换页', link: '/web/typecho/typecho-page-change'},
+              { text: 'Debian 10 部署 Typecho', link: '/cms/typecho/debian10-typecho'},
+              { text: 'Typecho首页文章没排满就换页', link: '/cms/typecho/typecho-page-change'},
+            ],
+          },
+          {
+            text: 'WordPress',
+            collapsed: true,
+            items:[
+              { text: 'Windows 本地 Wordpress 搭建', link: '/cms/wordpress/windows-local-wordpress'},
+            ],
+          },
+        ]
+      },
+      {
+        text: 'SSG',
+        items: [
+          {
+            text: 'Hexo',
+            collapsed: true,
+            items:[
+              {
+                text: 'debug',
+                collapsed: true,
+                items:[
+                  { text: '此系统上禁止运行脚本', link: '/ssg/hexo/debug/script-forbidden'},
+                ]
+              },
+            ],
+          },
+          {
+            text: 'Jekyll',
+            collapsed: true,
+            items:[
+              { text: '个人在线简历', link: '/ssg/jekyll/jekyll-cv.md'},
             ],
           },
           {
@@ -269,21 +297,14 @@ export default defineConfig({
                 text: 'debug',
                 collapsed: true,
                 items:[
-                  { text: 'spawn-git-ENOENT', link: '/web/vitepress/debug/spawn-git-ENOENT'},
-                  { text: 'Error: listen EACCES', link: '/web/vitepress/debug/listen-EACCES'},
-                  { text: 'ERR_TTY_INIT_FAILED', link: '/web/vitepress/debug/ERR_TTY_INIT_FAILED'},
+                  { text: 'spawn-git-ENOENT', link: '/ssg/vitepress/debug/spawn-git-ENOENT'},
+                  { text: 'Error: listen EACCES', link: '/ssg/vitepress/debug/listen-EACCES'},
+                  { text: 'ERR_TTY_INIT_FAILED', link: '/ssg/vitepress/debug/ERR_TTY_INIT_FAILED'},
                 ]
               },
-              { text: 'VitePress 部署到 Github Pages', link: '/web/vitepress/vitepress-github-pages'},
-              { text: 'Nginx 反向代理实现 VitePress 站点部署到腾讯云服务器', link: '/web/vitepress/vitepress-tencent-cloud'},
-              { text: 'VitePress 中使用 Katex', link: '/web/vitepress/vitepress-katex'},
-            ],
-          },
-          {
-            text: 'WordPress',
-            collapsed: true,
-            items:[
-              { text: 'Windows 本地 Wordpress CMS 搭建', link: '/web/wordpress/windows-local-wordpress'},
+              { text: '部署到 Github Pages', link: '/ssg/vitepress/vitepress-github-pages'},
+              { text: '部署到云服务器', link: '/ssg/vitepress/vitepress-tencent-cloud'},
+              { text: '使用 Katex', link: '/ssg/vitepress/vitepress-katex'},
             ],
           },
         ]
@@ -296,41 +317,27 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                items: [
-                  {
-                    text: '输入/输出数据',
-                    collapsed: true,
-                    items: [
-                      { text: 'cin / cout', link: '/programming/c++/input-output/cin-cout'},
-                      { text: 'getline', link: '/programming/c++/input-output/getline'}
-                    ]
-                  },
-                  {
-                    text: '容器',
-                    collapsed: true,
-                    items: [
-                      { text: 'array', link: '/programming/c++/containers/array'}
-                    ]
-                  },
-                  {
-                    text: 'debug',
-                    collapsed: true,
-                    items: [
-                      { text: '牛客 Do not declare C-style arrays, use std::array<> instead', link: '/programming/c++/debug/nowcoder-use-stdarray-instead'}
-                    ]
-                  },
-                  { text: '格式说明符', link: '/programming/c++/format-specifier'},
-                ]
-              }
+                  text: 'debug',
+                  collapsed: true,
+                  items: [
+                    { text: '牛客 Do not declare C-style arrays, use std::array<> instead', link: '/programming/c++/debug/nowcoder-use-stdarray-instead'}
+                  ]
+              },
             ]
           },
           {
             text: 'VS Code',
             collapsed: true,
             items: [
-              { text: 'VS Code 配置 C++ 运行环境', link: '/programming/vscode/vscode-cpp' },
-              { text: '使用 VS Code 进行 git commit 一直加载', link: '/programming/vscode/commit-stuck' },
-              { text: 'VS Code 插件 markdownlint 提示 “no-hard-tabs”', link: '/programming/vscode/vscode-hard-tab'},
+              {
+                text: 'debug',
+                collapsed: true,
+                items: [
+                  { text: 'git commit 时一直加载', link: '/programming/vscode/debug/commit-stuck' },
+                  { text: 'no-hard-tabs', link: '/programming/vscode/debug/vscode-hard-tab'},
+                ]
+            },
+              { text: '配置 C/C++ MinGW 运行环境', link: '/programming/vscode/vscode-cpp' },
               { text: '同步扩展', link: '/programming/vscode/sync-extensions'},
             ]
           },
@@ -379,7 +386,6 @@ export default defineConfig({
       {
         text: 'ANTI',
         items:[
-          { text: 'ANTI 是什么', link: '/anti/whats-anti'},
           { 
             text: 'v2ray',
             collapsed: true,
@@ -387,6 +393,8 @@ export default defineConfig({
               { text: '重装 v2ray - WS + TLS + Web + CloudFlare', link: '/anti/v2ray/reinstall-v2ray' },
             ]
           },
+          { text: 'ANTI 是什么', link: '/anti/whats-anti'},
+          
         ]
       },
       {

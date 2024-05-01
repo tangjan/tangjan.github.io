@@ -1,4 +1,4 @@
-# VS Code 配置 C++ 运行环境
+# VS Code 配置 C/C++ MinGW 运行环境
 
 ## 下载安装 MinGW
 
