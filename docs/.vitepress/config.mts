@@ -93,10 +93,10 @@ const customElements = [
 export default defineConfig({
   title: "糖加盐的学习笔记",
   description: "Jan Tang",
-  head: [['link', { rel: 'icon', href: 'https://cdn.tangjiayan.com/logo.svg' }]],
+  head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
   lang: 'zh-CN',
   lastUpdated: true,
-  srcDir: './src',
+  srcDir: 'src',
 
   markdown: {
     config: (md) => {
@@ -127,7 +127,7 @@ export default defineConfig({
 
     lastUpdatedText: "最后更新于",
 
-    logo: 'https://cdn.tangjiayan.com/logo.svg',
+    logo: '../favicon.svg',
 
     // footer:{
     //   message: 'Released under the MIT License.',
@@ -153,7 +153,8 @@ export default defineConfig({
       {
         text: '未分类',
         items: [
-          { text: '未分类',
+          {
+            text: '未分类',
             collapsed: true,
             items: [
               { text: '向 Hyper-V 虚拟机中传输文件', link: '/unclassified/hyper-v/transfer-files-to-vm' },
@@ -163,8 +164,15 @@ export default defineConfig({
           { text: 'Git',
             collapsed: true,
             items: [
+              {
+                text: 'DeBug',
+                collapsed: true,
+                items: [
+                    { text: 'Connection timed out', link: '/unclassified/git/debug/connection-timed-out'},
+                    { text: 'Recv failure: Connection was reset', link: '/unclassified/git/debug/recv-failure'},
+                ]
+              },
               { text: 'Git / GitHub 的基本使用', link: '/unclassified/git/git-github' },
-              { text: 'GitHub Connection timed out 问题', link: '/unclassified/git/connection-timed-out'},
             ]
           },
           { text: 'Linux',

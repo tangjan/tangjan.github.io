@@ -4,6 +4,13 @@
 
 ## 日志
 
+::: details 2024.5
+
+- 5月1日
+  - [Recv failure: Connection was reset](/unclassified/git/debug/connection-timed-out)
+
+:::
+
 ::: details 2024.4
 
 - 4月22日
@@ -67,7 +74,7 @@
   - [使用 VS Code 进行 commit 一直加载](/programming/vscode/commit-stuck)
 - 9月14日
   - [日语五十音图](/japanese/gojuon/gojuon)
-  - [GitHub Connection timed out 问题](/unclassified/git/connection-timed-out)
+  - [Connection timed out](/unclassified/git/debug/connection-timed-out)
 - 9月13日
   - [将 url 中的 query 字段显示在网页中](/web-build/js/query-display)
 - 9月12日
