@@ -13,12 +13,14 @@
 
 ::: details 2024.4
 
+- 4月28日
+  - [VS Code 同步扩展](/programming/vscode/sync-extensions)
 - 4月22日
   - [金辉恋曲四重奏 CHARACTER](/japanese/acgn/kiniro)
 - 4月17日
   - [Summer Pockets CHARACTER](/japanese/acgn/summer-pockets)
 - 4月15日
-  - [魔法师之夜 CHARACTER](/japanese/acgn/maho-yoru)
+  - [魔法使之夜 CHARACTER](/japanese/acgn/maho-yoru)
 - 4月14日
   - [CHAOS;CHILD CHARACTER](/japanese/acgn/chaos-child)
   - [用 png 图片代替 svg 的图形元素](/web-build/html/neodb-png-svg)
