@@ -40,10 +40,10 @@
 - 3月16日
   - [WebStackPage 个人导航站](/web/webstackpage)
 - 3月2日
-  - [Typecho首页文章没排满就换页](/web/typecho/typecho-page-change)
-  - [运行 `npx vitepress init` 时出现 `ERR_TTY_INIT_FAILED`](/web/vitepress/debug/ERR_TTY_INIT_FAILED)
+  - [Typecho首页文章没排满就换页](/cms/typecho/typecho-page-change)
+  - [运行 `npx vitepress init` 时出现 `ERR_TTY_INIT_FAILED`](/ssg/vitepress/debug/ERR_TTY_INIT_FAILED)
 - 3月1日
-  - [Debian 10 部署 Typecho](/web/typecho/debian10-typecho)
+  - [Debian 10 部署 Typecho](/cms/typecho/debian10-typecho)
 
 :::
 
@@ -55,7 +55,7 @@
   - [五十音笔顺](/japanese/gojuon/gojuon-stroke-order)
 - 9月28日 ~ 10月3日
   - 基于 [HEXO](https://hexo.io/zh-cn/) 的 [Butterfly](https://butterfly.js.org/) 主题建设 [个人博客](https://blog.tangjiayan.cn/)，撰写博客 [《个人小站开张》](https://blog.tangjiayan.cn/2023/web-open/)
-  - 将 [腾讯云服务器上的 VitePress 站点](https://notes.tangjiayan.cn/web/vitepress/vitepress-tencent-cloud.html) 迁移至 GitHub Pages，[配置 apex 域](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain) 使 [tangjiayan.cn](https://www.tangjiayan.cn/) 指向此站点
+  - 将 [腾讯云服务器上的 VitePress 站点](https://notes.tangjiayan.cn/ssg/vitepress/vitepress-tencent-cloud.html) 迁移至 GitHub Pages，[配置 apex 域](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain) 使 [tangjiayan.cn](https://www.tangjiayan.cn/) 指向此站点
 
 :::
 
@@ -71,9 +71,9 @@
 - 9月17 ~ 18日
   - 第一份工作辞职啦。
 - 9月16日
-  - [使用 `npm run docs:dev` 开启 VitePress 本地服务器提示 `Error: listen EACCES`](/web/vitepress/debug/listen-EACCES)
+  - [使用 `npm run docs:dev` 开启 VitePress 本地服务器提示 `Error: listen EACCES`](/ssg/vitepress/debug/listen-EACCES)
   - [VS Code 配置 C++ 运行环境](/programming/vscode/vscode-cpp)
-  - [使用 VS Code 进行 commit 一直加载](/programming/vscode/commit-stuck)
+  - [使用 VS Code 进行 commit 一直加载](/programming/vscode/debug/commit-stuck)
 - 9月14日
   - [日语五十音图](/japanese/gojuon/gojuon)
   - [Connection timed out](/unclassified/git/debug/connection-timed-out)
@@ -82,7 +82,7 @@
 - 9月12日
   - [JavaScript 初探——猜数字小游戏](/web/js/js-number-guessing)
 - 9月11日
-  - [Nginx 反向代理实现 VitePress 站点部署到腾讯云服务器](/web/vitepress/vitepress-tencent-cloud)
+  - [Nginx 反向代理实现 VitePress 站点部署到腾讯云服务器](/ssg/vitepress/vitepress-tencent-cloud)
 - 9月10日
   - [Bitvise Access Denied 问题](/unclassified/bitvise-access-denied)
 - 9月9日
@@ -98,7 +98,7 @@
 - 9月6日
   - [STM32 命名规则](/embeded/stm32-naming-rule)
 - 9月5日
-  - [VitePress 中使用 Katex](/web/vitepress/vitepress-katex.md)
+  - [VitePress 中使用 Katex](/ssg/vitepress/vitepress-katex.md)
 - 9月4日
   - [仿豆瓣主页静态页面](/web/fake-douban)
   - [url](/web/url)
@@ -106,21 +106,21 @@
   - [注音元素 &lt;ruby&gt;](/web/html/ruby)
 - 9月1日
   - [重装 v2ray - WS + TLS + Web + CloudFlare](/anti/v2ray/reinstall-v2ray)
-  - [设置 lastUpdated 时出现 spawn-git-ENOENT](/web/vitepress/debug/spawn-git-ENOENT)
+  - [设置 lastUpdated 时出现 spawn-git-ENOENT](/ssg/vitepress/debug/spawn-git-ENOENT)
 
 :::
 
 ::: details 2023.8
 
 - 8月31日
-  - [VitePress 部署到 Github Pages](/web/vitepress/vitepress-github-pages)
+  - [VitePress 部署到 Github Pages](/ssg/vitepress/vitepress-github-pages)
   - [CSS linear-gradient 渐变色](/web/css/linear-gradient-tangjiayan)
 - 8月30日
   - 将笔记从 [GitBook](https://www.gitbook.com/) 迁移至 [Vitepress](https://vitepress.dev/)
 - 8月28日
   - [XAMPP - phpmyadmin：Error establishing a database connection](/web/debug/Error-establishing-a-database-connection)
 - 8月27日
-  - [VS Code 插件 markdownlint 提示 “no-hard-tabs”](/programming/vscode/vscode-hard-tab)
+  - [VS Code 插件 markdownlint 提示 “no-hard-tabs”](/programming/vscode/debug/vscode-hard-tab)
 
 :::
 
