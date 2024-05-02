@@ -6,10 +6,9 @@
 
 ::: details 2024.5
 
-- 5月3日
-  - [《SPY×FAMILY》 CHARACTER](/japanese/acgn/spy-family)
 - 5月2日
   - [运行 `hexo server` 时提示 `此系统上禁止运行脚本`](ssg/hexo/debug/script-forbidden)
+  - [《SPY×FAMILY》 CHARACTER](/japanese/acgn/spy-family)
 - 5月1日
   - [Recv failure: Connection was reset](/unclassified/git/debug/connection-timed-out)
 
