@@ -1,4 +1,4 @@
-# Summer Pockets CHARACTER
+# 《Summer Pockets》CHARACTER
 
 <table>
     <tbody>

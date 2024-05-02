@@ -360,11 +360,12 @@ export default defineConfig({
             text: 'ACGN',
             collapsed: true,
             items: [
-              { text: '欢迎来到实力至上主义教室 CHARACTER', link: '/japanese/acgn/shi-jiao' },
-              { text: 'CHAOS;CHILD CHARACTER', link: '/japanese/acgn/chaos-child' },
-              { text: '魔法使之夜 CHARACTER', link: '/japanese/acgn/maho-yoru' },
-              { text: 'Summer Pockets CHARACTER', link: '/japanese/acgn/summer-pockets' },
-              { text: '金辉恋曲四重奏 CHARACTER', link: '/japanese/acgn/kiniro' },
+              { text: '《实教》', link: '/japanese/acgn/shi-jiao' },
+              { text: '《CHAOS;CHILD》', link: '/japanese/acgn/chaos-child' },
+              { text: '《魔法使之夜》', link: '/japanese/acgn/maho-yoru' },
+              { text: '《Summer Pockets》', link: '/japanese/acgn/summer-pockets' },
+              { text: '《金辉恋曲四重奏》', link: '/japanese/acgn/kiniro' },
+              { text: '《SPY×FAMILY》', link: '/japanese/acgn/spy-family' },
             ]
           },
         ]

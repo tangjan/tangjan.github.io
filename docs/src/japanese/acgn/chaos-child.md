@@ -1,4 +1,4 @@
-# CHAOS;CHILD CHARACTER
+# 《CHAOS;CHILD》CHARACTER
 
 <table>
     <tbody>
