@@ -127,7 +127,7 @@ export default defineConfig({
 
     lastUpdatedText: "最后更新于",
 
-    logo: '../favicon.svg',
+    logo: '/favicon.svg',
 
     // footer:{
     //   message: 'Released under the MIT License.',
