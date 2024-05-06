@@ -337,7 +337,7 @@ export default defineConfig({
                   { text: 'no-hard-tabs', link: '/programming/vscode/debug/vscode-hard-tab'},
                 ]
             },
-              { text: '配置 C/C++ MinGW 运行环境', link: '/programming/vscode/vscode-cpp' },
+              { text: '配置 C/C++ MinGW 运行环境', link: '/programming/vscode/cpp-MinGW-env' },
               { text: '同步扩展', link: '/programming/vscode/sync-extensions'},
             ]
           },
