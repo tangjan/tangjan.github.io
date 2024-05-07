@@ -6,6 +6,8 @@
 
 ::: details 2024.5
 
+- 5月7日
+  - [VS Code 运行 python 代码输出乱码](/programming/vscode/debug/python-garbled)
 - 5月2日
   - [运行 `hexo server` 时提示 `此系统上禁止运行脚本`](ssg/hexo/debug/script-forbidden)
 - 5月1日

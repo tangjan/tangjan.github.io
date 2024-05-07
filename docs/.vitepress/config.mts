@@ -335,6 +335,7 @@ export default defineConfig({
                 items: [
                   { text: 'git commit 时一直加载', link: '/programming/vscode/debug/commit-stuck' },
                   { text: 'no-hard-tabs', link: '/programming/vscode/debug/vscode-hard-tab'},
+                  { text: 'python 输出乱码', link: '/programming/vscode/debug/python-garbled'},
                 ]
             },
               { text: '配置 C/C++ MinGW 运行环境', link: '/programming/vscode/vscode-cpp' },
