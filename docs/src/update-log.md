@@ -10,6 +10,7 @@
   - [VS Code 运行 python 代码输出乱码](/programming/vscode/debug/python-garbled)
 - 5月2日
   - [运行 `hexo server` 时提示 `此系统上禁止运行脚本`](ssg/hexo/debug/script-forbidden)
+  - [《SPY×FAMILY》 CHARACTER](/japanese/acgn/spy-family)
 - 5月1日
   - [Recv failure: Connection was reset](/unclassified/git/debug/connection-timed-out)
 
@@ -76,7 +77,7 @@
   - 第一份工作辞职啦。
 - 9月16日
   - [使用 `npm run docs:dev` 开启 VitePress 本地服务器提示 `Error: listen EACCES`](/ssg/vitepress/debug/listen-EACCES)
-  - [VS Code 配置 C++ 运行环境](/programming/vscode/vscode-cpp)
+  - [VS Code 配置 C++ 运行环境](/programming/vscode/cpp-MinGW-env)
   - [使用 VS Code 进行 commit 一直加载](/programming/vscode/debug/commit-stuck)
 - 9月14日
   - [日语五十音图](/japanese/gojuon/gojuon)

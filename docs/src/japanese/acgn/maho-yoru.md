@@ -1,4 +1,4 @@
-# 魔法使之夜 CHARACTER
+# 《魔法使之夜》CHARACTER
 
 ## 作品名称
 

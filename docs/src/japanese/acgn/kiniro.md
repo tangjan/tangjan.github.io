@@ -20,7 +20,7 @@
     }
 </style>
 
-# 金辉恋曲四重奏 CHARACTER
+# 《金辉恋曲四重奏》CHARACTER
 
 ## 作品名称
 
