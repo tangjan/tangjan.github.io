@@ -6,6 +6,8 @@
 
 ::: details 2024.5
 
+- 5月9日
+  - [七牛云图床同步到本地](/web/qiniu-cloud/batch-download)
 - 5月7日
   - [VS Code 运行 python 代码输出乱码](/programming/vscode/debug/python-garbled)
 - 5月2日

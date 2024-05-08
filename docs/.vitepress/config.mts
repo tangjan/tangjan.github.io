@@ -220,6 +220,13 @@ export default defineConfig({
             ]
           },
           {
+            text: '七牛云',
+            collapsed: true,
+            items: [
+              { text: '图床同步到本地', link: '/web/qiniu-cloud/batch-download'},
+            ]
+          },
+          {
             text: 'CSS',
             collapsed: true,
             items:[
