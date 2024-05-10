@@ -6,6 +6,10 @@
 
 ::: details 2024.5
 
+- 5月9日
+  - [七牛云图床同步到本地](/web/qiniu-cloud/batch-download)
+- 5月7日
+  - [VS Code 运行 python 代码输出乱码](/programming/vscode/debug/python-garbled)
 - 5月2日
   - [运行 `hexo server` 时提示 `此系统上禁止运行脚本`](ssg/hexo/debug/script-forbidden)
   - [《SPY×FAMILY》 CHARACTER](/japanese/acgn/spy-family)
