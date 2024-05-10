@@ -371,6 +371,18 @@ export default defineConfig({
         ]
       },
       {
+        text: '写作',
+        items:[
+          {
+            text: '未分类',
+            collapsed: true,
+            items: [
+              { text: '“哎” de 叫了一声', link: '/writing/de'},
+            ] 
+          },
+        ]
+      },
+      {
         text: '嵌入式',
         items:[
           {
