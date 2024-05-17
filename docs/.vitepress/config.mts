@@ -159,6 +159,7 @@ export default defineConfig({
             items: [
               { text: '向 Hyper-V 虚拟机中传输文件', link: '/unclassified/hyper-v/transfer-files-to-vm' },
               { text: 'Bitvise Access Denied 问题', link: '/unclassified/bitvise-access-denied'},
+              { text: 'AHK 配置 Telegram 快捷键', link: '/unclassified/telegram-hotkey'},
             ]
           },
           { text: 'Git',
@@ -373,7 +374,7 @@ export default defineConfig({
               { text: '《魔法使之夜》', link: '/japanese/acgn/maho-yoru' },
               { text: '《Summer Pockets》', link: '/japanese/acgn/summer-pockets' },
               { text: '《金辉恋曲四重奏》', link: '/japanese/acgn/kiniro' },
-              { text: '《SPY×FAMILY》', link: '/japanese/acgn/spy-family' },
+              { text: '《SPYxFAMILY》', link: '/japanese/acgn/spy-family' },
             ]
           },
         ]
