@@ -27,6 +27,9 @@ tr {
 }
 
 /* END 文字渐变遮罩 */
+
+/* 代码自动换行 */
+/* https://github.com/vuejs/vitepress/issues/2567 */
     
 /* code {
     white-space: pre-wrap !important;
@@ -46,3 +49,5 @@ display: inline-block;
 text-align: right;
 color: var(--vp-code-line-number-color);
 } */
+
+/* END 代码自动换行 */

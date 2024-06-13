@@ -6,6 +6,10 @@
 
 ::: details 2024.5
 
+- 5月17日
+  - [AHK 配置 Telegram 快捷键](/unclassified/telegram-hotkey)
+- 5月10日
+  - [“哎” de 叫了一声](/writing/de)
 - 5月9日
   - [七牛云图床同步到本地](/web/qiniu-cloud/batch-download)
 - 5月7日
