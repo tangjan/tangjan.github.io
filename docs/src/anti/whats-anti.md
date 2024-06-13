@@ -8,8 +8,8 @@
 
 ![anti](https://cdn.tangjiayan.com/reinstall-v2ray/anti-origin.png)
 
-`anti` 作为一个英文词汇前缀，表示 `opposed to`; `against` 。
+<!-- `anti` 作为一个英文词汇前缀，表示 `opposed to`; `against` 。
 
 我对政治浅尝辄止，别的方面我不知道，单就 [互联网](https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91) 这方面，就我的体会，我想说：
 
-<span style="color:red;"><strong>傻 逼 GFW，操 你 妈</strong></span>
+<span style="color:red;"><strong>傻 逼 GFW，操 你 妈</strong></span> -->
