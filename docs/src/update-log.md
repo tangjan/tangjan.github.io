@@ -116,7 +116,6 @@
 - 9月3日
   - [注音元素 &lt;ruby&gt;](/web/html/ruby)
 - 9月1日
-  - [重装 v2ray - WS + TLS + Web + CloudFlare](/anti/v2ray/reinstall-v2ray)
   - [设置 lastUpdated 时出现 spawn-git-ENOENT](/ssg/vitepress/debug/spawn-git-ENOENT)
 
 :::

@@ -406,20 +406,6 @@ export default defineConfig({
         ]
       },
       {
-        text: 'ANTI',
-        items:[
-          { 
-            text: 'v2ray',
-            collapsed: true,
-            items:[
-              { text: '重装 v2ray - WS + TLS + Web + CloudFlare', link: '/anti/v2ray/reinstall-v2ray' },
-            ]
-          },
-          { text: 'ANTI 是什么', link: '/anti/whats-anti'},
-          
-        ]
-      },
-      {
         text: `www.tangjiayan.cn`, link: 'https://www.tangjiayan.cn',
       },
       {
