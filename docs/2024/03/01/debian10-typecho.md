@@ -448,7 +448,7 @@ server {
 
 ::: tip
 
-注意选对打开方式，不然会出现 [Bitvise Access Denied 问题](/unclassified/bitvise-access-denied)。
+注意选对打开方式，不然会出现 [Bitvise Access Denied 问题](/2023/09/10/bitvise-access-denied)。
 
 :::
 
