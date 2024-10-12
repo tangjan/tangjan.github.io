@@ -180,7 +180,7 @@ int main(){
 }
 ```
 
-![hello](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/16/hello.png)
+![hello](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/16/vscode-cpp/hello.png)
 
 ## 参考
 

@@ -965,7 +965,7 @@ Configuration file: Y:/repositories/Github-Repos/online-cv/_config.yml
 
 在浏览器中打开 `http://localhost:4000/` 即可预览编辑。
 
-![localhost](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/10/29/jekyll-cv/localhost.png)
+![localhost](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/10/29/jekyll-cv/localhost.png)
 
 编辑好了 push 到 GitHub 就行了。
 

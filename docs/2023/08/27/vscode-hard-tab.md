@@ -4,7 +4,7 @@ tags:
  - VS Code
 ---
 
-## VS Code 插件 markdownlint 提示 “no-hard-tabs”
+# VS Code 插件 markdownlint 提示 “no-hard-tabs”
 
 VS Code 启用 [markdownlint](https://github.com/DavidAnson/markdownlint) 插件编写 md 文件的时候，发现提示 `MD010/no-hard-tabs：Hard tabs`：
 

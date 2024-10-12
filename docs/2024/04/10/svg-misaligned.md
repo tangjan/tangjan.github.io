@@ -10,7 +10,7 @@ tags:
 
 之前在给 [我的主页](https://www.tangjiayan.cn/) 添加 Threads 的 [socialLink](https://vitepress.dev/reference/default-theme-config#sociallinks) 图标的时候，出现了图标大小不对齐的问题。
 
-![svg-misaligned](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/04/10/svg-misaligned.png)
+![svg-misaligned](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/04/10/svg-misaligned/svg-misaligned.png)
 
 ## 复现过程
 

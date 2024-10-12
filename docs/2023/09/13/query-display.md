@@ -16,8 +16,7 @@ tags:
 
 ![URI_syntax_diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/URI_syntax_diagram.svg/1602px-URI_syntax_diagram.svg.png)
 
-- [GitHub 源码](https://github.com/tangjan/online-demos/tree/main/query-display)
-- [在线查看](https://notes.tangjiayan.cn/online-demos/query-display/?digit=1234567890)
+- GitLab：[query-display](https://gitlab.com/tangjan/web-demos/-/tree/main/query-display)
 
 ## 初始化 query 键值对，显示在 HTML
 

@@ -13,7 +13,7 @@ tags:
 
 首先在 [ping.pe](https://ping.pe/) 确认一下是不是我的服务器 IP 地址被墙了：
 
-![ping.be](https://cdn.tangjiayan.com/reinstall-v2ray/1-ping.be.png)
+![ping.be](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/01/reinstall-v2ray/1-ping-be.png)
 
 我是江苏电信网络，从图中可以看到，`Jiangsu China Telecom` 的丢包率是 `15%`，还算正常。因此问题出在我的服务器或客户端上。
 
@@ -43,7 +43,7 @@ CentOS Linux release 7.9.2009 (Core)
 
 我的服务器是在 [RackNerd](https://www.racknerd.com/) 买的，在 RackNerd 服务器管理界面进入 `Control Panel`（登入Control Panel 的初始账号密码在购买服务器时发送到了注册邮箱），将服务器系统重置为 `Debian 10`。
 
-![reinstall-Debian](https://cdn.tangjiayan.com/reinstall-v2ray/2-reinstall-Debian.png)
+![reinstall-Debian](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/01/reinstall-v2ray/2-reinstall-Debian.png)
 
 ## v2ray 安装前准备及安装
 
@@ -99,7 +99,7 @@ ufw allow 'OpenSSH'
 bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
 ```
 
-![instal-v2ray](https://cdn.tangjiayan.com/reinstall-v2ray/3-instal-v2ray.png)
+![instal-v2ray](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/01/reinstall-v2ray/3-instal-v2ray.png)
 
 根据安装完成后的提示，顺便运行一下：
 
@@ -201,7 +201,7 @@ CloudFlare 接管了域名解析之后，在 CloudFlare 添加以下两条 DNS �
 
 因为「The private key data will not be stored at Cloudflare and will no longer be accessible once the creation is complete」，所以要保存好。
 
-![Cloudflare-TLS-Generate](https://cdn.tangjiayan.com/reinstall-v2ray/5-Cloudflare-TLS-Generate.png)
+![Cloudflare-TLS-Generate](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/01/reinstall-v2ray/4-Cloudflare-TLS-Generate.png)
 
 把证书和私钥都保存在 `/etc/ssl/cloudflare` 内。
 
@@ -256,7 +256,7 @@ fVQ6VpyjEXdiIXWUq/o=
 
 :::
 
-![save-the-TLS](https://cdn.tangjiayan.com/reinstall-v2ray/cloudflare-tls-auth.png)
+![save-the-TLS](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/01/reinstall-v2ray/5-cloudflare-tls-auth.png)
 
 ## Nginx 证书和密钥、反向代理的配置
 

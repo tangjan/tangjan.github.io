@@ -15,7 +15,7 @@ tags:
 [plugin:vitepress] spawn git ENOENT
 ```
 
-![spawn-git-ENOENT](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/01/vitepress-spawn-git-ENOENT.png)
+![spawn-git-ENOENT](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/01/spawn-git-ENOENT/vitepress-spawn-git-ENOENT.png)
 
 ## 解决
 
