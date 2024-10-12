@@ -9,6 +9,7 @@
     "vitepress": "^1.0.0-rc.10"
   },
   "dependencies": {
+    "@antv/g2plot": "^2.4.32",
     "markdown-it-katex": "^2.0.3",
     "sitemap": "^7.1.1"
   }
