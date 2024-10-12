@@ -10,7 +10,7 @@ tags:
 
 有点纳闷的是，公司电脑上的 VS Code 已经登录了账号，也开启了 `Cloud Changes`（如下图），为什么还没同步扩展呢？
 
-![already-logged-in](https://cdn.tangjiayan.com/notes/programming/vscode/extension-sync/already-logged-in.png)
+![already-logged-in](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/04/28/1-already-logged-in.png)
 
 于是调查了一圈，找到了答案。
 
@@ -24,7 +24,7 @@ tags:
 
 参考的 [这篇文章](https://betterprogramming.pub/sync-visual-studio-code-settings-extensions-shortcuts-across-multiple-devices-9fa6a980f25e)，用 [Google Slides](https://www.google.com/slides/about/) 做了一张图来表述步骤。
 
-![步骤图示](https://cdn.tangjiayan.com/notes/programming/vscode/extension-sync/steps.png)
+![步骤图示](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/04/28/2-steps.png)
 
 ::: details VS Code 搜索内容开头的 `>`
 

@@ -12,7 +12,7 @@ tags:
 
 然后发现 Typecho 首页显示 5 篇文章就换页了，应该显示 8 篇再换页才对。
 
-![首页没排满就换页](https://cdn.tangjiayan.com/notes/web-build/typecho/page-change/5-articles-page-change.png)
+![首页没排满就换页](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/03/02/typecho-page-change/5-articles-page-change.png)
 
 第一反应是 Story 这个主题的什么参数没设置对，参照其 [README](https://github.com/txperl/Story-for-Typecho) 改了几个参数试了试，结果还是没变化。
 
@@ -22,11 +22,11 @@ tags:
 
 在 Typecho 后台找了找，结果还真有 (￣ i ￣;)
 
-![Typecho 后台设置翻页数量](https://cdn.tangjiayan.com/notes/web-build/typecho/page-change/typecho-setting.png)
+![Typecho 后台设置翻页数量](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/03/02/typecho-page-change/typecho-setting.png)
 
 改成 `8`，就 OK 了。
 
-![首页正常了](https://cdn.tangjiayan.com/notes/web-build/typecho/page-change/8-articles-page-change.png)
+![首页正常了](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/03/02/typecho-page-change/8-articles-page-change.png)
 
 ## 总结
 

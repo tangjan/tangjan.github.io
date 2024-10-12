@@ -7,7 +7,7 @@ tags:
 
 # 仿豆瓣主页静态页面
 
-2023年1月做的一个前端小项目，搬到这来。
+2023年1月做的一个前端小项目。
 
 ## 目标
 
@@ -15,10 +15,7 @@ tags:
 
 参考自 [Web前端开发_渡一教育_bilibili](https://www.bilibili.com/video/BV1yx411d7Rc/)
 
-链接：
-
-- [GitHub 源码](https://github.com/tangjan/online-demos/tree/main/static-page-douban)
-- [在线查看](https://notes.tangjiayan.cn/online-demos/static-page-douban/)
+- [GitLab](https://gitlab.com/tangjan/web-demos/-/tree/main/static-page-douban)
 
 ## 著作权声明
 
@@ -41,7 +38,7 @@ CSS 代码太多了，就不介绍了，这里只简单介绍 HTML 代码。
 
 页眉由 Logo、搜索框 和 导航栏组成。
 
-![head](https://cdn.tangjiayan.com/web-douban/head.png)
+![head](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/1-head.png)
 
 Logo 和 搜索框 采用左浮动，导航栏 采用右浮动，涉及到浮动就要注意高度坍塌。
 
@@ -85,17 +82,17 @@ logo 使用 `<h1>` 元素，以实现 SEO 优化。logo 图片由 `<a>` 元素�
 
 导航栏显示其实用的是一张精灵图和两张图片：
 
-![anony_nav_logo](https://cdn.tangjiayan.com/web-douban/anony_nav_logo.png)
+![anony_nav_logo](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/2-anony_nav_logo.png)
 
-![ic_shijian_home_nav](https://cdn.tangjiayan.com/web-douban/ic_shijian_home_nav.png)
+![ic_shijian_home_nav](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/3-ic_shijian_home_nav.png)
 
-![ic_read_home_nav](https://cdn.tangjiayan.com/web-douban/ic_read_home_nav.png)
+![ic_read_home_nav](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/4-ic_read_home_nav.png)
 
 给相应的 `<a>` 元素定位相应的背景图就行了。
 
 ## 登录/注册区域
 
-![login-register-area](https://cdn.tangjiayan.com/web-douban/login-register-area.png)
+![login-register-area](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/5-login-register-area.png)
 
 该区域可分为两个部分，一是右边的登录/注册框，二是其他，先说登录/注册框。
 
@@ -105,11 +102,11 @@ logo 使用 `<h1>` 元素，以实现 SEO 优化。logo 图片由 `<a>` 元素�
 
 它分为两个表单和一个二维码登录页面。表单一是 “短信登录/注册”，表单二是 “密码登录”，二者的样式布局差不多，这里只介绍前者。
 
-![login-box-1](https://cdn.tangjiayan.com/web-douban/login-box-1.png)
+![login-box-1](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/6-login-box-1.png)
 
-![login-box-2](https://cdn.tangjiayan.com/web-douban/login-box-2.png)
+![login-box-2](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/7-login-box-2.png)
 
-![login-box-3](https://cdn.tangjiayan.com/web-douban/login-box-3.png)
+![login-box-3](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/8-login-box-3.png)
 
 ### 短信/密码 切换选项卡
 
@@ -162,7 +159,7 @@ logo 使用 `<h1>` 元素，以实现 SEO 优化。logo 图片由 `<a>` 元素�
 
 叉号用字母 `X`，`hover` 时变色；国家及区号用无序列表，使用 `overflow: auto` 实现滚动条；单独设定选中的类样式，变色并通过背景图加个对号。
 
-![country-code](https://cdn.tangjiayan.com/web-douban/country-code.png)
+![country-code](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/9-country-code.png)
 
 （找图标时 [iconfont](https://www.iconfont.cn/) 刚好在维护，进不去，就随便找了一个对号图片，将就着看吧）
 
@@ -234,9 +231,9 @@ logo 使用 `<h1>` 元素，以实现 SEO 优化。logo 图片由 `<a>` 元素�
 
 其实就是两张图片，通过背景图放在 `<i>` 元素上。
 
-![switch-pc](https://cdn.tangjiayan.com/web-douban/switch-pc.png)
+![switch-pc](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/10-switch-pc.png)
 
-![switch-qrcode](https://cdn.tangjiayan.com/web-douban/switch-qrcode.png)
+![switch-qrcode](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/11-switch-qrcode.png)
 
 ```html
 <div class="switch">
@@ -304,7 +301,7 @@ logo 使用 `<h1>` 元素，以实现 SEO 优化。logo 图片由 `<a>` 元素�
 
 ## 热点内容
 
-![hot-area](https://cdn.tangjiayan.com/web-douban/hot-area.png)
+![hot-area](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/12-hot-area.png)
 
 由主区域和右边栏构成，先说右边栏。
 
@@ -408,7 +405,7 @@ logo 使用 `<h1>` 元素，以实现 SEO 优化。logo 图片由 `<a>` 元素�
 
 由左边栏和主区域构成。
 
-![time](https://cdn.tangjiayan.com/web-douban/time.png)
+![time](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/13-time.png)
 
 ```html
 <div class="section">
@@ -452,7 +449,7 @@ logo 使用 `<h1>` 元素，以实现 SEO 优化。logo 图片由 `<a>` 元素�
 
 由左边栏、主区域和右边栏构成。
 
-![movie](https://cdn.tangjiayan.com/web-douban/movie.png)
+![movie](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/14-movie.png)
 
 左边栏需要注意的有两点，一是 “&” 符号用字符实体 `&amp;` 书写；二是有的元素后面有个 `new` 的图片，这里通过 `a.new::after` 添加背景图。
 
@@ -506,7 +503,7 @@ logo 使用 `<h1>` 元素，以实现 SEO 优化。logo 图片由 `<a>` 元素�
 
 主区域中，评分的星星用的是精灵图，它在整个豆瓣网站中肯定是通用样式，所以写到 `common.css` 里。
 
-![ic_rating_s](https://cdn.tangjiayan.com/web-douban/ic_rating_s.png)
+![ic_rating_s](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/15-ic_rating_s.png)
 
 ```html
 <div class="main">
@@ -545,9 +542,9 @@ logo 使用 `<h1>` 元素，以实现 SEO 优化。logo 图片由 `<a>` 元素�
 
 ## 小组、读书
 
-![group](https://cdn.tangjiayan.com/web-douban/group.png)
+![group](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/16-group.png)
 
-![read](https://cdn.tangjiayan.com/web-douban/read.png)
+![read](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/17-read.png)
 
 用上面写过的样式稍作修改即可，不放代码了。
 
@@ -555,13 +552,13 @@ logo 使用 `<h1>` 元素，以实现 SEO 优化。logo 图片由 `<a>` 元素�
 
 豆瓣阅读以及之后的 app 图标用的是精灵图：
 
-![app_icons_50_10](https://cdn.tangjiayan.com/web-douban/app_icons_50_10.jpg)
+![app_icons_50_10](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/18-app_icons_50_10.jpg)
 
 另外，图标右边和下边的阴影，涉及到 CSS3 的 [box-shadow](https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-shadow) 属性。
 
 ## 音乐
 
-![music](https://cdn.tangjiayan.com/web-douban/music.png)
+![music](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/19-music.png)
 
 对于右边栏的序号，如果使用 `<ul>` 自带的序号，会不太好调整序号垂直位置的 css 样式，所以这里直接用 `<span>` 元素打出来。
 
@@ -579,7 +576,7 @@ logo 使用 `<h1>` 元素，以实现 SEO 优化。logo 图片由 `<a>` 元素�
 
 ## 页脚
 
-![footer](https://cdn.tangjiayan.com/web-douban/footer.png)
+![footer](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/04/fake-douban/20-footer.png)
 
 一个 `div.left` 和 一个 `div.right` 就完事。
 两个小图标要 `vertical-align: middle`。

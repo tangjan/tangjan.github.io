@@ -39,7 +39,7 @@ git config --global user.email "tangjiayan2019@gmail.com"
 
 我创建了名为 `hello` 的文件夹，写了一个输出 `Hello, world` 的简单 C++ 程序：
 
-![local-create-hello](https://cdn.tangjiayan.com/notes/git/git-github/local-create-hello.png)
+![local-create-hello](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/git-github/1-local-create-hello.png)
 
 ### init
 
@@ -51,7 +51,7 @@ git init
 
 执行完 `git init` 后，在文件夹中会出现名为 `.git` 的文件夹：
 
-![init](https://cdn.tangjiayan.com/notes/git/git-github/init.png)
+![init](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/git-github/2-init.png)
 
 ### add
 
@@ -63,7 +63,7 @@ git add .
 
 可以用 [status](https://git-scm.com/docs/git-status) 命令查看当前的工作树状态。
 
-![add-status](https://cdn.tangjiayan.com/notes/git/git-github/add-status.png)
+![add-status](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/git-github/3-add-status.png)
 
 ### commit
 
@@ -73,7 +73,7 @@ git add .
 git commit -m "initial commit"
 ```
 
-![commit-status](https://cdn.tangjiayan.com/notes/git/git-github/commit-status.png)
+![commit-status](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/git-github/4-commit-status.png)
 
 至此，已经可以通过 Git 在本地进行项目的版本控制了。
 
@@ -91,9 +91,9 @@ git commit -m "initial commit"
 
 推荐勾选上 `Add a README file`，`.gitignore` 和 `license` 可以不选，保持为 `None`。
 
-![github-new-repository](https://cdn.tangjiayan.com/notes/git/git-github/github-new-repository.png)
+![github-new-repository](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/git-github/5-github-new-repository.png)
 
-![details-github-new-repository](https://cdn.tangjiayan.com/notes/git/git-github/details-github-new-repository.png)
+![details-github-new-repository](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/git-github/6-details-github-new-repository.png)
 
 然后点击 `Create repository` 即可创建一个 GitHub 仓库。
 
@@ -111,11 +111,11 @@ git remote add origin git@github.com:tangjan/hello.git
 
 其中 GitHub 仓库的 SSH url 来自：
 
-![github-ssh-url](https://cdn.tangjiayan.com/notes/git/git-github/github-ssh-url.png)
+![github-ssh-url](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/git-github/7-github-ssh-url.png)
 
 使用 `git remote -v` 查看远程库列表详细信息。
 
-![remote](https://cdn.tangjiayan.com/notes/git/git-github/remote.png)
+![remote](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/git-github/8-remote.png)
 
 ::: details 为什么将远程库起名为 `origin`
 
@@ -133,7 +133,7 @@ git remote add origin git@github.com:tangjan/hello.git
 
 本地 Git 仓库默认主分支的名称是 `master`，而 Github 仓库默认主分支的名称是 `main`，二者名称不一致，这时如果 `push` 会提示 `error: src refspec main does not match any`：
 
-![error-src](https://cdn.tangjiayan.com/notes/git/git-github/error-src.png)
+![error-src](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/git-github/9-error-src.png)
 
 解决方法是通过 [branch](https://git-scm.com/docs/git-branch) 命令将本地主分支的名称从 `master` 修改为 `main`:
 
@@ -143,7 +143,7 @@ git branch -m master main
 
 之后还存在一个问题：GitHub 远程库和本地库的内容不一致，导致无法 `push`：
 
-![push-rejected](https://cdn.tangjiayan.com/notes/git/git-github/push-rejected.png)
+![push-rejected](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/git-github/10-push-rejected.png)
 
 解决方法：
 
@@ -155,13 +155,13 @@ git fetch origin
 git merge --allow-unrelated-histories origin/main
 ```
 
-![fetch-merge](https://cdn.tangjiayan.com/notes/git/git-github/fetch-merge.png)
+![fetch-merge](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/git-github/11-fetch-merge.png)
 
-![merge-annotation](https://cdn.tangjiayan.com/notes/git/git-github/merge-annotation.png)
+![merge-annotation](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/git-github/12-merge-annotation.png)
 
 然后就可以看本地库中多了缺少的 `README.md`：
 
-![new-README](https://cdn.tangjiayan.com/notes/git/git-github/new-README.png)
+![new-README](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/git-github/13-new-README.png)
 
 然后就可以通过 push 将本地库上传到 GitHub 远程库了：
 
@@ -169,11 +169,11 @@ git merge --allow-unrelated-histories origin/main
 git push origin main
 ```
 
-![push](https://cdn.tangjiayan.com/notes/git/git-github/push.png)
+![push](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/git-github/14-push.png)
 
 `push` 命令执行成功后，可以看到 GitHub 仓库里已经成功上传了本地库的项目内容：
 
-![github-push-success.](https://cdn.tangjiayan.com/notes/git/git-github/github-push-success.png)
+![github-push-success.](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/git-github/15-github-push-success.png)
 
 ## 参考
 

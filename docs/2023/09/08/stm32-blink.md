@@ -13,10 +13,10 @@ tags:
 
 ## 目标
 
-<video src="https://cdn.tangjiayan.com/notes/embeded/stm32-blink/stm32-blink.mp4" controls>
+<video src="https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/08/stm32-blink/1-stm32-blink.mp4" controls>
 </video>
 
-![overview](https://cdn.tangjiayan.com/notes/embeded/stm32-blink/overview.png)
+![overview](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/08/stm32-blink/2-overview.png)
 
 ## 添加所需文件到工程
 
@@ -112,13 +112,13 @@ void Delay_s(uint32_t xs)
 
 点击三个箱子的按钮 (`File Extensions, Books and Environment...`)
 
-![button-extensions](https://cdn.tangjiayan.com/notes/embeded/keil5/button-extensions.png)
+![button-extensions](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/08/stm32-blink/3-button-extensions.png)
 
 可以调整文件夹的排列顺序。
 
 把这些不用修改的组靠上放置，会看着舒服一些。
 
-![uncommon-top](https://cdn.tangjiayan.com/notes/embeded/stm32-blink/uncommon-top.png)
+![uncommon-top](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/08/stm32-blink/4-uncommon-top.png)
 :::
 
 ## 宏定义 `USE_STDPERIPH_DRIVER`
@@ -131,7 +131,7 @@ void Delay_s(uint32_t xs)
 
 这一行，点击 `Open document 'stm32f10x.h'`，可以打开 `stm32f10x.h`。
 
-![right-to-stm32f10x_conf.h](https://cdn.tangjiayan.com/notes/embeded/stm32-blink/right-to-stm32f10x_conf.h.png)
+![right-to-stm32f10x_conf.h](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/08/stm32-blink/5-right-to-stm32f10x_conf.h.png)
 
 在 `stm32f10x.h` 临近末尾的位置，可以看到有这样的宏 [条件编译](https://blog.csdn.net/wordwarwordwar/article/details/84932183)：
 
@@ -143,11 +143,11 @@ void Delay_s(uint32_t xs)
 
 点击魔术棒按钮  (`Options for Target`)
 
-![button-magic-wand](https://cdn.tangjiayan.com/notes/embeded/keil5/button-magic-wand.png)
+![button-magic-wand](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/10-button-magic-wand.png)
 
 在 `C/C++` - `Preprocessor Symbols` - `Define` 填入 `USE_STDPERIPH_DRIVER`
 
-![preprocessor-symbols-define](https://cdn.tangjiayan.com/notes/embeded/stm32-blink/preprocessor-symbols-define.png)
+![preprocessor-symbols-define](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/08/stm32-blink/6-preprocessor-symbols-define.png)
 
 ::: details 宏定义的好处
 
@@ -158,7 +158,7 @@ void Delay_s(uint32_t xs)
 
 这里顺便在 `Include Pahts` 里加上 `.\Libraries`、`.\User`、`.\System`。
 
-![include-Libraries-User-System](https://cdn.tangjiayan.com/notes/embeded/stm32-blink/include-Libraries-User-System.png)
+![include-Libraries-User-System](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/08/stm32-blink/7-include-Libraries-User-System.png)
 
 至此，基于库函数的工程就建好了，编译一下试试。
 
@@ -183,9 +183,9 @@ Build Time Elapsed:  00:00:00
 
 使能时钟函数是 `RCC_APB2PeriphClockCmd`，右键 - 点击 `Go To Definition Of 'RCC_APB2PeriphClockCmd'` 可以看到它的用法。
 
-![go-to-definition](https://cdn.tangjiayan.com/notes/embeded/stm32-blink/go-to-definition.png)
+![go-to-definition](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/08/stm32-blink/8-go-to-definition.png)
 
-![RCC_APB2PeriphClockCmd-Keil](https://cdn.tangjiayan.com/notes/embeded/stm32-blink/RCC_APB2PeriphClockCmd-Keil.png)
+![RCC_APB2PeriphClockCmd-Keil](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/08/stm32-blink/9-RCC_APB2PeriphClockCmd-Keil.png)
 
 所以 `RCC_APB2PeriphClockCmd` 的配置为：
 
@@ -197,7 +197,7 @@ RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
 
 在官方固件库的 `stm32f10x_stdperiph_lib_um.chm` 文件中也可以查到标准外设固件库函数列表及用法，这里标示得更清晰一些。
 
-![RCC_APB2PeriphClockCmd](https://cdn.tangjiayan.com/notes/embeded/stm32-blink/RCC_APB2PeriphClockCmd.png)
+![RCC_APB2PeriphClockCmd](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/08/stm32-blink/10-RCC_APB2PeriphClockCmd.png)
 
 :::
 
@@ -205,13 +205,13 @@ RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
 
 配置引脚输出模式的函数是 `GPIO_Init`，用法：
 
-![GPIO_Init](https://cdn.tangjiayan.com/notes/embeded/stm32-blink/GPIO_Init.png)
+![GPIO_Init](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/08/stm32-blink/11-GPIO_Init.png)
 
 `GPIO_InitStruct` 这个参数需要自己定义一个 `GPIO_InitTypeDef` 类型的结构体。其名字随便起，但根据官方推荐，起为 `GPIO_InitStructure` 比较好。
 
 `GPIO_InitTypeDef` 结构体有三个参数，分别是 `GPIO_Mode`、`GPIO_Pin` 和 `GPIO_Speed`:
 
-![GPIO_InitTypeDef-Keil](https://cdn.tangjiayan.com/notes/embeded/stm32-blink/GPIO_InitTypeDef-Keil.png)
+![GPIO_InitTypeDef-Keil](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/08/stm32-blink/12-GPIO_InitTypeDef-Keil.png)
 
 分别 `Go To Definition` 进行查询，得到配置：
 

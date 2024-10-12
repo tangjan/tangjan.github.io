@@ -35,7 +35,7 @@ tags:
 </ruby>
 
 > [尾上 世莉架](https://zh.moegirl.org.cn/%E5%B0%BE%E4%B8%8A%E4%B8%96%E8%8E%89%E6%9E%B6)：《Chaos;Child》女主角。
-> ![onoe-serika](https://cdn.tangjiayan.com/notes/common/chara_serika.png)
+> ![onoe-serika](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/03/html-ruby/chara_serika.png)
 
 ### HTML
 

@@ -17,37 +17,43 @@ tags:
 
 ## 结果
 
-<figure><img src="https://cdn.tangjiayan.com/Local-Wordpress/9.png" alt=""><figcaption></figcaption></figure>
+![结果](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/windows-local-wordpress/9.png)
 
-## 过程
+下面是过程。
+
+## 下载解压所需文件
 
 1. 下载安装 [XAMPP](https://www.apachefriends.org/)；
 2. 下载 [Wordpress](https://wordpress.org/)；
 3. 将 wordpress 压缩包解压，将解压得到的文件夹（此文件夹可自定义名称，我将其改为了 `Local-Wordpress`），放在 XAMPP 安装路径的 `xampp/htdocs` 内
 
-<figure><img src="https://cdn.tangjiayan.com/Local-Wordpress/1-move-wordpress-to-xampp-folder.png" alt="" width="375"><figcaption></figcaption></figure>
+![wordpress 压缩包解压](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/windows-local-wordpress/1-move-wordpress-to-xampp-folder.png)
 
-4. 启动 XAMPP 的 Apache 和 MySQL，在 phpMyAdmin 页面创建 Wordpress 数据库和数据库管理员，建议都取名为 `wordpress`，数据库格式选为 `utf8mb4_general_ci` ，并设置 wordpress 数据库管理员的 wordpress 数据库权限。
+## 数据库配置
 
-<figure><img src="https://cdn.tangjiayan.com/Local-Wordpress/XMAPP.png" alt="" width="375"><figcaption><p>启动 XAMPP 的 Apache 和 MySQL</p></figcaption></figure>
+启动 XAMPP 的 Apache 和 MySQL，在 phpMyAdmin 页面创建 Wordpress 数据库和数据库管理员，建议都取名为 `wordpress`，数据库格式选为 `utf8mb4_general_ci` ，并设置 Wordpress 数据库管理员的 Wordpress 数据库权限。
 
-<figure><img src="https://cdn.tangjiayan.com/Local-Wordpress/2-create-mysql-database.png" alt="" width="375"><figcaption><p>创建 wordpress 数据库，格式选为 <code>utf8mb4_general_ci</code></p></figcaption></figure>
+![启动 XAMPP 的 Apache 和 MySQL](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/windows-local-wordpress/XMAPP.png)
 
-<figure><img src="https://cdn.tangjiayan.com/Local-Wordpress/3-add-mysql-user.png" alt="" width="563"><figcaption><p>创建 wordpress 数据库管理员</p></figcaption></figure>
+![创建 wordpress 数据库，格式选为 utf8mb4_general_ci<](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/windows-local-wordpress/2-create-mysql-database.png)
 
-<figure><img src="https://cdn.tangjiayan.com/Local-Wordpress/4-set-wordpres-user-privileges.png" alt="" width="563"><figcaption><p>设置 wordpress 数据库管理员的 wordpress 数据库权限 </p></figcaption></figure>
+![创建 wordpress 数据库管理员](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/windows-local-wordpress/3-add-mysql-user.png)
 
-5. 用浏览器打开 `http://localhost/Local-Wordpress/` (`Local-Wordpress` 替换为第3步的文件夹名称)，然后按提示一步步来就可以了。
+![设置 wordpress 数据库管理员的 wordpress 数据库权限](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/windows-local-wordpress/4-set-wordpres-user-privileges.png)
 
-<figure><img src="https://cdn.tangjiayan.com/Local-Wordpress/5.png" alt="" width="563"><figcaption></figcaption></figure>
+## 打开浏览器进行配置
 
-<figure><img src="https://cdn.tangjiayan.com/Local-Wordpress/6.png" alt="" width="563"><figcaption></figcaption></figure>
+用浏览器打开 `http://localhost/Local-Wordpress/` (`Local-Wordpress` 替换为第3步的文件夹名称)，然后按提示一步步来就可以了。
 
-<figure><img src="https://cdn.tangjiayan.com/Local-Wordpress/7.png" alt="" width="563"><figcaption></figcaption></figure>
+![5](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/windows-local-wordpress/5.png)
 
-<figure><img src="https://cdn.tangjiayan.com/Local-Wordpress/8.png" alt="" width="563"><figcaption></figcaption></figure>
+![6](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/windows-local-wordpress/6.png)
 
-<figure><img src="https://cdn.tangjiayan.com/Local-Wordpress/9.png" alt="" width="563"><figcaption></figcaption></figure>
+![7](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/windows-local-wordpress/7.png)
+
+![8](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/windows-local-wordpress/8.png)
+
+![9](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/windows-local-wordpress/9-result.png)
 
 ## 参考
 

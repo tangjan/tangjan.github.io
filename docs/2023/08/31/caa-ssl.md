@@ -11,7 +11,7 @@ tags:
 
 Google 了一下，参考 [申请SSL证书一直无法通过DNS验证的问题](https://www.tangruiping.com/post/ssl-certificate-dns.html)，将 `tangjiayan.com` DNS 记录中的 CAA 记录暂停解析，然后就申请成功了。
 
-<figure><img src="https://cdn.tangjiayan.com/notes/default/CAA-record.png" alt=""><figcaption></figcaption></figure>
+![caa](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/caa-ssl/caa.png)
 
 [CAA](https://en.wikipedia.org/wiki/DNS\_Certification\_Authority\_Authorization)，全称 <span style="color:red;">C</span>ertification <span style="color:red;">A</span>uthority <span style="color:red;">A</span>uthorization，证书颁发机构授权。
 

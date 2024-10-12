@@ -10,21 +10,23 @@ tags:
 
 将 VitePress 站点部署到腾讯云服务器，访问 [www.tangjiayan.com](https://www.tangjiayan.com/) 时打开设计好的网站。
 
-![homepage](https://cdn.tangjiayan.com/notes/web-build/vitepress/vitepress-tencent-cloud/homepage.png)
+![homepage](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/11/vitepress-tencent-cloud/1-homepage.png)
 
 主页的设计之后会另写一篇笔记。
 
 ## 备份站点
 
+我的服务器上之前有部署另一个网站，虽然没什么内容，但还是备份一下吧。
+
 使用 WordPress 插件 [UpDraftPlus](https://wordpress.org/plugins/updraftplus/) 将原站点备份。
 
-![backup](https://cdn.tangjiayan.com/notes/web-build/vitepress/vitepress-tencent-cloud/backup.png)
+![backup](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/11/vitepress-tencent-cloud/2-backup.png)
 
 ## 重装服务器
 
 备份好之后，在腾讯云轻量应用服务器后台把操作系统重装一下，原来是 `CentOS 7.6`，重装为 `Debian 12`。
 
-![tencent-reinstall-os](https://cdn.tangjiayan.com/notes/web-build/vitepress/vitepress-tencent-cloud/tencent-reinstall-os.png)
+![tencent-reinstall-os](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/11/vitepress-tencent-cloud/3-tencent-reinstall-os.png)
 
 ## 服务器安装 Node.js 和 npm
 
@@ -101,7 +103,7 @@ npx vitepress init
 
 在本地设计好 VitePress 主页后，使用 Bitvise 将本地的 VitePress 站点上传到服务器。
 
-![upload](https://cdn.tangjiayan.com/notes/web-build/vitepress/vitepress-tencent-cloud/upload.png)
+![upload](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/11/vitepress-tencent-cloud/4-upload.png)
 
 ::: details `Permission denied` 问题
 
@@ -246,7 +248,7 @@ location / {
 }
 ```
 
-![failed](https://cdn.tangjiayan.com/notes/web-build/vitepress/vitepress-tencent-cloud/failed.png)
+![failed](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/11/vitepress-tencent-cloud/5-failed.png)
 
 结果是提示
 

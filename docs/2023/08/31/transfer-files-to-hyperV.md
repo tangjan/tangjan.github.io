@@ -26,29 +26,28 @@ tags:
 
 在 Hyper-V Manager 界面右击虚拟机，点击`Settings`
 
-<figure><img src="https://cdn.tangjiayan.com/notes/hyper-v/transfer-files-to-virtual-machine/select-settings" alt="" width="188"><figcaption></figcaption></figure>
+![1-settings](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/transfer-files-to-hyperV/1-settings.png)
 
-在`Network Adapter` - `Virtual switch` - 选择 `Default-switch`
+在`Network Adapter` - `Virtual switch` - 选择 `Default Switch`
 
-<figure><img src="https://cdn.tangjiayan.com/notes/hyper-v/transfer-files-to-virtual-machine/select-default-switch.png" alt="" width="563"><figcaption></figcaption></figure>
+![default-switch](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/transfer-files-to-hyperV/2-default-switch.png)
 
-\
 然后点击 OK，虚拟机就会弹出 设置网络位置，选 家庭网络/工作网络 均可。
 
-<figure><img src="https://cdn.tangjiayan.com/notes/hyper-v/transfer-files-to-virtual-machine/network-position.png" alt="" width="563"><figcaption></figcaption></figure>
+![-network-position](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/transfer-files-to-hyperV/3-network-position.png)
 
 ## 局域网共享文件夹
 
 创建一个要共享给虚拟机的文件夹，右击 → `Properties` → `Sharing` → `Share...`，添加一个 `Everyone`，允许读写，然后 `Share`。
 
-<figure><img src="https://cdn.tangjiayan.com/notes/hyper-v/transfer-files-to-virtual-machine/share-network-access.png" alt="" width="375"><figcaption><p>共享文件夹成功界面</p></figcaption></figure>
+![share-network-access](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/transfer-files-to-hyperV/4-share-network-access)
 
 然后 `Win`+`R` → `cmd` → `ipconfig`，找到 `Ethernet adapter vEthernet (Default Switch)`，找到这个本地 IP 地址。
 
-<figure><img src="https://cdn.tangjiayan.com/notes/hyper-v/transfer-files-to-virtual-machine/lan-ip.png" alt="" width="563"><figcaption></figcaption></figure>
+![lan-ip](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/transfer-files-to-hyperV/5-lan-ip.png)
 
 在 Win7 虚拟机中 `Win`+`R` → `\\IP地址` 回车 (或者在文件浏览器的地址栏)，就能打开局域网文件共享窗口了。
 
-<figure><img src="https://cdn.tangjiayan.com/notes/hyper-v/transfer-files-to-virtual-machine/vm-run-lan-ip.png" alt="" width="375"><figcaption></figcaption></figure>
+![vm-run-lan-ip](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/transfer-files-to-hyperV/6-vm-run-lan-ip.png)
 
-<figure><img src="https://cdn.tangjiayan.com/notes/hyper-v/transfer-files-to-virtual-machine/share-success.png" alt="" width="563"><figcaption></figcaption></figure>
+![share-success](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/transfer-files-to-hyperV/7-share-success.png)

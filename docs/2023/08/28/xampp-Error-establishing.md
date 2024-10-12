@@ -12,7 +12,7 @@ tags:
 
 参见 [Windows 本地 Wordpress CMS 搭建]，打开本地 wordpress 界面，提示 `Error-establishing a database connection`
 
-<figure><img src="https://cdn.tangjiayan.com/notes/web-build/debug/error-establishing/1-error-establishing.png" alt="" width="600"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/03/02/xampp-Error-establishing/1-error-establishing.png" alt="" width="600"><figcaption></figcaption></figure>
 
 打开 `http://localhost/phpmyadmin/` phpMyAdmin 界面，提示
 
@@ -21,7 +21,7 @@ The phpMyAdmin configuration storage is not completely configured, some extended
 Or alternately go to 'Operations' tab of any database to set it up there.
 ```
 
-<figure><img src="https://cdn.tangjiayan.com/notes/web-build/debug/error-establishing/find-out-why.png" alt="" width="800"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/03/02/xampp-Error-establishing/2-find-out-why.png" alt="" width="800"><figcaption></figcaption></figure>
 
 点击 `Find out why`，提示
 
@@ -34,7 +34,7 @@ General relation features Disabled
 Create a database named 'phpmyadmin' and setup the phpMyAdmin configuration storage there.
 ```
 
-<figure><img src="https://cdn.tangjiayan.com/notes/web-build/debug/error-establishing/pmadb-not-ok.png" alt="" width="650"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/03/02/xampp-Error-establishing/3-pmadb-not-ok.png" alt="" width="650"><figcaption></figcaption></figure>
 
 ## 解决
 

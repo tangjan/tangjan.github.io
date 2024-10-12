@@ -18,10 +18,10 @@ Access denied.
 See log for more information
 ```
 
-![bitvise-access-denied](https://cdn.tangjiayan.com/notes/common/bitvise-access-denied.png)
+![bitvise-access-denied](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/10/bitvise-access-denied.png)
 
 ## 解决
 
 原因是没选对打开方式，`右键` - `Edit With...`，选择 VS Code 即可。
 
-![bitvise-access-denied-solution](https://cdn.tangjiayan.com/notes/common/bitvise-access-denied-solution.png)
+![bitvise-access-denied-solution](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/10/bitvise-access-denied-solution.png)

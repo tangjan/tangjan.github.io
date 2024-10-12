@@ -24,7 +24,7 @@ head:
 
 ## 模型概览
 
-![overview](https://cdn.tangjiayan.com/simulink-svpwm/overview.png)
+![overview](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/1-overview.png)
 
 ## SVPWM 简介
 
@@ -68,15 +68,15 @@ $$
 
 据此可搭出：
 
-![3-2](https://cdn.tangjiayan.com/simulink-svpwm/3-2.png)
+![3-2](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/2-3_2.png)
 
 不过其实 SIMULINK 有提供现成的 3/2 变换模块：
 
-![3-2-simulink](https://cdn.tangjiayan.com/simulink-svpwm/3-2-simulink.png)
+![3-2-simulink](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/3-3_2-simulink.png)
 
 这里输出的 0 用不上，可以接个 Terminator。
 
-![3-2-simulink-terminator](https://cdn.tangjiayan.com/simulink-svpwm/3-2-simulink-terminator.png)
+![3-2-simulink-terminator](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/4-3_2-simulink-terminator.png)
 
 ## 将两相坐标转化为极坐标
 
@@ -84,7 +84,7 @@ $$
 
 转化方法：角度是 arctan，模长是平方和开根号（模长在该模型中用不上，这里就是顺便计算一下）。
 
-![2phase-to-polar](https://cdn.tangjiayan.com/simulink-svpwm/2phase-to-polar.png)
+![2phase-to-polar](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/5-2phase-to-polar.png)
 
 ## 扇区计算
 
@@ -92,15 +92,15 @@ $$
 
 0 – 60° 就是扇区Ⅰ，60° – 120° 就是扇区Ⅱ……依次类推。
 
-![sector-calculate](https://cdn.tangjiayan.com/simulink-svpwm/sector-calculate.png)
+![sector-calculate](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/6-sector-calculate.png)
 
 目前为止，可以接个示波器简单验证一下已经搭建的模型是否正确：
 
-![mid-test-simulink](https://cdn.tangjiayan.com/simulink-svpwm/mid-test-simulink.png)
+![mid-test-simulink](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/7-mid-test-simulink.png)
 
 效果
 
-![mid-test-result](https://cdn.tangjiayan.com/simulink-svpwm/mid-test-result.png)
+![mid-test-result](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/8-mid-test-result.png)
 
 ## 作用时间计算
 
@@ -116,11 +116,11 @@ $$
 
 但是不知道为什么，我用这个公式搭出来的仿真结果不正确，而用另一套等价的公式一次性就正确了。所以我用的是这套等价的公式：
 
-![effect-time-equivalent](https://cdn.tangjiayan.com/simulink-svpwm/effect-time-equivalent.png)
+![effect-time-equivalent](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/9-effect-time-equivalent.png)
 
 SIMULINK 搭建：
 
-![effect-time-simulink](https://cdn.tangjiayan.com/simulink-svpwm/effect-time-simulink.png)
+![effect-time-simulink](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/10-effect-time-simulink.png)
 
 ## 调制波计算
 
@@ -128,9 +128,9 @@ SIMULINK 搭建：
 
 采用零矢量分散的实现方法。可通过三角形相似定理计算，以第Ⅰ扇区为例：
 
-![modulation-wave-handwriting](https://cdn.tangjiayan.com/simulink-svpwm/modulation-wave-handwriting.jpg)
+![modulation-wave-handwriting](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/11-modulation-wave-handwriting.jpg)
 
-![modulation-wave-calculation](https://cdn.tangjiayan.com/simulink-svpwm/modulation-wave-calculation.png)
+![modulation-wave-calculation](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/12-modulation-wave-calculation.png)
 
 这里的 `Vta`、`Vtb`、`Vtc` 分别相当于 `Sa`、`Sb`、`Sc`。
 
@@ -138,55 +138,55 @@ SIMULINK 搭建：
 
 其他扇区也同理，有规律可循。最终计算结果：
 
-![modulation-wave-result](https://cdn.tangjiayan.com/simulink-svpwm/modulation-wave-result.png)
+![modulation-wave-result](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/13-modulation-wave-result.png)
 
 据此可搭出 SIMULINK 模型：
 
-![modulation-wave-simulink](https://cdn.tangjiayan.com/simulink-svpwm/modulation-wave-simulink.png)
+![modulation-wave-simulink](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/14-modulation-wave-simulink.png)
 
 观察一下调制波波形：
 
-![modulation-wave-test-simulink](https://cdn.tangjiayan.com/simulink-svpwm/modulation-wave-test-simulink.png)
+![modulation-wave-test-simulink](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/15-modulation-wave-test-simulink.png)
 
-![modulation-wave-test-wave](https://cdn.tangjiayan.com/simulink-svpwm/modulation-wave-test-wave.png)
+![modulation-wave-test-wave](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/16-modulation-wave-test-wave.png)
 
 ## 触发脉冲计算
 
 有了调制波，将它和三角载波进行比较就能得到逆变桥所需的触发脉冲信号了。
 
-![trigger-pulse](https://cdn.tangjiayan.com/simulink-svpwm/trigger-pulse.png)
+![trigger-pulse](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/17-trigger-pulse.png)
 
 至此，SVPWM 的主要工作就做完了。接下来是将触发脉冲应用到逆变桥中进行验证。
 
 ## 逆变器验证
 
-![inverter-verification-simulink](https://cdn.tangjiayan.com/simulink-svpwm/inverter-verification-simulink.png)
+![inverter-verification-simulink](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/18-inverter-verification-simulink.png)
 
 三相线电压波形：
 
-![line-voltage](https://cdn.tangjiayan.com/simulink-svpwm/line-voltage.png)
+![line-voltage](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/19-line-voltage.png)
 
 验证成功。
 
 ## 相关参数
 
-![parameter-f-Ts-Vdc-m](https://cdn.tangjiayan.com/simulink-svpwm/parameter-f-Ts-Vdc-m.png)
+![parameter-f-Ts-Vdc-m](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/20-parameter-f-Ts-Vdc-m.png)
 
 `f` 表示开关频率（采样频率），`Ts` 表示开关周期（采样周期），`Vdc` 表示直流母线电压，`m` 表示作用时间的系数，其含义相当于利用率。
 
 `Ts` 体现在三角载波：
 
-![parameter-Ts](https://cdn.tangjiayan.com/simulink-svpwm/parameter-Ts.png)
+![parameter-Ts](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/21-parameter-Ts.png)
 
 `Vdc` 体现在逆变桥的直流电压输入：
 
-![parameter-Vdc](https://cdn.tangjiayan.com/simulink-svpwm/parameter-Vdc.png)
+![parameter-Vdc](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/22-parameter-Vdc.png)
 
 `m` 体现在输入的标准三相正弦信号，m = sqrt(3)*380/Vdc，其中 `380` 表示期望输出的相电压幅值：
 
-![parameter-m](https://cdn.tangjiayan.com/simulink-svpwm/parameter-m.png)
+![parameter-m](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/23-parameter-m.png)
 
-![line-voltage-expand](https://cdn.tangjiayan.com/simulink-svpwm/line-voltage-expand.png)
+![line-voltage-expand](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/24-line-voltage-expand.png)
 
 理论输出线电压幅值是 380 * sqrt(3) ≈ 658，可见结果符合。
 
@@ -194,13 +194,13 @@ SIMULINK 搭建：
 
 ### SVPWM
 
-![svpwm-fundamental](https://cdn.tangjiayan.com/simulink-svpwm/svpwm-fundamental.png)
+![svpwm-fundamental](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/25-svpwm-fundamental.png)
 
 `fundamental` = `520.8`
 
 ### SPWM
 
-![spwm-fundamental](https://cdn.tangjiayan.com/simulink-svpwm/spwm-fundamental.png)
+![spwm-fundamental](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/simulink-svpwm/26-spwm-fundamental.png)
 
 `fundamental` = `451`
 

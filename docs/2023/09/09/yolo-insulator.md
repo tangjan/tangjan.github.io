@@ -14,11 +14,11 @@ tags:
 
 ## 效果
 
-![yolo_insulator-1](https://cdn.tangjiayan.com/notes/undergraduate/yolo-insulator/yolo_insulator-1.png)
+![yolo_insulator-1](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/yolo-insulator/1-effect_1.png)
 
-![yolo_insulator-2](https://cdn.tangjiayan.com/notes/undergraduate/yolo-insulator/yolo_insulator-2.png)
+![yolo_insulator-2](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/yolo-insulator/2-effect_2.png)
 
-![yolo_insulator-3](https://cdn.tangjiayan.com/notes/undergraduate/yolo-insulator/yolo_insulator-3.gif)
+![yolo_insulator-3](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/yolo-insulator/3-effect_3.gif)
 
 ## YOLO 算法理论
 
@@ -50,11 +50,11 @@ VOC 格式的数据集由图片文件和标签文件组成，标签文件是监�
 
 准备好图片集后，去 `git clone` 一个 `labelImg`（或者 `pip install labelImg`），运行软件，然后按照教程对图像进行分类标注，示例：
 
-![labelImg](https://cdn.tangjiayan.com/notes/undergraduate/yolo-insulator/labelImg.png)
+![labelImg](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/yolo-insulator/4-labelImg.png)
 
 标注完点击保存就会生成相应的 `.xml` 文件，这就是标签文件了，它和图片文件是同名的。
 
-![xml](https://cdn.tangjiayan.com/notes/undergraduate/yolo-insulator/xml.png)
+![xml](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/yolo-insulator/5-xml.png)
 
 准备好每一张图片及其对应的标签文件后，数据集就算是准备好了。
 
@@ -75,7 +75,7 @@ YOLO 算法理论比较复杂，想弄懂有一定的知识门槛。使用过程
 
 我采用的默认的 300 代，损失函数变化如图（左：绝缘子缺陷 右：绝缘子）：
 
-![loss](https://cdn.tangjiayan.com/notes/undergraduate/yolo-insulator/loss.png)
+![loss](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/yolo-insulator/6-loss.png)
 
 训练好模型之后，就会得到 `.pth` 格式的权重文件（格式可转化为 `.onnx` 格式，后文会介绍），就可以用它来预测图片了，我的预测结果如本博客开头所示。
 
@@ -91,19 +91,19 @@ YOLO 算法理论比较复杂，想弄懂有一定的知识门槛。使用过程
 
 示意图（引用自 CBAM 论文原文）
 
-![CBAM](https://cdn.tangjiayan.com/notes/undergraduate/yolo-insulator/CBAM.png)
+![CBAM](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/yolo-insulator/7-CBAM.png)
 
 图中的 `Refined Feature` 相较于原始的 `Input Feature`，更集中地包含了检测目标的关键信息，使得模型的性能有所提高。
 
 直观一点的解释，如下图所示，分别是插入 CBAM 前后预测结果的 heatmap：
 
-![heatmap](https://cdn.tangjiayan.com/notes/undergraduate/yolo-insulator/heatmap.png)
+![heatmap](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/yolo-insulator/8-heatmap.png)
 
 可以看出，引入 CBAM 后，特征区域覆盖到了绝缘子的更多部位，说明 CBAM 确实起到了让神经网络更多地关注关键信息的效果。
 
 在性能指标上也有一定的体现，引入 CBAM 前后的 F1 曲线如图所示：
 
-![f1](https://cdn.tangjiayan.com/notes/undergraduate/yolo-insulator/f1.png)
+![f1](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/yolo-insulator/9-f1.png)
 
 提升比较细微，这与数据集本身、CBAM 插入的位置等因素有关。
 
@@ -111,7 +111,7 @@ YOLO 算法理论比较复杂，想弄懂有一定的知识门槛。使用过程
 
 这个东西就是 [OAK-D](https://www.oakchina.cn/product/oak-d/)：
 
-![oak-d](https://cdn.tangjiayan.com/notes/undergraduate/yolo-insulator/oak-d.png)
+![oak-d](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/yolo-insulator/10-oak-d.png)
 
 别看它看上去就像个摄像头，但它可比摄像头厉害多了 <span class="mask">首先在价格上就贵了 10 倍</span>，二者的主要区别是在软件层面。
 
@@ -127,7 +127,7 @@ OAK-D 的核心不是感光组件电路什么的，而是视觉处理单元 [VPU
 
 后来按照官方提供的 [Yolov5 6.0 转换成blob格式](https://www.oakchina.cn/2022/01/22/yolov5-blob/)，用 [YOLOv5](https://github.com/ultralytics/yolov5) 重新训练了一个 `.pt` 格式的权重文件，按其教程先转化为 `.onnx` 通用格式，通过 [Netron](https://github.com/lutzroeder/netron) 将其可视化，在最后一层添加 3 个 sigmoid 层，如图所示：
 
-![sigmoid](https://cdn.tangjiayan.com/notes/undergraduate/yolo-insulator/sigmoid.png)
+![sigmoid](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/yolo-insulator/11-sigmoid.png)
 
 添加完 sigmoid 层之后再修转化为 .blob 格式，最后在官方的 [Tiny YOLO demo](https://docs.oakchina.cn/projects/api/samples/Yolo/tiny_yolo.html) 基础上修改锚框（Anchor）信息、窗口大小（`camRgb.setPreviewSize(640, 640)`）、预测类别个数等细节即可。
 

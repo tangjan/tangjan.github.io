@@ -10,11 +10,11 @@ tags:
 
 参照 [基于MATLAB的拼图游戏设计_思绪无限_CSDN](https://wuxian.blog.csdn.net/article/details/79219110)，通过 `.m` 文件编程做了个拼图游戏。
 
-Github：[tangjan/MATLAB_jigsaw](https://github.com/tangjan/MATLAB_jigsaw)
+GitLab：[matlab-jigsaw](https://gitlab.com/tangjan/matlab-jigsaw)
 
 这里的拼图指的是华容道式的拼图，不过每次只能移动一块拼图。
 
-![shuzi-huarongdao](https://cdn.tangjiayan.com/notes/undergraduate/matlab-jigsaw/shuzi-huarongdao.jpg)
+![shuzi-huarongdao](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/matlab-jigsaw/1-shuzi-huarongdao.jpg)
 
 ## 分割拼图
 
@@ -24,13 +24,13 @@ Github：[tangjan/MATLAB_jigsaw](https://github.com/tangjan/MATLAB_jigsaw)
 
 比如，这里我制作了一张只有一个白色像素点的图片（用 mspaint 制作的），在 MATLAB 中使用 `imread` 函数来读取这张图片，显示出数组信息如图：
 
-![1-pixel-info](https://cdn.tangjiayan.com/notes/undergraduate/matlab-jigsaw/1-pixel-info.png)
+![1-pixel-info](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/matlab-jigsaw/2-pixel-info.png)
 
 `(255，255，255)` 即表示白色
 
 接下来，为便于解释，现把整个图片分为 9 个部分，编号如图所示：
 
-![cumt-numbering](https://cdn.tangjiayan.com/notes/undergraduate/matlab-jigsaw/cumt-numbering.png)
+![cumt-numbering](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/matlab-jigsaw/3-cumt-numbering.png)
 
 其中最后一个位置用作空白块，所以为了显示出其特殊性，编号为 0 而非编号为 9。这样一来，运行 `x1 = image(1:100, 1:100, :)` 赋值语句之后，`x1` 即是表示 拼图块1 的矩阵。
 
@@ -49,7 +49,7 @@ x0 = image(201:300, 201:300, : );   %拼图块0矩阵数据
 
 可使用 `axis on` 函数显示出横纵坐标帮助理解：
 
-![axis-on](https://cdn.tangjiayan.com/notes/undergraduate/matlab-jigsaw/axis-on.png)
+![axis-on](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/matlab-jigsaw/4-axis-on.png)
 
 接下来定义一个从原图中分割拼图块并标记编号的函数，不妨命名为 `split(image, index)`，其中 `image` 为原图的数据矩阵，`index` 为要选择的拼图块的编号。`split` 函数的输出为矩阵 `x`，是序号为 `index` 的拼图块的数据矩阵。
 
@@ -87,11 +87,11 @@ function drawmap(A)
 
 比如，假设矩阵 `A` 为
 
-![assuming-drawmap](https://cdn.tangjiayan.com/notes/undergraduate/matlab-jigsaw/assuming-drawmap.png)
+![assuming-drawmap](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/matlab-jigsaw/5-assuming-drawmap.png)
 
 则运行 `drawmap(A)` 可得到：
 
-![drawmap](https://cdn.tangjiayan.com/notes/undergraduate/matlab-jigsaw/drawmap.png)
+![drawmap](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/matlab-jigsaw/6-drawmap.png)
 
 ## 移动拼图
 
@@ -150,7 +150,7 @@ function y = Disrupt()
 
 另外，很明显主函数需要重复获得鼠标点击时的位置坐标来进行拼图游戏，也要有游戏胜利的终止条件。这里采用 `figure` 的 `WindowButtonDownFcn` 属性，MATLAB 官方文件中对其介绍如下：
 
-![WindowButtonDownFcn](https://cdn.tangjiayan.com/notes/undergraduate/matlab-jigsaw/WindowButtonDownFcn.png)
+![WindowButtonDownFcn](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/matlab-jigsaw/7-WindowButtonDownFcn.png)
 
 据此可以结合 `set` 函数、`gcf` 图形句柄和函数句柄定义一个获取鼠标点击坐标的回调函数。当在图上按下鼠标左键的时候，就自动执行回调函数来获取坐标值，同时在回调函数中判断游戏是否胜利。
 
@@ -201,20 +201,20 @@ function ButtonDownFcn(src,event)
 
 点击运行程序，会显示打乱好的拼图：
 
-![broken-jigsaw](https://cdn.tangjiayan.com/notes/undergraduate/matlab-jigsaw/broken-jigsaw.png)
+![broken-jigsaw](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/matlab-jigsaw/8-broken-jigsaw.png)
 
 点击空白块旁边的拼图，会移动拼图块：
 
-![click-jigsaw](https://cdn.tangjiayan.com/notes/undergraduate/matlab-jigsaw/click-jigsaw.png)
+![click-jigsaw](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/matlab-jigsaw/9-click-jigsaw.png)
 
 完成拼图后会提示 “恭喜完成”：
 
-![complete-jigsaw](https://cdn.tangjiayan.com/notes/undergraduate/matlab-jigsaw/complete-jigsaw.png)
+![complete-jigsaw](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/matlab-jigsaw/10-complete-jigsaw.png)
 
 稍作修改，也可以将该程序改为 4*4、5*5、……的拼图游戏。主要需要修改循环次数、行列数、行列计算公式、原始数据矩阵等，disrupt 函数中的随机点击的次数也应适当增加。我做了个 `10*10` 的拼图游戏，效果如图:
 
-![10%2A10-jigsaw](https://cdn.tangjiayan.com/notes/undergraduate/matlab-jigsaw/10%2A10-jigsaw.png)
+![10%2A10-jigsaw](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/matlab-jigsaw/11-10x10-jigsaw.png)
 
 另外，结合 `tic toc` 指令，可以实现游戏计时功能：
 
-![tic-toc](https://cdn.tangjiayan.com/notes/undergraduate/matlab-jigsaw/tic-toc.png)
+![tic-toc](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/matlab-jigsaw/12-tic-toc.png)

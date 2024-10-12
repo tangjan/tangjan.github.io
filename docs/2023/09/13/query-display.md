@@ -10,7 +10,7 @@ tags:
 
 将 `query` 的内容显示在网页中。
 
-![query-display](https://cdn.tangjiayan.com/notes/common/query-display.png)
+![query-display](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/13/query-display.png)
 
 `query` 是 [url](https://en.wikipedia.org/wiki/URL#Syntax) 的第 4 组成部分。
 

@@ -40,9 +40,9 @@ tags:
 ② 点击 `编辑账户的环境变量`<br>
 ③ 在 `用户变量` 的 `Path` 里添加 qshell 的路径，我的是 `Y:\repositories\Github-Repos\zip\qshell`<br>
 
-![start-search](https://cdn.tangjiayan.com/notes/web-build/qshell/start-search.png)
+![start-search](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/05/09/qiniu-batch-download/1-start-search.png)
 
-![env-variables](https://cdn.tangjiayan.com/notes/web-build/qshell/env-variables.png)
+![env-variables](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/05/09/qiniu-batch-download/2-env-variables.png)
 
 添加好后，可以重开一个 cmd 测试一下
 

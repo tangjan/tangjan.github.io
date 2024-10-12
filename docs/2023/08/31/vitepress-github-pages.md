@@ -13,7 +13,7 @@ tags:
 
 ::: details 个人小插曲：在 Windows 注册表更改 Node.js 的安装路径
 之前我为了扩展 C 盘的空间，需要清空 D 盘。
-![C-D-Merge](https://cdn.tangjiayan.com/notes/vitepress-github-pages/C-D-Merge.jpg)
+![C-D-Merge](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/vitepress-github-pages/C-D-Merge.jpg)
 
 当时蠢蠢地直接把 Node.js 文件夹剪切到了 E 盘，于是理所当然地运行不了，也卸载不了，提示 `Invalid D: drive`。
 
@@ -204,5 +204,4 @@ VitePress 站点相关文件上传到 GitHub 仓库后，就会自动执行 `Dep
 ## 参考
 
 - [VitePress Guide](https://vitepress.dev/guide/what-is-vitepress)
-- [git忽略某个目录或文件不上传_git忽略指定文件_sxjlinux的博客-CSDN博客](https://blog.csdn.net/sunxiaoju/article/details/86495234)
 - [Learn GitHub Actions - GitHub Docs](https://docs.github.com/en/actions/learn-github-actions)

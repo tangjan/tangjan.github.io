@@ -63,7 +63,7 @@ Node.js v20.11.1
 
 改用 VS Code 终端执行 `npx vitepress init`。
 
-![vscode-ERR_TTY_INIT_FAILED](https://cdn.tangjiayan.com/notes/vitepress/vscode-ERR_TTY_INIT_FAILED.png)
+![vscode-ERR_TTY_INIT_FAILED](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/04/02/vscode-ERR_TTY_INIT_FAILED.png)
 
 解决方法提供者不知道为啥，我也不知道为啥。。
 

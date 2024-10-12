@@ -15,9 +15,9 @@ Keil5 的安装和破解就不叙述了。
 
 ## 目标
 
-![overview](https://cdn.tangjiayan.com/notes/embeded/stm32-light/overview.png)
+![overview](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/1-overview.png)
 
-![stm32-stlink](https://cdn.tangjiayan.com/notes/embeded/stm32-light/stm32-stlink.jpg)
+![stm32-stlink](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/2-stm32-stlink.jpg)
 
 ## 在电脑上创建工程文件夹
 
@@ -25,7 +25,7 @@ Keil5 的安装和破解就不叙述了。
 
 我创建为 `stm32-light`。
 
-![create-folder](https://cdn.tangjiayan.com/notes/embeded/stm32-light/create-folder.png)
+![create-folder](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/3-create-folder.png)
 
 ## Keil5 创建工程
 
@@ -33,7 +33,7 @@ Keil5 的安装和破解就不叙述了。
 
 点击 `Project` - `New μVision Project` 创建一个新工程：
 
-![new-project](https://cdn.tangjiayan.com/notes/embeded/stm32-light/new-project.png)
+![new-project](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/4-new-project.png)
 
 ::: info
 
@@ -44,19 +44,19 @@ Keil5 的安装和破解就不叙述了。
 
 工程文件命名为比较通用的 `Project`：
 
-![new-project-naming](https://cdn.tangjiayan.com/notes/embeded/stm32-light/new-project-naming.png)
+![new-project-naming](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/5-new-project-naming.png)
 
 ### Select Device
 
 然后是 Select Device 环节，选择 `STM32F108C8`：
 
-![new-project-device-select](https://cdn.tangjiayan.com/notes/embeded/stm32-light/new-project-device-select.png)
+![new-project-device-select](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/6-new-project-device-select.png)
 
 ### Manage Run-Time Environment
 
 之后弹出的 `Manage Run-Time Environment` 环节可以关掉跳过：
 
-![run-time-environment](https://cdn.tangjiayan.com/notes/embeded/stm32-light/new-project-run-time-environment.png)
+![run-time-environment](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/7-new-project-run-time-environment.png)
 
 这样工程就建好了。
 
@@ -66,7 +66,7 @@ Keil5 的安装和破解就不叙述了。
 
 在 Keil5 工程 和 本地工程文件夹中都创建名为 `Startup` 的文件夹：
 
-![startup-folder](https://cdn.tangjiayan.com/notes/embeded/stm32-light/startup-folder.png)
+![startup-folder](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/8-startup-folder.png)
 
 ### 从官方标准外设库中添加所需文件
 
@@ -86,17 +86,17 @@ Keil5 的安装和破解就不叙述了。
 
 每个文件的作用可以在每个文件的文档注释里看到。
 
-![add-files-to-startup](https://cdn.tangjiayan.com/notes/embeded/stm32-light/add-files-to-startup.png)
+![add-files-to-startup](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/9-add-files-to-startup.png)
 
 ### 设置头文件路径
 
 点击魔术棒按钮  (`Options for Target`)
 
- ![button-magic-wand](https://cdn.tangjiayan.com/notes/embeded/keil5/button-magic-wand.png)
+ ![button-magic-wand](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/10-button-magic-wand.png)
 
 在 `C/C++` - `Include Paths` 中添加 `Startup` 文件夹。
 
-![include-paths](https://cdn.tangjiayan.com/notes/embeded/stm32-light/include-paths.png)
+![include-paths](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/11-include-paths.png)
 
 ## 创建 `main.c`，编写配置寄存器代码
 
@@ -104,13 +104,13 @@ Keil5 的安装和破解就不叙述了。
 
 在 Keil5 工程 和 本地工程文件夹中都创建名为 `User` 的文件夹，在 Keil5 的 `User` 里右键创建 `main.c`。注意路径 (Location) 选择本地的 `User`
 
-![create-main](https://cdn.tangjiayan.com/notes/embeded/stm32-light/create-main.png)
+![create-main](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/12-create-main.png)
 
 ### `main.c` include 头文件
 
 `右键` - `Insert '#include file'` 来 include 头文件：
 
-![right-include](https://cdn.tangjiayan.com/notes/embeded/stm32-light/right-include.png)
+![right-include](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/13-right-include.png)
 
 点击后得到：
 
@@ -124,7 +124,7 @@ Keil5 的安装和破解就不叙述了。
 
 - `Ctrl` + `鼠标滚轮` 可以放大/缩小编辑器文字大小。
 - 在 `configuration` 中，可以
-  ![button-configuration](https://cdn.tangjiayan.com/notes/embeded/keil5/button-configuration.png)
+  ![button-configuration](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/14-button-configuration.png)
   - 设置编码格式 `Encoding` 为 `UTF-8`
   - 设置 C/C++ 文件的 `Tab Size` 为 `4`
 
@@ -146,7 +146,7 @@ int main(void){
 
 根据 `STM32F103C8T6核心板原理图`，要点亮 `D2`，需要将 `PC13` 置为低电平。
 
-![sch-led-pc13](https://cdn.tangjiayan.com/notes/embeded/stm32-light/sch-led-pc13.png)
+![sch-led-pc13](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/15-sch-led-pc13.png)
 
 为了将 `PC13` 置为低电平，需要：
 
@@ -164,7 +164,7 @@ RCC->APB2ENR = 0x00000010;
 
 在官方手册的 `7.3.7 APB2 peripheral clock enable register (RCC_APB2ENR)` 章节中可以看到 `RCC->APB2ENR` 这一寄存器的 `位4` (第5位) 用来使能 `GPIOC` 的时钟，设为 `1` 使能。
 
-![RCC_APB2ENR](https://cdn.tangjiayan.com/notes/embeded/stm32-light/RCC_APB2ENR.png)
+![RCC_APB2ENR](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/16-RCC_APB2ENR.png)
 
 所以 `0x00000010` 表示二进制的 `位4` 置 `1`，使能 `GPIOC` 的时钟，使其有效。
 
@@ -186,7 +186,7 @@ GPIOC->CRH = 0x00300000;
 
 (至于为什么这样配置，见后续笔记。)
 
-![GPIOx-CRH](https://cdn.tangjiayan.com/notes/embeded/stm32-light/GPIOx-CRH.png)
+![GPIOx-CRH](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/17-GPIOx-CRH.png)
 
 所以 `GPIOC->CRH` 配置为 `0x00300000`，表示 `位23` - `位20` 置为 `0011B` 。
 
@@ -203,7 +203,7 @@ GPIOC->ODR = 0x00000000;
 
 在官方手册的 `9.2.4 Port output data register (GPIOx_ODR) (x=A..G)` 章节中可以看到，`ODR13` 这一位控制 `GPIO13` 的输出，写 `0`，`GPIO13` 就输出 `0`。
 
-![GPIOx_ODR](https://cdn.tangjiayan.com/notes/embeded/stm32-light/GPIOx_ODR.png)
+![GPIOx_ODR](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/18-GPIOx_ODR.png)
 
 所以 `GPIOC->ODR` 配置为 `0x00000000`，表示将 `ODR13` 置 `0`。
 
@@ -218,7 +218,7 @@ GPIOC->ODR = 0x00000000;
 
 分别将 ST-LINK 和 STM32F103C8T6最小系统板 的 `SWCLK`、`SWDIO`、`GND`、`3.3V` 通过母对母杜邦线连接在一起。
 
-![stm32-stlink](https://cdn.tangjiayan.com/notes/embeded/stm32-light/stm32-stlink.jpg)
+![stm32-stlink](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/2-stm32-stlink.jpg)
 
 连接到电脑的 USB 口上后，ST-LINK 的蓝色的灯应该是常亮的，如果是闪烁状态很可能是没安装驱动，在 [ST官方下载](https://www.st.com/en/development-tools/stsw-link009.html) ST-LINK 的驱动并安装即可。
 
@@ -226,23 +226,23 @@ GPIOC->ODR = 0x00000000;
 
 点击魔术棒按钮  (`Options for Target`)
 
-![button-magic-wand](https://cdn.tangjiayan.com/notes/embeded/keil5/button-magic-wand.png)
+![button-magic-wand](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/10-button-magic-wand.png)
 
 在 `Debug` 中选择 `Use ST-Link Debugger`
 
-![ST-Link-debugger-select](https://cdn.tangjiayan.com/notes/embeded/stm32-light/ST-Link-debugger-select.png)
+![ST-Link-debugger-select](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/19-ST-Link-debugger-select.png)
 
 ### 设置 `Reset and Run`
 
 点击 `Use ST-Link Debugger` 旁边的 `Settings`，在 `Flash Download` 中勾选 `Reset and Run`，这样使用 ST-LINK 烧录程序后，不用每次都手动按一下 STM32 板子上的复位按键。
 
-![reset-and-run](https://cdn.tangjiayan.com/notes/embeded/stm32-light/reset-and-run.png)
+![reset-and-run](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/20-reset-and-run.png)
 
 ### Build
 
 点击 `build` 按钮进行编译
 
-![button-build](https://cdn.tangjiayan.com/notes/embeded/keil5/button-build.png)
+![button-build](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/21-button-build.png)
 
 ```
 Build started: Project: Project
@@ -255,7 +255,7 @@ Build Time Elapsed:  00:00:00
 ::: details 因缺少 ARM Complier Version 5 而编译失败
 我在编译时，出现了很多错误和警告，原因是缺少了 ARM Complier Version 5
 
-![missing-v5](https://cdn.tangjiayan.com/notes/embeded/light/missing-v5.png)
+![missing-v5](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/22-missing-v5.png)
 
 解决：[KEIL5MDK最新版(3.37)安装以及旧编译器(V5)安装_keil5 mdk_二氧化碳的日常生活的博客-CSDN博客](https://blog.csdn.net/qq_54995462/article/details/126533029)
 :::
@@ -264,7 +264,7 @@ Build Time Elapsed:  00:00:00
 
 编译完成后点击 `Download` 即可烧录程序。
 
-![button-download](https://cdn.tangjiayan.com/notes/embeded/keil5/button-download.png)
+![button-download](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/23-button-download.png)
 
 ```
 Load "Y:\\repositories\\embeded\\keil5 projects\\stm32-light\\Objects\\Project.axf" 
@@ -290,13 +290,13 @@ Flash Load finished at 23:44:28
 
 很多系统板板载 USB 转 CH340 电路，如正点原子的 STM32F103ZET6 最小系统板：
 
-![zhengdian-F103ZET6](https://cdn.tangjiayan.com/notes/embeded/stm32-light/zhengdian-F103ZET6.jpg)
+![zhengdian-F103ZET6](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/24-zhengdian-F103ZET6.jpg)
 
 而我的这个最小系统板上没有 USB 转 TTL 芯片 (如 CH340、FTDI)，所以需要外接 USB 转 TTL 模块。
 
 对于我的这个 STM32F103C8T6，直接连接 Micro-USB 和电脑的 USB，只能起到供电作用。
 
-![usb-to-stm32](https://cdn.tangjiayan.com/notes/embeded/stm32-light/usb-to-stm32.jpg)
+![usb-to-stm32](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/07/stm32-light/25-usb-to-stm32.jpg)
 
 使用 MicroUSB 烧录程序的过程就不演示了，可参考：
 

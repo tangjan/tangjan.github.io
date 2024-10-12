@@ -14,8 +14,7 @@ JavaScript 初探 !
 
 > 猜数字游戏。随机选择一个 1 ~ 100 之间的自然数，玩家在 10 轮以内猜这个数字。每轮后都告知玩家的答案正确与否。如果猜错了，则告诉他数字是小了还是大了。并且显示出玩家前一轮所猜的数字。一旦玩家猜对，或者用尽所有机会，游戏将结束。游戏结束后，可以让玩家选择重新开始。<br>添加作弊功能，点击 `作弊 !` 按钮显示答案。
 
-- [GitHub 源码](https://github.com/tangjan/online-demos/tree/main/javascript-number-guessing)
-- [在线查看](https://notes.tangjiayan.cn/online-demos/javascript-number-guessing/)
+- GitLab：[javascript-number-guessing](https://gitlab.com/tangjan/web-demos/-/tree/main/javascript-number-guessing)
 
 ## 目标拆解
 
@@ -54,7 +53,7 @@ let guessCount = 1;
 let resetButton;
 ```
 
-![class-overview](https://cdn.tangjiayan.com/notes/web-build/js/class-overview.png)
+![class-overview](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/12/js-number-guessing/class-overview.png)
 
 ## 变量分析
 
@@ -359,7 +358,7 @@ answer.textContent = "";
 cheatButton.disabled = false;
 ```
 
-![cheat](https://cdn.tangjiayan.com/notes/web-build/js/cheat.png)
+![cheat](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/12/js-number-guessing/cheat.png)
 
 ## 完整代码
 

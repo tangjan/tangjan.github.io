@@ -53,7 +53,7 @@ color: [transparent](https://developer.mozilla.org/en-US/docs/Web/CSS/named-colo
 
 <figure>
 <img style="text-align:center;" src="https://piapro.net/intl/images/ch_img_miku.png" alt="">
-<img src="https://cdn.tangjiayan.com/notes/common/YUEZHENGLING.png" alt="">
+<img src="https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/css-linear-gradient/yue-zheng-ling.png" alt="">
 </figure>
 
 图片分别来自 [piapro](https://piapro.net/intl/zh-cn_character.html)、[萌娘百科](https://zh.moegirl.org.cn/%E4%B9%90%E6%AD%A3%E7%BB%AB) 。

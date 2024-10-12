@@ -252,7 +252,7 @@ export default defineConfig({
               },
               {
                 text: "viepress ERR_TTY_INIT_FAILED",
-                link: "/2024/03/02/vitepress-ERR_TTY_INIT_FAILED",
+                link: "/2024/03/02/vscode-ERR_TTY_INIT_FAILED",
               },
               {
                 text: "Debian10部署Typecho",
@@ -297,7 +297,7 @@ export default defineConfig({
               },
               {
                 text: "vscode配置C++环境",
-                link: "/2023/09/16/vscode-cpp-env",
+                link: "/2023/09/16/vscode-cpp",
               },
               {
                 text: "git Connection timed out",
@@ -399,7 +399,7 @@ export default defineConfig({
               },
               {
                 text: "C++ use array instead",
-                link: "/2023/08/31/cpp-use-stdarray-instead",
+                link: "/2023/08/31/cpp-array",
               },
               {
                 text: "向Hyper-V虚拟机传输文件",
@@ -410,16 +410,16 @@ export default defineConfig({
                 link: "/2023/08/31/vitepress-github-pages",
               },
               {
-                text: "VSCode no hard tabs",
-                link: "/2023/08/31/vscode-hard-tab",
-              },
-              {
                 text: "Windows本地Wordpress",
                 link: "/2023/08/31/windows-local-wordpress",
               },
               {
                 text: "XAMPP Error establishing",
                 link: "/2023/08/28/xampp-Error-establishing",
+              },
+              {
+                text: "VSCode no hard tabs",
+                link: "/2023/08/27/vscode-hard-tab",
               },
             ],
           },

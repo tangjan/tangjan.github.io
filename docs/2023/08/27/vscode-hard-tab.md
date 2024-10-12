@@ -8,7 +8,7 @@ tags:
 
 VS Code 启用 [markdownlint](https://github.com/DavidAnson/markdownlint) 插件编写 md 文件的时候，发现提示 `MD010/no-hard-tabs：Hard tabs`：
 
-<figure><img src="https://cdn.tangjiayan.com/notes/debug/vs-code-hard-tab.png" alt=""><figcaption></figcaption></figure>
+![vscode-hard-tab](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/27/vscode-hard-tab/vscode-hard-tab.png)
 
 好奇调查了一下：
 
