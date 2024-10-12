@@ -375,6 +375,10 @@ export default defineConfig({
                 text: "url",
                 link: "/2023/09/01/url",
               },
+              {
+                text: "重装v2ray",
+                link: "/2023/09/01/reinstall-v2ray",
+              },
             ],
           },
           {
