@@ -114,14 +114,14 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
-    nav: [
-      { text: "标签", link: "/tag.md" },
-      { text: "归档", link: "/archive.md" },
-    ],
+    // nav: [
+    //   { text: "标签", link: "/tag.md" },
+    //   { text: "归档", link: "/archive.md" },
+    // ],
 
     editLink: {
       pattern:
-        "https://github.com/tangjan/tangjan.github.io/edit/main/docs/src/:path",
+        "https://github.com/tangjan/tangjan.github.io/edit/main/docs/:path",
       text: "在 GitHub 上编辑此页面",
     },
 
@@ -156,363 +156,267 @@ export default defineConfig({
         link: "/index.md",
       },
       {
-        text: "未分类",
+        text: "2024",
         items: [
           {
-            text: "未分类",
-            collapsed: true,
+            text: "5月",
+            collapsed: false,
             items: [
               {
-                text: "向 Hyper-V 虚拟机中传输文件",
-                link: "/unclassified/hyper-v/transfer-files-to-vm",
+                text: "AHK配置Telegram快捷键",
+                link: "/2024/05/17/ahk-telegram",
               },
               {
-                text: "Bitvise Access Denied 问题",
-                link: "/unclassified/bitvise-access-denied",
+                text: "“哎”de叫了一声",
+                link: "/2024/05/10/ai-de",
               },
               {
-                text: "AHK 配置 Telegram 快捷键",
-                link: "/unclassified/telegram-hotkey",
+                text: "七牛云图床同步到本地",
+                link: "/2024/05/09/qiniu-batch-download",
+              },
+              {
+                text: "VSCode python输出乱码",
+                link: "/2024/05/07/vscode-python-garbled",
+              },
+              {
+                text: "《SPYxFAMILY》角色",
+                link: "/2024/05/02/spy-family",
+              },
+              {
+                text: "hexo 此系统上禁止运行脚本",
+                link: "/2024/05/02/hexo-script-forbidden",
+              },
+              {
+                text: "Git Connection was reset",
+                link: "/2024/05/01/git-recv-failure",
               },
             ],
           },
           {
-            text: "Git",
+            text: "4月",
             collapsed: true,
             items: [
               {
-                text: "debug",
-                collapsed: true,
-                items: [
-                  {
-                    text: "Connection timed out",
-                    link: "/unclassified/git/debug/connection-timed-out",
-                  },
-                  {
-                    text: "Recv failure: Connection was reset",
-                    link: "/unclassified/git/debug/recv-failure",
-                  },
-                ],
+                text: "VSCode同步扩展",
+                link: "/2024/04/28/vscode-sync-extensions",
               },
               {
-                text: "Git / GitHub 的基本使用",
-                link: "/unclassified/git/git-github",
+                text: "《金辉恋曲四重奏》角色",
+                link: "/2024/04/22/kiniro",
               },
-            ],
-          },
-          {
-            text: "Linux",
-            collapsed: true,
-            items: [
               {
-                text: "debug",
-                collapsed: true,
-                items: [
-                  {
-                    text: "curl 安装的软件源问题",
-                    link: "/unclassified/linux/debug/curl-repo",
-                  },
-                ],
+                text: "《Summer Pockets》角色",
+                link: "/2024/04/17/summer-pockets",
               },
-              { text: "常见命令的全称", link: "/unclassified/linux/full-name" },
-            ],
-          },
-          {
-            text: "PhotoShop",
-            collapsed: true,
-            items: [
               {
-                text: "仿制图章工具",
-                link: "/unclassified/photoshop/clone-stamp",
+                text: "《魔法使之夜》角色",
+                link: "/2024/04/15/maho-yoru",
+              },
+              {
+                text: "《CHAOS;CHILD》角色",
+                link: "/2024/04/14/chaos-child",
+              },
+              {
+                text: "png代替svg",
+                link: "/2024/04/14/png-svg",
+              },
+              {
+                text: "《实教》角色",
+                link: "/2024/04/13/shi-jiao",
+              },
+              {
+                text: "svg图标不对齐问题",
+                link: "/2024/04/10/svg-misaligned",
+              },
+              {
+                text: "curl安装的软件源问题",
+                link: "/2024/04/05/curl-repo",
               },
             ],
           },
           {
-            text: "本科",
+            text: "3月",
             collapsed: true,
             items: [
               {
-                text: "Simulink SVPWM 仿真",
-                link: "/unclassified/undergraduate/simulink-svpwm",
+                text: "五十音图-易混淆标色版",
+                link: "/2024/03/17/confusing-gojuon",
+              },
+              {
+                text: "WebStackPage个人导航站",
+                link: "/2024/03/16/webstackpage",
+              },
+              {
+                text: "Typecho文章没排满就换页",
+                link: "/2024/03/02/typecho-page-change",
+              },
+              {
+                text: "viepress ERR_TTY_INIT_FAILED",
+                link: "/2024/03/02/vitepress-ERR_TTY_INIT_FAILED",
+              },
+              {
+                text: "Debian10部署Typecho",
+                link: "/2024/03/01/debian10-typecho",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        text: "2023",
+        items: [
+          {
+            text: "10月",
+            collapsed: true,
+            items: [
+              {
+                text: "Jekyll个人在线简历",
+                link: "/2023/10/29/jekyll-cv",
+              },
+              {
+                text: "日语五十音笔顺",
+                link: "/2023/10/06/gojuon-stroke-order",
+              },
+            ],
+          },
+          {
+            text: "9月",
+            collapsed: true,
+            items: [
+              {
+                text: "日语浊音/半浊音",
+                link: "/2023/09/27/japanese-voiced",
+              },
+              {
+                text: "vitepress listen EACCES",
+                link: "/2023/09/16/vitepress-listen-EACCES",
+              },
+              {
+                text: "viscode commit 时卡住",
+                link: "/2023/09/16/vscode-commit-stuck",
+              },
+              {
+                text: "vscode配置C++环境",
+                link: "/2023/09/16/vscode-cpp-env",
+              },
+              {
+                text: "git Connection timed out",
+                link: "/2023/09/14/git-connection-timed-out",
+              },
+              {
+                text: "日语五十音",
+                link: "/2023/09/14/gojuon",
+              },
+              {
+                text: "url query字段显示在网页中",
+                link: "/2023/09/13/query-display",
+              },
+              {
+                text: "JS初探—猜数字小游戏",
+                link: "/2023/09/12/js-number-guessing",
+              },
+              {
+                text: "vitepress部署到云服务器",
+                link: "/2023/09/11/vitepress-tencent-cloud",
+              },
+              {
+                text: "Bitvise Access Denied",
+                link: "/2023/09/10/bitvise-access-denied",
+              },
+              {
+                text: "GitHub基本使用",
+                link: "/2023/09/09/git-github",
               },
               {
                 text: "MATLAB 拼图游戏",
-                link: "/unclassified/undergraduate/matlab-jigsaw",
+                link: "/2023/09/09/matlab-jigsaw",
               },
               {
                 text: "YOLO 绝缘子及缺陷识别",
-                link: "/unclassified/undergraduate/yolo-insulator",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        text: "网站",
-        // collapsed: true,
-        items: [
-          {
-            text: "未分类",
-            collapsed: true,
-            items: [
-              { text: "仿豆瓣主页静态页面", link: "/web/fake-douban" },
-              {
-                text: "CAA 类型解析记录会影响 SSL 证书的申请",
-                link: "/web/caa-ssl",
+                link: "/2023/09/09/yolo-insulator",
               },
               {
-                text: "XAMPP - phpmyadmin：Error establishing a database connection",
-                link: "/web/debug/Error-establishing-a-database-connection",
+                text: "PhotoShop仿制图章工具",
+                link: "/2023/09/08/ps-clone-stamp",
               },
-              { text: "url", link: "/web/url" },
-              { text: "WebStackPage 个人导航站", link: "/web/webstackpage.md" },
-            ],
-          },
-          {
-            text: "七牛云",
-            collapsed: true,
-            items: [
               {
-                text: "图床同步到本地",
-                link: "/web/qiniu-cloud/batch-download",
+                text: "STM32 点灯大大师",
+                link: "/2023/09/08/stm32-blink",
               },
-            ],
-          },
-          {
-            text: "CSS",
-            collapsed: true,
-            items: [
               {
-                text: "linear-gradient 渐变色",
-                link: "/web/css/linear-gradient-tangjiayan",
+                text: "Simulink SVPWM仿真",
+                link: "/2023/09/07/simulink-svpwm",
+              },
+              {
+                text: "STM32 点灯大师",
+                link: "/2023/09/07/stm32-light",
+              },
+              {
+                text: "STM32 命名规则",
+                link: "/2023/09/06/stm32-naming-rule",
+              },
+              {
+                text: "VitePress 使用 Katex",
+                link: "/2023/09/05/vitepress-katex",
+              },
+              {
+                text: "仿豆瓣主页静态页面",
+                link: "/2023/09/04/fake-douban",
+              },
+              {
+                text: "HTML注音元素&lt;ruby&gt;",
+                link: "/2023/09/03/html-ruby",
+              },
+              {
+                text: "spawn-git-ENOENT",
+                link: "/2023/09/01/spawn-git-ENOENT",
+              },
+              {
+                text: "url",
+                link: "/2023/09/01/url",
               },
             ],
           },
           {
-            text: "HTML",
-            collapsed: true,
-            items: [
-              { text: "HTML 注音元素 &lt;ruby&gt;", link: "/web/html/ruby" },
-              {
-                text: "svg 图标大小不对齐问题",
-                link: "/web/html/svg-misaligned",
-              },
-              {
-                text: "用 png 图片代替 svg 的图形元素",
-                link: "/web/html/neodb-png-svg",
-              },
-            ],
-          },
-          {
-            text: "JS",
+            text: "8月",
             collapsed: true,
             items: [
               {
-                text: "JavaScript 初探——猜数字小游戏",
-                link: "/web/js/js-number-guessing",
+                text: "CAA类型记录影响SSL证书",
+                link: "/2023/08/31/caa-ssl",
               },
               {
-                text: "将 url 中的 query 字段显示在网页中",
-                link: "/web/js/query-display",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        text: "CMS",
-        items: [
-          {
-            text: "Typecho",
-            collapsed: true,
-            items: [
-              {
-                text: "Debian 10 部署 Typecho",
-                link: "/cms/typecho/debian10-typecho",
+                text: "css linear-gradient 渐变色",
+                link: "/2023/08/31/css-linear-gradient",
               },
               {
-                text: "Typecho首页文章没排满就换页",
-                link: "/cms/typecho/typecho-page-change",
-              },
-            ],
-          },
-          {
-            text: "WordPress",
-            collapsed: true,
-            items: [
-              {
-                text: "Windows 本地 Wordpress 搭建",
-                link: "/cms/wordpress/windows-local-wordpress",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        text: "SSG",
-        items: [
-          {
-            text: "Hexo",
-            collapsed: true,
-            items: [
-              {
-                text: "debug",
-                collapsed: true,
-                items: [
-                  {
-                    text: "此系统上禁止运行脚本",
-                    link: "/ssg/hexo/debug/script-forbidden",
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            text: "Jekyll",
-            collapsed: true,
-            items: [{ text: "个人在线简历", link: "/ssg/jekyll/jekyll-cv.md" }],
-          },
-          {
-            text: "VitePress",
-            collapsed: true,
-            items: [
-              {
-                text: "debug",
-                collapsed: true,
-                items: [
-                  {
-                    text: "spawn-git-ENOENT",
-                    link: "/ssg/vitepress/debug/spawn-git-ENOENT",
-                  },
-                  {
-                    text: "Error: listen EACCES",
-                    link: "/ssg/vitepress/debug/listen-EACCES",
-                  },
-                  {
-                    text: "ERR_TTY_INIT_FAILED",
-                    link: "/ssg/vitepress/debug/ERR_TTY_INIT_FAILED",
-                  },
-                ],
+                text: "Linux常见命令的全称",
+                link: "/2023/08/31/linux-command-fullname",
               },
               {
-                text: "部署到 Github Pages",
-                link: "/ssg/vitepress/vitepress-github-pages",
+                text: "C++ use array instead",
+                link: "/2023/08/31/cpp-use-stdarray-instead",
               },
               {
-                text: "部署到云服务器",
-                link: "/ssg/vitepress/vitepress-tencent-cloud",
-              },
-              { text: "使用 Katex", link: "/ssg/vitepress/vitepress-katex" },
-            ],
-          },
-        ],
-      },
-      {
-        text: "编程",
-        items: [
-          {
-            text: "C++",
-            collapsed: true,
-            items: [
-              {
-                text: "debug",
-                collapsed: true,
-                items: [
-                  {
-                    text: "牛客 Do not declare C-style arrays, use std::array<> instead",
-                    link: "/programming/c++/debug/nowcoder-use-stdarray-instead",
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            text: "VS Code",
-            collapsed: true,
-            items: [
-              {
-                text: "debug",
-                collapsed: true,
-                items: [
-                  {
-                    text: "git commit 时一直加载",
-                    link: "/programming/vscode/debug/commit-stuck",
-                  },
-                  {
-                    text: "no-hard-tabs",
-                    link: "/programming/vscode/debug/vscode-hard-tab",
-                  },
-                  {
-                    text: "python 输出乱码",
-                    link: "/programming/vscode/debug/python-garbled",
-                  },
-                ],
+                text: "向Hyper-V虚拟机传输文件",
+                link: "/2023/08/31/transfer-files-to-hyperV",
               },
               {
-                text: "配置 C/C++ MinGW 运行环境",
-                link: "/programming/vscode/cpp-MinGW-env",
-              },
-              { text: "同步扩展", link: "/programming/vscode/sync-extensions" },
-            ],
-          },
-        ],
-      },
-      {
-        text: "日语",
-        items: [
-          {
-            text: "五十音",
-            collapsed: true,
-            items: [
-              { text: "五十音图", link: "/japanese/gojuon/gojuon" },
-              {
-                text: "五十音图-易混淆标色版",
-                link: "/japanese/gojuon/confusing-gojuon",
+                text: "VitePress部署到Github Pages",
+                link: "/2023/08/31/vitepress-github-pages",
               },
               {
-                text: "五十音笔顺",
-                link: "/japanese/gojuon/gojuon-stroke-order",
+                text: "VSCode no hard tabs",
+                link: "/2023/08/31/vscode-hard-tab",
               },
-              { text: "浊音/半浊音", link: "/japanese/gojuon/voiced" },
-            ],
-          },
-          {
-            text: "ACGN",
-            collapsed: true,
-            items: [
-              { text: "《实教》", link: "/japanese/acgn/shi-jiao" },
-              { text: "《CHAOS;CHILD》", link: "/japanese/acgn/chaos-child" },
-              { text: "《魔法使之夜》", link: "/japanese/acgn/maho-yoru" },
               {
-                text: "《Summer Pockets》",
-                link: "/japanese/acgn/summer-pockets",
+                text: "Windows本地Wordpress",
+                link: "/2023/08/31/windows-local-wordpress",
               },
-              { text: "《金辉恋曲四重奏》", link: "/japanese/acgn/kiniro" },
-              { text: "《SPYxFAMILY》", link: "/japanese/acgn/spy-family" },
-            ],
-          },
-        ],
-      },
-      {
-        text: "写作",
-        items: [
-          {
-            text: "未分类",
-            collapsed: true,
-            items: [{ text: "“哎” de 叫了一声", link: "/writing/de" }],
-          },
-        ],
-      },
-      {
-        text: "嵌入式",
-        items: [
-          {
-            text: "嵌入式",
-            collapsed: true,
-            items: [
-              { text: "STM32 命名规则", link: "/embeded/stm32-naming-rule" },
-              { text: "STM32 点灯大师", link: "/embeded/stm32-light" },
-              { text: "STM32 点灯大大师", link: "/embeded/stm32-blink" },
+              {
+                text: "XAMPP Error establishing",
+                link: "/2023/08/28/xampp-Error-establishing",
+              },
             ],
           },
         ],
