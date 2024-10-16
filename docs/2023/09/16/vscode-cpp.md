@@ -161,7 +161,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 在一篇 CSDN 热门博客 [vscode配置C/C++环境](https://blog.csdn.net/m0_62721576/article/details/127207028) 中，有介绍到配置 `settings.json` 文件。
 
-但我发现只配置上述三个文件也能运行 C++ 代码，`settings.jso`n 的配置貌似不是必要的。
+但我发现只配置上述三个文件也能运行 C++ 代码，`settings.json` 的配置貌似不是必要的。
 
 以后有需要再参阅 [settings.json](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson) 去研究。
 
