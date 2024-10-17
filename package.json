@@ -10,7 +10,7 @@
     "vitepress": "^1.0.0-rc.10"
   },
   "dependencies": {
-    "@antv/g2plot": "^2.4.23",
+    "@antv/g2plot": "^2.4.32",
     "@arco-design/web-vue": "^2.56.2",
     "arco-design": "^1.0.0",
     "axios": "^1.7.7",

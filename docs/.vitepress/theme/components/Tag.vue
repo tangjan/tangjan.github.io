@@ -4,7 +4,7 @@
     <!-- 内容 -->
     <div>
       <!-- 标签云 -->
-      <!-- <WordCloud :dataList="dataList" :style="{ width: '100%', height: '130px' }" /> -->
+      <WordCloud :dataList="dataList" :style="{ width: '100%', height: '130px' }" />
       <a-row :gutter="24">
         <!-- 标签列表区域 -->
         <a-col :span="24">
