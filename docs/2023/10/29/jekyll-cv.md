@@ -9,7 +9,7 @@ tags:
 
 ::: info
 
-个人在线简历链接：[cv.tangjiayan.cn](https://cv.tangjiayan.cn/)
+个人在线简历链接：[cv.tangjiayan.com](https://cv.tangjiayan.com/)
 
 :::
 
