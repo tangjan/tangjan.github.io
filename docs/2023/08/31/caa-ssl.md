@@ -1,4 +1,5 @@
 ---
+title: CAA 类型解析记录会影响 SSL 证书的申请
 date: 2023/08/31
 tags: 
  - SSL

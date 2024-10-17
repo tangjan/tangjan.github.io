@@ -1,4 +1,5 @@
 ---
+title: 安装 curl 时遇到的软件源问题
 date: 2024/04/05
 tags: 
  - Debian

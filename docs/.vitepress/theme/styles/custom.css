@@ -1,0 +1,42 @@
+/* 日语注音 */
+
+ruby rt {
+  font-size: 0.8em;
+}
+
+ruby {
+  font-size: 25px;
+}
+
+tr {
+  text-align: center;
+}
+
+/* END 日语注音 */
+
+/* 文字渐变遮罩 */
+
+.mask {
+  background-color: #252525;
+  color: #252525;
+  transition: color 0.5s;
+  display: inline-block;
+}
+.mask:hover {
+  color: #ffffff;
+}
+
+/* END 文字渐变遮罩 */
+
+.chinese-zodiac {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -10.5px;
+  top: -1px;
+  background: #fff;
+  border: 1px solid #84b9e5;
+  border-radius: 50%;
+  cursor: pointer;
+}

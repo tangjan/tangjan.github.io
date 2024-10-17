@@ -113,12 +113,10 @@ export default defineConfig({
   },
 
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-
-    // nav: [
-    //   { text: "标签", link: "/tags.md" },
-    //   { text: "归档", link: "/archives.md" },
-    // ],
+    nav: [
+      { text: "标签", link: "/tags.md" },
+      { text: "归档", link: "/archives.md" },
+    ],
 
     editLink: {
       pattern:

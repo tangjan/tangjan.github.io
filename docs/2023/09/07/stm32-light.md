@@ -1,4 +1,5 @@
 ---
+title: 配置 STM32F103C8T6 最小系统板 PC13 寄存器点亮板载 LED 灯
 date: 2023/09/07
 tags: 
   - STM32

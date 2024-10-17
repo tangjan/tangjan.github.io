@@ -1,4 +1,5 @@
-import DefaultTheme from 'vitepress/theme'
-import './custom.css'
+import DefaultTheme from "vitepress/theme";
+import "./styles/custom.css";
+import axios from "axios";
 
-export default DefaultTheme
+export default DefaultTheme;

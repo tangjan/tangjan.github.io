@@ -1,10 +1,11 @@
 ---
+title: PhotoShop 仿制图章工具
 date: 2023/09/08
 tags: 
   - PhotoShop
 ---
 
-# 仿制图章工具
+# PhotoShop 仿制图章工具
 
 [仿制图章工具](https://helpx.adobe.com/cn/photoshop/using/tool-techniques/clone-stamp-tool.html) (Clone Stamp Tool) 作用：将图像中某个部分的像素复制到另一部分。
 

@@ -1,7 +1,9 @@
 ---
+title: 基于机器视觉 YOLO 目标检测算法的绝缘子及缺陷识别
 date: 2023/09/09
 tags: 
-- yolo
+  - yolo
+  - Capstone
 ---
 
 # 基于机器视觉 YOLO 目标检测算法的绝缘子及缺陷识别

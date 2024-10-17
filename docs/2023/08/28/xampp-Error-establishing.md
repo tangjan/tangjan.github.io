@@ -1,4 +1,5 @@
 ---
+title: XAMPP Error establishing a database connection
 date: 2023/08/28
 tags: 
  - debug

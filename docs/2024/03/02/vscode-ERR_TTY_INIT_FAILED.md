@@ -1,4 +1,5 @@
 ---
+title: 运行 `npx vitepress init` 时出现 `ERR_TTY_INIT_FAILED`
 date: 2024/03/02
 tags: 
  - VitePress

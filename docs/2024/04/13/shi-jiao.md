@@ -1,4 +1,5 @@
 ---
+title: 《欢迎来到实力至上主义教室》CHARACTER
 date: 2024/04/13
 tags: 
  - 日语

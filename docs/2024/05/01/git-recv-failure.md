@@ -1,4 +1,5 @@
 ---
+title: Git Recv failure Connection was reset
 date: 2024/05/01
 tags: 
  - debug
@@ -6,7 +7,7 @@ tags:
  - 翻墙
 ---
 
-# Recv failure: Connection was reset
+# Git Recv failure: Connection was reset
 
 ## 问题
 

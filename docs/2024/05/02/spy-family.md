@@ -1,4 +1,5 @@
 ---
+title: 《SPY×FAMILY》CHARACTER
 date: 2024/05/02
 tags: 
  - 日语

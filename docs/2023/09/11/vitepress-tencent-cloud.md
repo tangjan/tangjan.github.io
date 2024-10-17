@@ -1,7 +1,9 @@
 ---
+title: Nginx 反向代理实现 VitePress 站点部署到腾讯云服务器
 date: 2023/09/11
 tags: 
 - VitePress
+- Nginx
 ---
 
 # Nginx 反向代理实现 VitePress 站点部署到腾讯云服务器

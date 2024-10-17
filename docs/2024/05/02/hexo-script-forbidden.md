@@ -1,4 +1,5 @@
 ---
+title: 运行 `hexo server` 时提示 `此系统上禁止运行脚本`
 date: 2024/05/02
 tags: 
  - hexo

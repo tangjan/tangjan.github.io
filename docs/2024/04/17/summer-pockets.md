@@ -1,4 +1,5 @@
 ---
+title: 《Summer Pockets》CHARACTER
 date: 2024/04/17
 tags: 
  - 日语

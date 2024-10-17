@@ -1,4 +1,5 @@
 ---
+title: 向 Hyper-V 虚拟机中传输文件
 date: 2023/08/31
 tags: 
  - Hyper-V

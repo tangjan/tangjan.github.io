@@ -1,4 +1,5 @@
 ---
+title: Debian 10 部署 Typecho
 date: 2024/03/01
 tags: 
  - Debian

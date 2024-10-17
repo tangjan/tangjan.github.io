@@ -1,4 +1,5 @@
 ---
+title: Do not declare C-style arrays, use std::array<> instead
 date: 2023/08/31
 tags: 
  - C++

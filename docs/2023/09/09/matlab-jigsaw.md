@@ -1,10 +1,12 @@
 ---
+title: MATLAB 拼图游戏
 date: 2023/09/09
 tags: 
  - MATLAB
+ - Capstone
 ---
 
-# MATLAB 拼图游戏设计
+# MATLAB 拼图游戏
 
 这是我大三上学期《自动化软件工具》这门课的结课作业，也就是用 MATLAB 做一个项目出来。
 

@@ -1,4 +1,5 @@
 ---
+title: 《CHAOS;CHILD》CHARACTER
 date: 2024/04/14
 tags: 
  - 日语

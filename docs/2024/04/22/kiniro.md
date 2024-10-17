@@ -1,4 +1,5 @@
 ---
+title: 《金辉恋曲四重奏》CHARACTER
 date: 2024/04/22
 tags: 
  - 日语

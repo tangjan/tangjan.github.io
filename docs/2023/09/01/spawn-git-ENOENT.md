@@ -1,11 +1,12 @@
 ---
+title: VitePress 设置 lastUpdated 时提示 spawn-git-ENOENT
 date: 2023/09/01
 tags: 
   - debug
   - VitePress
 ---
 
-# 设置 lastUpdated 时出现 spawn-git-ENOENT
+# VitePress 设置 lastUpdated 时提示 spawn-git-ENOENT
 
 ## 问题
 

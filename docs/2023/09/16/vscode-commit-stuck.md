@@ -1,11 +1,13 @@
 ---
+title: 使用 VS Code 进行 git commit 时一直加载
 date: 2023/09/16
 tags: 
  - VS Code
  - Git
+ - debug
 ---
 
-# 使用 VS Code 的 `Source Control` 进行 git commit 一直加载
+# 使用 VS Code 进行 git commit 一直加载
 
 ## 问题
 

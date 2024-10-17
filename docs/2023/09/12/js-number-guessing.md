@@ -1,4 +1,5 @@
 ---
+title: JavaScript 初探——猜数字小游戏
 date: 2023/09/12
 tags: 
  - JavaScript

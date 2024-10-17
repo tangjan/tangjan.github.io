@@ -1,10 +1,11 @@
 ---
+title: Git Connection timed out
 date: 2023/09/14
 tags: 
  - Git
 ---
 
-# Connection timed out
+# Git Connection timed out
 
 ## 问题
 

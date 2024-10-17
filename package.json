@@ -1,16 +1,25 @@
 {
+  "type": "module",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
     "type": "module"
   },
   "devDependencies": {
     "vitepress": "^1.0.0-rc.10"
   },
   "dependencies": {
-    "@antv/g2plot": "^2.4.32",
+    "@antv/g2plot": "^2.4.31",
+    "@arco-design/web-vue": "^2.56.2",
+    "arco-design": "^1.0.0",
+    "axios": "^1.7.7",
+    "blueimp-md5": "^2.19.0",
+    "esm": "^3.2.25",
+    "gray-matter": "^4.0.3",
     "markdown-it-katex": "^2.0.3",
-    "sitemap": "^7.1.1"
+    "node-fetch": "^3.3.2",
+    "sitemap": "^7.1.1",
+    "unplugin-vue-components": "^0.27.4"
   }
 }

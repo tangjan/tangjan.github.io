@@ -1,11 +1,12 @@
 ---
+title: Windows 本地 Wordpress
 date: 2024/08/31
 tags: 
  - WordPress
  - XAMPP
 ---
 
-# Windows 本地 Wordpress CMS 搭建
+# Windows 本地 Wordpress
 
 因为：
 

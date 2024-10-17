@@ -275,11 +275,15 @@ export const sidebar = [
     ],
   },
   {
+    text: `CC BY-NC-SA 4.0`,
+    link: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  },
+  {
     text: "旧笔记站",
     link: "https://old-notes.tangjiayan.com",
   },
   {
-    text: `CC BY-NC-SA 4.0`,
-    link: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    text: "萌ICP备20210789号",
+    link: "https://icp.gov.moe/?keyword=20210789",
   },
 ];

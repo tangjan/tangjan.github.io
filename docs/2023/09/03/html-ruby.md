@@ -1,10 +1,11 @@
 ---
+title: 注音元素 ruby
 date: 2023/09/03
 tags: 
   - HTML
 ---
 
-# 注音元素 &lt;ruby&gt;
+# 注音元素 ruby
 
 ## 例
 

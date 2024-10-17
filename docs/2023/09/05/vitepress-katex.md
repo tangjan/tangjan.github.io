@@ -1,4 +1,5 @@
 ---
+title: VitePress 中使用 Katex
 date: 2023/09/05
 tags: 
   - VitePress

@@ -1,4 +1,5 @@
 ---
+title: 《魔法使之夜》CHARACTER
 date: 2024/04/15
 tags: 
  - 日语

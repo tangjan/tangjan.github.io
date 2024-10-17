@@ -1,4 +1,5 @@
 ---
+title: VS Code 配置 C++ MinGW 运行环境
 date: 2023/09/16
 tags: 
  - VS Code
