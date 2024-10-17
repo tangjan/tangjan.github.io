@@ -1,124 +1,118 @@
 {
-  "hash": "b5380f79",
+  "hash": "c1001785",
   "configHash": "76f25abf",
-  "lockfileHash": "0e2e7741",
-  "browserHash": "77b96453",
+  "lockfileHash": "6fe37b9c",
+  "browserHash": "7d092046",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "8ad1c7c3",
+      "fileHash": "88408703",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "59a10700",
+      "fileHash": "d76d0b88",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "fe1508ff",
+      "fileHash": "ac240cdc",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "58260a29",
+      "fileHash": "c128501b",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "9d6bbb70",
+      "fileHash": "7098c42c",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "929cc7b6",
-      "needsInterop": false
-    },
-    "axios": {
-      "src": "../../../../node_modules/axios/index.js",
-      "file": "axios.js",
-      "fileHash": "ef4150f4",
+      "fileHash": "63ec8165",
       "needsInterop": false
     },
     "@arco-design/web-vue": {
       "src": "../../../../node_modules/@arco-design/web-vue/es/index.js",
       "file": "@arco-design_web-vue.js",
-      "fileHash": "bf9027df",
+      "fileHash": "b0902f86",
       "needsInterop": false
-    },
-    "@arco-design/web-vue/es/tag/style/css.js": {
-      "src": "../../../../node_modules/@arco-design/web-vue/es/tag/style/css.js",
-      "file": "@arco-design_web-vue_es_tag_style_css__js.js",
-      "fileHash": "4ca58376",
-      "needsInterop": false
-    },
-    "blueimp-md5": {
-      "src": "../../../../node_modules/blueimp-md5/js/md5.js",
-      "file": "blueimp-md5.js",
-      "fileHash": "425d6d89",
-      "needsInterop": true
-    },
-    "dayjs": {
-      "src": "../../../../node_modules/dayjs/dayjs.min.js",
-      "file": "dayjs.js",
-      "fileHash": "cac38bc4",
-      "needsInterop": true
-    },
-    "dayjs/locale/zh-cn": {
-      "src": "../../../../node_modules/dayjs/locale/zh-cn.js",
-      "file": "dayjs_locale_zh-cn.js",
-      "fileHash": "5d40ee9e",
-      "needsInterop": true
-    },
-    "dayjs/plugin/relativeTime": {
-      "src": "../../../../node_modules/dayjs/plugin/relativeTime.js",
-      "file": "dayjs_plugin_relativeTime.js",
-      "fileHash": "7aa550e5",
-      "needsInterop": true
     },
     "@arco-design/web-vue/es/grid/style/css.js": {
       "src": "../../../../node_modules/@arco-design/web-vue/es/grid/style/css.js",
       "file": "@arco-design_web-vue_es_grid_style_css__js.js",
-      "fileHash": "fdba1d12",
+      "fileHash": "5f368206",
       "needsInterop": false
     },
     "@arco-design/web-vue/es/list/style/css.js": {
       "src": "../../../../node_modules/@arco-design/web-vue/es/list/style/css.js",
       "file": "@arco-design_web-vue_es_list_style_css__js.js",
-      "fileHash": "fb35b05e",
+      "fileHash": "7d58a976",
       "needsInterop": false
     },
     "@arco-design/web-vue/es/card/style/css.js": {
       "src": "../../../../node_modules/@arco-design/web-vue/es/card/style/css.js",
       "file": "@arco-design_web-vue_es_card_style_css__js.js",
-      "fileHash": "8fa0e229",
+      "fileHash": "dd4048f3",
       "needsInterop": false
+    },
+    "@arco-design/web-vue/es/tag/style/css.js": {
+      "src": "../../../../node_modules/@arco-design/web-vue/es/tag/style/css.js",
+      "file": "@arco-design_web-vue_es_tag_style_css__js.js",
+      "fileHash": "bc14376f",
+      "needsInterop": false
+    },
+    "blueimp-md5": {
+      "src": "../../../../node_modules/blueimp-md5/js/md5.js",
+      "file": "blueimp-md5.js",
+      "fileHash": "767b21c5",
+      "needsInterop": true
+    },
+    "dayjs": {
+      "src": "../../../../node_modules/dayjs/dayjs.min.js",
+      "file": "dayjs.js",
+      "fileHash": "8d4eb5d1",
+      "needsInterop": true
+    },
+    "dayjs/locale/zh-cn": {
+      "src": "../../../../node_modules/dayjs/locale/zh-cn.js",
+      "file": "dayjs_locale_zh-cn.js",
+      "fileHash": "7d43ae53",
+      "needsInterop": true
+    },
+    "dayjs/plugin/relativeTime": {
+      "src": "../../../../node_modules/dayjs/plugin/relativeTime.js",
+      "file": "dayjs_plugin_relativeTime.js",
+      "fileHash": "8658205a",
+      "needsInterop": true
     },
     "@antv/g2plot": {
       "src": "../../../../node_modules/@antv/g2plot/esm/index.js",
       "file": "@antv_g2plot.js",
-      "fileHash": "b54e24cd",
+      "fileHash": "6bac99e3",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-OFH4YBLA": {
-      "file": "chunk-OFH4YBLA.js"
-    },
-    "chunk-MDZOBHN3": {
-      "file": "chunk-MDZOBHN3.js"
-    },
     "chunk-5T5HKNKV": {
       "file": "chunk-5T5HKNKV.js"
     },
     "chunk-XJZ34XUT": {
       "file": "chunk-XJZ34XUT.js"
+    },
+    "chunk-OFH4YBLA": {
+      "file": "chunk-OFH4YBLA.js"
+    },
+    "chunk-MDZOBHN3": {
+      "file": "chunk-MDZOBHN3.js"
     },
     "chunk-ZS7NZCD4": {
       "file": "chunk-ZS7NZCD4.js"

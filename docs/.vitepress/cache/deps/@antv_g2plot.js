@@ -52595,9 +52595,9 @@ function getMessage(format2) {
     args[_i - 1] = arguments[_i];
   }
   var argIndex = 0;
-  return "".concat(BRAND, ": ").concat(format2.replace(/%s/g, function() {
-    return "".concat(args[argIndex++]);
-  }));
+  return BRAND + ": " + format2.replace(/%s/g, function() {
+    return "" + args[argIndex++];
+  });
 }
 function log2(level, condition, format2) {
   var args = [];
@@ -52605,7 +52605,7 @@ function log2(level, condition, format2) {
     args[_i - 3] = arguments[_i];
   }
   if (!condition) {
-    console[level](getMessage.apply(void 0, __spreadArray([format2], args, false)));
+    console[level](getMessage.apply(void 0, __spreadArrays([format2], args)));
   }
 }
 
@@ -52847,14 +52847,14 @@ var measureTextWidth2 = memoize_default(function(text, font) {
   }
   var fontSize = font.fontSize, _a6 = font.fontFamily, fontFamily = _a6 === void 0 ? "sans-serif" : _a6, fontWeight = font.fontWeight, fontStyle = font.fontStyle, fontVariant = font.fontVariant;
   var ctx4 = getCanvasContext2();
-  ctx4.font = [fontStyle, fontWeight, fontVariant, "".concat(fontSize, "px"), fontFamily].join(" ");
+  ctx4.font = [fontStyle, fontWeight, fontVariant, fontSize + "px", fontFamily].join(" ");
   var metrics = ctx4.measureText(is_string_default(text) ? text : "");
   return metrics.width;
 }, function(text, font) {
   if (font === void 0) {
     font = {};
   }
-  return __spreadArray([text], values_default(font), true).join("");
+  return __spreadArrays([text], values_default(font)).join("");
 });
 
 // node_modules/@antv/g2plot/esm/utils/number.js
@@ -53076,14 +53076,14 @@ function adapteStyle(style) {
     styleObject["color"] = style["fill"];
   }
   var _a6 = pick(style, shapeStyleKeys), shadowColor = _a6.shadowColor, _b = _a6.shadowBlur, shadowBlur = _b === void 0 ? 0 : _b, _c = _a6.shadowOffsetX, shadowOffsetX = _c === void 0 ? 0 : _c, _d = _a6.shadowOffsetY, shadowOffsetY = _d === void 0 ? 0 : _d;
-  styleObject["text-shadow"] = "".concat([shadowColor, "".concat(shadowOffsetX, "px"), "".concat(shadowOffsetY, "px"), "".concat(shadowBlur, "px")].join(" "));
+  styleObject["text-shadow"] = "" + [shadowColor, shadowOffsetX + "px", shadowOffsetY + "px", shadowBlur + "px"].join(" ");
   var _e = pick(style, shapeStyleKeys), stroke = _e.stroke, _f = _e.lineWidth, lineWidth = _f === void 0 ? 0 : _f;
-  styleObject["-webkit-text-stroke"] = "".concat(["".concat(lineWidth, "px"), stroke].join(" "));
+  styleObject["-webkit-text-stroke"] = "" + [lineWidth + "px", stroke].join(" ");
   each_default(style, function(v, k) {
     if (["fontSize"].includes(k) && is_number_default(v)) {
-      styleObject[kebabCase(k)] = "".concat(v, "px");
+      styleObject[kebabCase(k)] = v + "px";
     } else if (k && !shapeStyleKeys.includes(k)) {
-      styleObject[kebabCase(k)] = "".concat(v);
+      styleObject[kebabCase(k)] = "" + v;
     }
   });
   return styleObject;
@@ -53130,7 +53130,7 @@ var renderStatistic = function(chart, options, datum) {
           } else if (!containerW) {
             containerW = coordinate11.getWidth();
           }
-          setStatisticContainerStyle(container, __assign({ width: "".concat(containerW, "px"), transform: transform11 }, adapteStyle(style)));
+          setStatisticContainerStyle(container, __assign({ width: containerW + "px", transform: transform11 }, adapteStyle(style)));
           var filteredData = view.getData();
           if (option.customHtml) {
             return option.customHtml(container, view, datum, filteredData);
@@ -53139,10 +53139,10 @@ var renderStatistic = function(chart, options, datum) {
           if (option.formatter) {
             text = option.formatter(datum, filteredData);
           }
-          return text ? is_string_default(text) ? text : "".concat(text) : "<div></div>";
+          return text ? is_string_default(text) ? text : "" + text : "<div></div>";
         },
         // @ts-ignore
-        key: "".concat(idx === 0 ? "top" : "bottom", "-statistic")
+        key: (idx === 0 ? "top" : "bottom") + "-statistic"
       },
       pick(option, ["offsetX", "offsetY", "rotate", "style", "formatter"])
       /** 透传配置 */
@@ -53166,7 +53166,7 @@ var renderGaugeStatistic = function(chart, options, datum) {
         var polarMaxY = Math.max(Math.sin(polarCoord.startAngle), Math.sin(polarCoord.endAngle)) * polarRadius;
         var offsetY = polarCenter.y + polarMaxY - coordinate11.y.start - parseFloat(get_default(style, "fontSize", 0));
         var containerWidth = coordinate11.getRadius() * coordinate11.innerRadius * 2;
-        setStatisticContainerStyle(container, __assign({ width: "".concat(containerWidth, "px"), transform: "translate(-50%, ".concat(offsetY, "px)") }, adapteStyle(style)));
+        setStatisticContainerStyle(container, __assign({ width: containerWidth + "px", transform: "translate(-50%, " + offsetY + "px)" }, adapteStyle(style)));
         var filteredData = view.getData();
         if (option.customHtml) {
           return option.customHtml(container, view, datum, filteredData);
@@ -53175,7 +53175,7 @@ var renderGaugeStatistic = function(chart, options, datum) {
         if (option.formatter) {
           text = option.formatter(datum, filteredData);
         }
-        return text ? is_string_default(text) ? text : "".concat(text) : "<div></div>";
+        return text ? is_string_default(text) ? text : "" + text : "<div></div>";
       } },
       pick(option, ["offsetX", "offsetY", "rotate", "style", "formatter"])
       /** 透传配置 */
@@ -53192,7 +53192,7 @@ function template(source, data3) {
     // @ts-ignore
     data3,
     function(r, v, k) {
-      return r.replace(new RegExp("{\\s*".concat(k, "\\s*}"), "g"), v);
+      return r.replace(new RegExp("{\\s*" + k + "\\s*}", "g"), v);
     },
     source
   );
@@ -53245,8 +53245,8 @@ function initCanvas(width, height) {
   var pixelRatio = getPixelRatio2();
   canvas.width = width * pixelRatio;
   canvas.height = height * pixelRatio;
-  canvas.style.width = "".concat(width, "px");
-  canvas.style.height = "".concat(height, "px");
+  canvas.style.width = width + "px";
+  canvas.style.height = height + "px";
   var ctx4 = canvas.getContext("2d");
   ctx4.scale(pixelRatio, pixelRatio);
   return canvas;
@@ -53358,7 +53358,7 @@ function createLinePattern(cfg) {
   var spacing = lineCfg.spacing, rotation = lineCfg.rotation, lineWidth = lineCfg.lineWidth;
   var width = spacing + lineWidth || 1;
   var height = spacing + lineWidth || 1;
-  var d = "\n            M 0 0 L ".concat(width, " 0\n            M 0 ").concat(height, " L ").concat(width, " ").concat(height, "\n            ");
+  var d = "\n            M 0 0 L " + width + " 0\n            M 0 " + height + " L " + width + " " + height + "\n            ";
   var canvas = initCanvas(width, height);
   var ctx4 = canvas.getContext("2d");
   drawBackground(ctx4, lineCfg, width, height);
@@ -53467,7 +53467,7 @@ function pattern(key) {
         pattern2 = getCanvasPattern(deepAssign({}, { cfg: { backgroundColor: color3 } }, pattern2));
       }
       var styleOption = options[key];
-      return __assign(__assign({}, typeof styleOption === "function" ? styleOption.call.apply(styleOption, __spreadArray([_this, datum], args, false)) : styleOption || {}), { fill: pattern2 || color3 });
+      return __assign(__assign({}, typeof styleOption === "function" ? styleOption.call.apply(styleOption, __spreadArrays([_this, datum], args)) : styleOption || {}), { fill: pattern2 || color3 });
     };
     return deepAssign({}, params, { options: (_a6 = {}, _a6[key] = style, _a6) });
   };
@@ -53556,7 +53556,7 @@ function annotation(annotationOptions) {
   return function(params) {
     var chart = params.chart, options = params.options;
     var annotationController = chart.getController("annotation");
-    each_default(__spreadArray(__spreadArray([], options.annotations || [], true), annotationOptions || [], true), function(annotationOption) {
+    each_default(__spreadArrays(options.annotations || [], annotationOptions || []), function(annotationOption) {
       annotationController.annotation(annotationOption);
     });
     return params;
@@ -53688,7 +53688,6 @@ function getTooltipMapping(tooltip11, defaultFields) {
   if (tooltip11 === false) {
     return {
       fields: false
-      // 关闭 tooltip
     };
   }
   var fields = get_default(tooltip11, "fields");
@@ -53709,13 +53708,13 @@ function getMappingField(o, field6) {
   var fields = [];
   rawFields = (is_function_default(rawFields) ? rawFields(type, field6) : rawFields) || [];
   if (field6 === "color") {
-    fields = __spreadArray([colorField || xField], rawFields, true);
+    fields = __spreadArrays([colorField || xField], rawFields);
   } else if (field6 === "shape") {
-    fields = __spreadArray([shapeField || xField], rawFields, true);
+    fields = __spreadArrays([shapeField || xField], rawFields);
   } else if (field6 === "size") {
-    fields = __spreadArray([sizeField || xField], rawFields, true);
+    fields = __spreadArrays([sizeField || xField], rawFields);
   } else {
-    fields = __spreadArray([xField, yField, colorField, shapeField, sizeField, styleField], rawFields, true);
+    fields = __spreadArrays([xField, yField, colorField, shapeField, sizeField, styleField], rawFields);
     var idx = ["x", "y", "color", "shape", "size", "style"].indexOf(field6);
     var f = fields[idx];
     fields.splice(idx, 1);
@@ -53753,7 +53752,7 @@ function geometry(params) {
     return params;
   }
   var color3 = mapping.color, shape = mapping.shape, size3 = mapping.size, style = mapping.style, tooltip11 = mapping.tooltip;
-  var geometry35 = chart[type](args).position("".concat(xField, "*").concat(yField));
+  var geometry35 = chart[type](args).position(xField + "*" + yField);
   if (is_string_default(color3)) {
     colorField ? geometry35.color(colorField, color3) : geometry35.color(color3);
   } else if (is_function_default(color3)) {
@@ -53826,10 +53825,7 @@ function area(params) {
       type: "area",
       colorField: seriesField,
       tooltipFields: fields,
-      mapping: deep_mix_default({
-        shape: smooth ? "smooth" : "area",
-        tooltip: formatter
-      }, area2),
+      mapping: __assign({ shape: smooth ? "smooth" : "area", tooltip: formatter }, area2),
       args: { useDeferredLabel }
     }
   })) : params;
@@ -54104,7 +54100,7 @@ var Plot = (
     };
     Plot2.prototype.addAnnotations = function(annotations, view) {
       view = view ? view : this.chart;
-      var incoming = __spreadArray([], annotations, true);
+      var incoming = __spreadArrays(annotations);
       var controller = view.getController("annotation");
       var current = controller.getComponents().map(function(co) {
         return co.extra;
@@ -54213,7 +54209,7 @@ function percent(data3, measure, groupField, as) {
 function getDeepPercent(data3, measure, fields, percent2) {
   var sumMap = reduce_default(data3, function(map5, datum) {
     var groupValue = reduce_default(fields, function(value2, field6) {
-      return "".concat(value2).concat(datum[field6]);
+      return "" + value2 + datum[field6];
     }, "");
     var sum2 = map5.has(groupValue) ? map5.get(groupValue) : 0;
     var v = datum[measure];
@@ -54225,7 +54221,7 @@ function getDeepPercent(data3, measure, fields, percent2) {
     var _a6;
     var v = datum[measure];
     var groupValue = reduce_default(fields, function(value2, field6) {
-      return "".concat(value2).concat(datum[field6]);
+      return "" + value2 + datum[field6];
     }, "");
     var percentage = isRealNumber(v) && sumMap.get(groupValue) !== 0 ? v / sumMap.get(groupValue) : 0;
     return __assign(__assign({}, datum), (_a6 = {}, _a6[percent2] = percentage, _a6));
@@ -54321,9 +54317,9 @@ function label(params) {
   if (!label17) {
     lineGeometry.label(false);
   } else {
-    var fields = label17.fields, callback = label17.callback, cfg = __rest(label17, ["fields", "callback"]);
+    var callback = label17.callback, cfg = __rest(label17, ["callback"]);
     lineGeometry.label({
-      fields: fields || [yField],
+      fields: [yField],
       callback,
       cfg: __assign({ layout: [
         { type: "limit-in-plot" },
@@ -54352,7 +54348,7 @@ function adaptor(params) {
 // node_modules/@antv/g2plot/esm/plots/area/adaptor.js
 function geometry3(params) {
   var chart = params.chart, options = params.options;
-  var data3 = options.data, areaStyle = options.areaStyle, areaShape = options.areaShape, color3 = options.color, pointMapping = options.point, lineMapping = options.line, isPercent = options.isPercent, xField = options.xField, yField = options.yField, tooltip11 = options.tooltip, seriesField = options.seriesField, startOnZero = options.startOnZero;
+  var data3 = options.data, areaStyle = options.areaStyle, color3 = options.color, pointMapping = options.point, lineMapping = options.line, isPercent = options.isPercent, xField = options.xField, yField = options.yField, tooltip11 = options.tooltip, seriesField = options.seriesField, startOnZero = options.startOnZero;
   var pointState = pointMapping === null || pointMapping === void 0 ? void 0 : pointMapping.state;
   var chartData = getDataWhetherPercentage(data3, yField, xField, yField, isPercent);
   chart.data(chartData);
@@ -54364,11 +54360,7 @@ function geometry3(params) {
   } }, tooltip11) : tooltip11;
   var primary = deepAssign({}, params, {
     options: {
-      area: {
-        color: color3,
-        style: areaStyle,
-        shape: areaShape
-      },
+      area: { color: color3, style: areaStyle },
       point: pointMapping && __assign({ color: color3 }, pointMapping),
       tooltip: tooltipOptions,
       // label 不传递给各个 geometry adaptor，由 label adaptor 处理
@@ -54407,9 +54399,9 @@ function label2(params) {
   if (!label17) {
     areaGeometry.label(false);
   } else {
-    var fields = label17.fields, callback = label17.callback, cfg = __rest(label17, ["fields", "callback"]);
+    var callback = label17.callback, cfg = __rest(label17, ["callback"]);
     areaGeometry.label({
-      fields: fields || [yField],
+      fields: [yField],
       callback,
       cfg: __assign({ layout: [
         { type: "limit-in-plot" },
@@ -54621,7 +54613,7 @@ function getInteractionCfg(interactionType, brushType, options) {
           {
             trigger: "mousedown",
             isEnable: isStartEnable || isPointInView2,
-            action: ["brush:start", "".concat(maskType, "-mask:start"), "".concat(maskType, "-mask:show")],
+            action: ["brush:start", maskType + "-mask:start", maskType + "-mask:show"],
             // 对应第二个action的参数
             arg: [null, { maskStyle: mask === null || mask === void 0 ? void 0 : mask.style }]
           }
@@ -54630,7 +54622,7 @@ function getInteractionCfg(interactionType, brushType, options) {
           {
             trigger: "mousemove",
             isEnable: isPointInView2,
-            action: ["".concat(maskType, "-mask:resize")]
+            action: [maskType + "-mask:resize"]
           }
         ],
         end: [
@@ -54640,8 +54632,8 @@ function getInteractionCfg(interactionType, brushType, options) {
             action: [
               "brush:filter",
               "brush:end",
-              "".concat(maskType, "-mask:end"),
-              "".concat(maskType, "-mask:hide"),
+              maskType + "-mask:end",
+              maskType + "-mask:hide",
               "brush-reset-button:show"
             ]
           }
@@ -54681,23 +54673,23 @@ function getInteractionCfg(interactionType, brushType, options) {
             isEnable: isStartEnable || function(context) {
               return !context.isInShape("mask");
             },
-            action: ["".concat(maskType, "-mask:start"), "".concat(maskType, "-mask:show")],
+            action: [maskType + "-mask:start", maskType + "-mask:show"],
             // 对应第 1 个action的参数
             arg: [{ maskStyle: mask === null || mask === void 0 ? void 0 : mask.style }]
           },
           {
             trigger: "mask:dragstart",
-            action: ["".concat(maskType, "-mask:moveStart")]
+            action: [maskType + "-mask:moveStart"]
           }
         ],
         processing: [
           {
             trigger: "plot:mousemove",
-            action: ["".concat(maskType, "-mask:resize")]
+            action: [maskType + "-mask:resize"]
           },
           {
             trigger: "mask:drag",
-            action: ["".concat(maskType, "-mask:move")]
+            action: [maskType + "-mask:move"]
           },
           {
             trigger: "mask:change",
@@ -54705,17 +54697,17 @@ function getInteractionCfg(interactionType, brushType, options) {
           }
         ],
         end: [
-          { trigger: "plot:mouseup", action: ["".concat(maskType, "-mask:end")] },
-          { trigger: "mask:dragend", action: ["".concat(maskType, "-mask:moveEnd")] },
+          { trigger: "plot:mouseup", action: [maskType + "-mask:end"] },
+          { trigger: "mask:dragend", action: [maskType + "-mask:moveEnd"] },
           {
             trigger: "document:mouseup",
             isEnable: function(context) {
               return !context.isInPlot();
             },
-            action: ["element-range-highlight:clear", "".concat(maskType, "-mask:end"), "".concat(maskType, "-mask:hide")]
+            action: ["element-range-highlight:clear", maskType + "-mask:end", maskType + "-mask:hide"]
           }
         ],
-        rollback: [{ trigger: "dblclick", action: ["element-range-highlight:clear", "".concat(maskType, "-mask:hide")] }]
+        rollback: [{ trigger: "dblclick", action: ["element-range-highlight:clear", maskType + "-mask:hide"] }]
       };
     case "brush-x":
       return {
@@ -54729,7 +54721,7 @@ function getInteractionCfg(interactionType, brushType, options) {
           {
             trigger: "mousedown",
             isEnable: isStartEnable || isPointInView2,
-            action: ["brush-x:start", "".concat(maskType, "-mask:start"), "".concat(maskType, "-mask:show")],
+            action: ["brush-x:start", maskType + "-mask:start", maskType + "-mask:show"],
             // 对应第二个action的参数
             arg: [null, { maskStyle: mask === null || mask === void 0 ? void 0 : mask.style }]
           }
@@ -54738,14 +54730,14 @@ function getInteractionCfg(interactionType, brushType, options) {
           {
             trigger: "mousemove",
             isEnable: isPointInView2,
-            action: ["".concat(maskType, "-mask:resize")]
+            action: [maskType + "-mask:resize"]
           }
         ],
         end: [
           {
             trigger: "mouseup",
             isEnable: isPointInView2,
-            action: ["brush-x:filter", "brush-x:end", "".concat(maskType, "-mask:end"), "".concat(maskType, "-mask:hide")]
+            action: ["brush-x:filter", "brush-x:end", maskType + "-mask:end", maskType + "-mask:hide"]
           }
         ],
         rollback: [{ trigger: "dblclick", action: ["brush-x:reset"] }]
@@ -54768,23 +54760,23 @@ function getInteractionCfg(interactionType, brushType, options) {
             isEnable: isStartEnable || function(context) {
               return !context.isInShape("mask");
             },
-            action: ["".concat(maskType, "-mask:start"), "".concat(maskType, "-mask:show")],
+            action: [maskType + "-mask:start", maskType + "-mask:show"],
             // 对应第 1 个action的参数
             arg: [{ maskStyle: mask === null || mask === void 0 ? void 0 : mask.style }]
           },
           {
             trigger: "mask:dragstart",
-            action: ["".concat(maskType, "-mask:moveStart")]
+            action: [maskType + "-mask:moveStart"]
           }
         ],
         processing: [
           {
             trigger: "plot:mousemove",
-            action: ["".concat(maskType, "-mask:resize")]
+            action: [maskType + "-mask:resize"]
           },
           {
             trigger: "mask:drag",
-            action: ["".concat(maskType, "-mask:move")]
+            action: [maskType + "-mask:move"]
           },
           {
             trigger: "mask:change",
@@ -54792,17 +54784,17 @@ function getInteractionCfg(interactionType, brushType, options) {
           }
         ],
         end: [
-          { trigger: "plot:mouseup", action: ["".concat(maskType, "-mask:end")] },
-          { trigger: "mask:dragend", action: ["".concat(maskType, "-mask:moveEnd")] },
+          { trigger: "plot:mouseup", action: [maskType + "-mask:end"] },
+          { trigger: "mask:dragend", action: [maskType + "-mask:moveEnd"] },
           {
             trigger: "document:mouseup",
             isEnable: function(context) {
               return !context.isInPlot();
             },
-            action: ["element-range-highlight:clear", "".concat(maskType, "-mask:end"), "".concat(maskType, "-mask:hide")]
+            action: ["element-range-highlight:clear", maskType + "-mask:end", maskType + "-mask:hide"]
           }
         ],
-        rollback: [{ trigger: "dblclick", action: ["element-range-highlight:clear", "".concat(maskType, "-mask:hide")] }]
+        rollback: [{ trigger: "dblclick", action: ["element-range-highlight:clear", maskType + "-mask:hide"] }]
       };
     case "brush-y":
       return {
@@ -54816,7 +54808,7 @@ function getInteractionCfg(interactionType, brushType, options) {
           {
             trigger: "mousedown",
             isEnable: isStartEnable || isPointInView2,
-            action: ["brush-y:start", "".concat(maskType, "-mask:start"), "".concat(maskType, "-mask:show")],
+            action: ["brush-y:start", maskType + "-mask:start", maskType + "-mask:show"],
             // 对应第二个action的参数
             arg: [null, { maskStyle: mask === null || mask === void 0 ? void 0 : mask.style }]
           }
@@ -54825,14 +54817,14 @@ function getInteractionCfg(interactionType, brushType, options) {
           {
             trigger: "mousemove",
             isEnable: isPointInView2,
-            action: ["".concat(maskType, "-mask:resize")]
+            action: [maskType + "-mask:resize"]
           }
         ],
         end: [
           {
             trigger: "mouseup",
             isEnable: isPointInView2,
-            action: ["brush-y:filter", "brush-y:end", "".concat(maskType, "-mask:end"), "".concat(maskType, "-mask:hide")]
+            action: ["brush-y:filter", "brush-y:end", maskType + "-mask:end", maskType + "-mask:hide"]
           }
         ],
         rollback: [{ trigger: "dblclick", action: ["brush-y:reset"] }]
@@ -54855,23 +54847,23 @@ function getInteractionCfg(interactionType, brushType, options) {
             isEnable: isStartEnable || function(context) {
               return !context.isInShape("mask");
             },
-            action: ["".concat(maskType, "-mask:start"), "".concat(maskType, "-mask:show")],
+            action: [maskType + "-mask:start", maskType + "-mask:show"],
             // 对应第 1 个action的参数
             arg: [{ maskStyle: mask === null || mask === void 0 ? void 0 : mask.style }]
           },
           {
             trigger: "mask:dragstart",
-            action: ["".concat(maskType, "-mask:moveStart")]
+            action: [maskType + "-mask:moveStart"]
           }
         ],
         processing: [
           {
             trigger: "plot:mousemove",
-            action: ["".concat(maskType, "-mask:resize")]
+            action: [maskType + "-mask:resize"]
           },
           {
             trigger: "mask:drag",
-            action: ["".concat(maskType, "-mask:move")]
+            action: [maskType + "-mask:move"]
           },
           {
             trigger: "mask:change",
@@ -54879,17 +54871,17 @@ function getInteractionCfg(interactionType, brushType, options) {
           }
         ],
         end: [
-          { trigger: "plot:mouseup", action: ["".concat(maskType, "-mask:end")] },
-          { trigger: "mask:dragend", action: ["".concat(maskType, "-mask:moveEnd")] },
+          { trigger: "plot:mouseup", action: [maskType + "-mask:end"] },
+          { trigger: "mask:dragend", action: [maskType + "-mask:moveEnd"] },
           {
             trigger: "document:mouseup",
             isEnable: function(context) {
               return !context.isInPlot();
             },
-            action: ["element-range-highlight:clear", "".concat(maskType, "-mask:end"), "".concat(maskType, "-mask:hide")]
+            action: ["element-range-highlight:clear", maskType + "-mask:end", maskType + "-mask:hide"]
           }
         ],
-        rollback: [{ trigger: "dblclick", action: ["element-range-highlight:clear", "".concat(maskType, "-mask:hide")] }]
+        rollback: [{ trigger: "dblclick", action: ["element-range-highlight:clear", maskType + "-mask:hide"] }]
       };
     default:
       return {};
@@ -55027,7 +55019,7 @@ function conversionTagFormatter(prev, next) {
   if (prev === 0) {
     return "∞";
   }
-  return "".concat((100 * next / prev).toFixed(2), "%");
+  return (100 * next / prev).toFixed(2) + "%";
 }
 
 // node_modules/@antv/g2plot/esm/adaptor/conversion-tag.js
@@ -55108,7 +55100,7 @@ function renderArrowTag(config, elemPrev, elemNext) {
     }
   }
   group2.addShape("polygon", {
-    id: "".concat(view.id, "-conversion-tag-arrow-").concat(geometry35.getElementId(elemPrev.getModel().mappingData)),
+    id: view.id + "-conversion-tag-arrow-" + geometry35.getElementId(elemPrev.getModel().mappingData),
     name: "conversion-tag-arrow",
     origin: {
       element: elemPrev,
@@ -55129,7 +55121,7 @@ function renderTextTag(config, elemPrev, elemNext) {
   var pointPrev = parsePoints(coordinate11, elemPrev)[horizontal ? 3 : 0];
   var pointNext = parsePoints(coordinate11, elemNext)[horizontal ? 0 : 3];
   var textShape = group2.addShape("text", {
-    id: "".concat(view.id, "-conversion-tag-text-").concat(geometry35.getElementId(elemPrev.getModel().mappingData)),
+    id: view.id + "-conversion-tag-text-" + geometry35.getElementId(elemPrev.getModel().mappingData),
     name: "conversion-tag-text",
     origin: {
       element: elemPrev,
@@ -55143,7 +55135,7 @@ function renderTextTag(config, elemPrev, elemNext) {
     if (textWidth > totalWidth) {
       var cWidth = textWidth / text.length;
       var cEnd = Math.max(1, Math.ceil(totalWidth / cWidth) - 1);
-      var textAdjusted = "".concat(text.slice(0, cEnd), "...");
+      var textAdjusted = text.slice(0, cEnd) + "...";
       textShape.attr("text", textAdjusted);
     }
   }
@@ -55169,7 +55161,7 @@ function conversionTag(field6, horizontal, disabled) {
       chart.annotation().shape({
         render: function(container, view) {
           var group2 = container.addGroup({
-            id: "".concat(chart.id, "-conversion-tag-group"),
+            id: chart.id + "-conversion-tag-group",
             name: "conversion-tag-group"
           });
           var interval3 = find_default(chart.geometries, function(geom) {
@@ -55232,9 +55224,8 @@ function geometry4(params) {
   }
   chart.data(chartData);
   var tooltipOptions = isPercent ? __assign({ formatter: function(datum) {
-    var _a6;
     return {
-      name: isGroup && isStack ? "".concat(datum[seriesField], " - ").concat(datum[groupField]) : (_a6 = datum[seriesField]) !== null && _a6 !== void 0 ? _a6 : datum[xField],
+      name: isGroup && isStack ? datum[seriesField] + " - " + datum[groupField] : datum[seriesField] || datum[xField],
       value: (Number(datum[yField]) * 100).toFixed(2) + "%"
     };
   } }, tooltip11) : tooltip11;
@@ -55324,7 +55315,7 @@ function columnTooltip(params) {
     if (isGroup && isStack) {
       var customItems_1 = tooltipOptions.customItems;
       var tooltipFormatter_1 = (tooltipOptions === null || tooltipOptions === void 0 ? void 0 : tooltipOptions.formatter) || function(datum) {
-        return { name: "".concat(datum[seriesField], " - ").concat(datum[groupField]), value: datum[yField] };
+        return { name: datum[seriesField] + " - " + datum[groupField], value: datum[yField] };
       };
       tooltipOptions = __assign(__assign({}, tooltipOptions), { customItems: function(originalItems) {
         var items = [];
@@ -55971,7 +55962,7 @@ var ConversionTagAction = (
 // node_modules/@antv/g2plot/esm/plots/funnel/interactions/index.js
 var FUNNEL_CONVERSION_TAG = "funnel-conversion-tag";
 var FUNNEL_LEGEND_FILTER = "funnel-afterrender";
-var interactionStart = { trigger: "afterrender", action: "".concat(FUNNEL_CONVERSION_TAG, ":change") };
+var interactionStart = { trigger: "afterrender", action: FUNNEL_CONVERSION_TAG + ":change" };
 registerAction(FUNNEL_CONVERSION_TAG, ConversionTagAction);
 registerInteraction(FUNNEL_LEGEND_FILTER, {
   start: [interactionStart]
@@ -55986,14 +55977,14 @@ function defaultOptions3(params) {
     label: compareField ? {
       fields: [xField, yField, compareField, FUNNEL_PERCENT, FUNNEL_CONVERSATION],
       formatter: function(datum) {
-        return "".concat(datum[yField]);
+        return "" + datum[yField];
       }
     } : {
       fields: [xField, yField, FUNNEL_PERCENT, FUNNEL_CONVERSATION],
       offset: 0,
       position: "middle",
       formatter: function(datum) {
-        return "".concat(datum[xField], " ").concat(datum[yField]);
+        return datum[xField] + " " + datum[yField];
       }
     },
     tooltip: {
@@ -56005,7 +55996,7 @@ function defaultOptions3(params) {
     conversionTag: {
       // conversionTag 的计算和显示逻辑统一保持一致
       formatter: function(datum) {
-        return "".concat(i18n.get(["conversionTag", "label"]), ": ").concat(conversionTagFormatter.apply(void 0, datum[FUNNEL_CONVERSATION]));
+        return i18n.get(["conversionTag", "label"]) + ": " + conversionTagFormatter.apply(void 0, datum[FUNNEL_CONVERSATION]);
       }
     }
   };
@@ -56197,7 +56188,7 @@ var DEFAULT_OPTIONS5 = {
 function processRangeData(range2, percent2) {
   return range2.map(function(r, idx) {
     var _a6;
-    return _a6 = {}, _a6[RANGE_VALUE] = r - (range2[idx - 1] || 0), _a6[RANGE_TYPE] = "".concat(idx), _a6[PERCENT] = percent2, _a6;
+    return _a6 = {}, _a6[RANGE_VALUE] = r - (range2[idx - 1] || 0), _a6[RANGE_TYPE] = "" + idx, _a6[PERCENT] = percent2, _a6;
   });
 }
 function getIndicatorData(percent2) {
@@ -56222,7 +56213,7 @@ function geometry11(params) {
     var indicatorData = getIndicatorData(percent2);
     var v1 = chart.createView({ id: INDICATEOR_VIEW_ID });
     v1.data(indicatorData);
-    v1.point().position("".concat(PERCENT, "*1")).shape(indicator.shape || "gauge-indicator").customInfo({
+    v1.point().position(PERCENT + "*1").shape(indicator.shape || "gauge-indicator").customInfo({
       defaultColor: chart.getTheme().defaultColor,
       indicator
     });
@@ -56230,7 +56221,6 @@ function geometry11(params) {
       startAngle,
       endAngle,
       radius: innerRadius * radius
-      // 外部的 innerRadius * radius = 这里的 radius
     });
     v1.axis(PERCENT, axis22);
     v1.scale(PERCENT, pick(axis22, AXIS_META_CONFIG_KEYS));
@@ -56290,7 +56280,7 @@ function statistic(params, updated) {
     var transformContent = void 0;
     if (contentOption) {
       transformContent = deepAssign({}, {
-        content: "".concat((percent2 * 100).toFixed(2), "%"),
+        content: (percent2 * 100).toFixed(2) + "%",
         style: {
           opacity: 0.75,
           fontSize: "30px",
@@ -56323,7 +56313,7 @@ function tooltip2(params) {
       },
       customContent: function(x, data3) {
         var percent2 = get_default(data3, [0, "data", PERCENT], 0);
-        return "".concat((percent2 * 100).toFixed(2), "%");
+        return (percent2 * 100).toFixed(2) + "%";
       }
     }, tooltip11));
   } else {
@@ -56490,7 +56480,7 @@ function binHistogram(data3, binField, binWidth, binNumber, stackField) {
     each_default(originData_copy, function(data4) {
       var value2 = data4[binField];
       var bin = getBinKey(value2, _binWidth, binNumber);
-      var binKey = "".concat(bin[0], "-").concat(bin[1]);
+      var binKey = bin[0] + "-" + bin[1];
       if (!has_key_default(bins, binKey)) {
         bins[binKey] = { range: bin, count: 0 };
       }
@@ -56501,8 +56491,8 @@ function binHistogram(data3, binField, binWidth, binNumber, stackField) {
       each_default(groups[groupKey], function(data4) {
         var value2 = data4[binField];
         var bin = getBinKey(value2, _binWidth, binNumber);
-        var binKey = "".concat(bin[0], "-").concat(bin[1]);
-        var groupKeyBinKey = "".concat(binKey, "-").concat(groupKey);
+        var binKey = bin[0] + "-" + bin[1];
+        var groupKeyBinKey = binKey + "-" + groupKey;
         if (!has_key_default(bins, groupKeyBinKey)) {
           bins[groupKeyBinKey] = { range: bin, count: 0 };
           bins[groupKeyBinKey][stackField] = groupKey;
@@ -56783,7 +56773,7 @@ var DEFAULT_OPTIONS8 = deepAssign({}, Plot.getDefaultOptions(), {
 // node_modules/@antv/g2plot/esm/utils/matrix.js
 var ORIGIN_MATRIX = [1, 0, 0, 0, 1, 0, 0, 0, 1];
 function transform7(actions, matrix) {
-  var ulMatrix = matrix ? __spreadArray([], matrix, true) : __spreadArray([], ORIGIN_MATRIX, true);
+  var ulMatrix = matrix ? __spreadArrays(matrix) : __spreadArrays(ORIGIN_MATRIX);
   return Util.transform(ulMatrix, actions);
 }
 
@@ -57078,7 +57068,7 @@ function label6(params) {
           value: value2,
           name,
           // percentage (string), default keep 2
-          percentage: is_number_default(percent2) && !is_nil_default(value2) ? "".concat((percent2 * 100).toFixed(2), "%") : null
+          percentage: is_number_default(percent2) && !is_nil_default(value2) ? (percent2 * 100).toFixed(2) + "%" : null
         }) : content_1;
       };
     }
@@ -57177,7 +57167,7 @@ function interaction3(params) {
         startStages_1 = [
           {
             trigger: "element:mouseenter",
-            action: "".concat(PIE_STATISTIC, ":change"),
+            action: PIE_STATISTIC + ":change",
             arg: { statistic: statistic4, annotations }
           }
         ];
@@ -57263,12 +57253,12 @@ function getProgressData(percent2) {
   return [
     {
       // 用于 progressStyle 的回调方法
-      current: "".concat(clampPercent),
+      current: "" + clampPercent,
       type: "current",
       percent: clampPercent
     },
     {
-      current: "".concat(clampPercent),
+      current: "" + clampPercent,
       type: "target",
       percent: 1
     }
@@ -57354,7 +57344,7 @@ function statistic2(params, updated) {
   chart.getController("annotation").clear(true);
   if (innerRadius && statistic4) {
     var metaFormatter = get_default(meta23, ["percent", "formatter"]) || function(v) {
-      return "".concat((v * 100).toFixed(2), "%");
+      return (v * 100).toFixed(2) + "%";
     };
     var contentOpt = statistic4.content;
     if (contentOpt) {
@@ -58102,12 +58092,10 @@ var splinePath = function(data3, config) {
 var getPath4 = function(config) {
   var options = config.options;
   var xField = options.xField, yField = options.yField, data3 = options.data, regressionLine2 = options.regressionLine;
-  var _a6 = regressionLine2.type, type = _a6 === void 0 ? "linear" : _a6, algorithm = regressionLine2.algorithm, customEquation = regressionLine2.equation;
+  var _a6 = regressionLine2.type, type = _a6 === void 0 ? "linear" : _a6, algorithm = regressionLine2.algorithm;
   var pathData;
-  var equation = null;
   if (algorithm) {
     pathData = is_array_default(algorithm) ? algorithm : algorithm(data3);
-    equation = customEquation;
   } else {
     var reg = REGRESSION_MAP[type]().x(function(d) {
       return d[xField];
@@ -58115,9 +58103,8 @@ var getPath4 = function(config) {
       return d[yField];
     });
     pathData = reg(data3);
-    equation = getRegressionEquation(type, pathData);
   }
-  return [splinePath(pathData, config), equation];
+  return splinePath(pathData, config);
 };
 var getMeta = function(options) {
   var _a6;
@@ -58155,37 +58142,6 @@ var getMeta = function(options) {
   }
   return __assign(__assign({}, meta23), (_a6 = {}, _a6[xField] = __assign(__assign({}, meta23[xField]), getMetaMinMax(xField, "x")), _a6[yField] = __assign(__assign({}, meta23[yField]), getMetaMinMax(yField, "y")), _a6));
 };
-function getRegressionEquation(type, res) {
-  var _a6, _b, _c;
-  var roundByPrecision = function(n, p) {
-    if (p === void 0) {
-      p = 4;
-    }
-    return Math.round(n * Math.pow(10, p)) / Math.pow(10, p);
-  };
-  var safeFormat = function(value2) {
-    return Number.isFinite(value2) ? roundByPrecision(value2) : "?";
-  };
-  switch (type) {
-    case "linear":
-      return "y = ".concat(safeFormat(res.a), "x + ").concat(safeFormat(res.b), ", R^2 = ").concat(safeFormat(res.rSquared));
-    case "exp":
-      return "y = ".concat(safeFormat(res.a), "e^(").concat(safeFormat(res.b), "x), R^2 = ").concat(safeFormat(res.rSquared));
-    case "log":
-      return "y = ".concat(safeFormat(res.a), "ln(x) + ").concat(safeFormat(res.b), ", R^2 = ").concat(safeFormat(res.rSquared));
-    case "quad":
-      return "y = ".concat(safeFormat(res.a), "x^2 + ").concat(safeFormat(res.b), "x + ").concat(safeFormat(res.c), ", R^2 = ").concat(safeFormat(res.rSquared));
-    case "poly":
-      var temp = "y = ".concat(safeFormat((_a6 = res.coefficients) === null || _a6 === void 0 ? void 0 : _a6[0]), " + ").concat(safeFormat((_b = res.coefficients) === null || _b === void 0 ? void 0 : _b[1]), "x + ").concat(safeFormat((_c = res.coefficients) === null || _c === void 0 ? void 0 : _c[2]), "x^2");
-      for (var i = 3; i < res.coefficients.length; ++i) {
-        temp += " + ".concat(safeFormat(res.coefficients[i]), "x^").concat(i);
-      }
-      return "".concat(temp, ", R^2 = ").concat(safeFormat(res.rSquared));
-    case "pow":
-      return "y = ".concat(safeFormat(res.a), "x^").concat(safeFormat(res.b), ", R^2 = ").concat(safeFormat(res.rSquared));
-  }
-  return null;
-}
 
 // node_modules/@antv/g2plot/esm/plots/scatter/adaptor.js
 function transformOptions(options) {
@@ -58334,41 +58290,27 @@ function regressionLine(params) {
   var options = params.options, chart = params.chart;
   var regressionLine2 = options.regressionLine;
   if (regressionLine2) {
-    var style_1 = regressionLine2.style, _a6 = regressionLine2.equationStyle, equationStyle_1 = _a6 === void 0 ? {} : _a6, _b = regressionLine2.top, top_1 = _b === void 0 ? false : _b, _c = regressionLine2.showEquation, showEquation_1 = _c === void 0 ? false : _c;
+    var style_1 = regressionLine2.style, _a6 = regressionLine2.top, top_1 = _a6 === void 0 ? false : _a6;
     var defaultStyle_1 = {
       stroke: "#9ba29a",
       lineWidth: 2,
       opacity: 0.5
     };
-    var defaulEquationStyle_1 = {
-      x: 20,
-      y: 20,
-      textAlign: "left",
-      textBaseline: "middle",
-      fontSize: 14,
-      fillOpacity: 0.5
-    };
     chart.annotation().shape({
       top: top_1,
       render: function(container, view) {
         var group2 = container.addGroup({
-          id: "".concat(chart.id, "-regression-line"),
+          id: chart.id + "-regression-line",
           name: "regression-line-group"
         });
-        var _a7 = getPath4({
+        var path = getPath4({
           view,
           options
-        }), path = _a7[0], equation = _a7[1];
+        });
         group2.addShape("path", {
           name: "regression-line",
           attrs: __assign(__assign({ path }, defaultStyle_1), style_1)
         });
-        if (showEquation_1) {
-          group2.addShape("text", {
-            name: "regression-equation",
-            attrs: __assign(__assign(__assign({}, defaulEquationStyle_1), equationStyle_1), { text: equation })
-          });
-        }
       }
     });
   }
@@ -58640,7 +58582,7 @@ var Stock = (
 // node_modules/@antv/g2plot/esm/plots/tiny-line/utils.js
 function getTinyData(data3) {
   return map_default(data3 || [], function(y, x) {
-    return { x: "".concat(x), y };
+    return { x: "" + x, y };
   });
 }
 
@@ -58652,7 +58594,7 @@ var DEFAULT_TOOLTIP_OPTIONS2 = {
   shared: true,
   showMarkers: false,
   customContent: function(x, data3) {
-    return "".concat(get_default(data3, [0, "data", "y"], 0));
+    return "" + get_default(data3, [0, "data", "y"], 0);
   },
   containerTpl: '<div class="g2-tooltip"><div class="g2-tooltip-list"></div></div>',
   itemTpl: "<span>{value}</span>",
@@ -58789,7 +58731,7 @@ var DEFAULT_TOOLTIP_OPTIONS3 = {
   shared: true,
   showMarkers: false,
   customContent: function(x, data3) {
-    return "".concat(get_default(data3, [0, "data", "y"], 0));
+    return "" + get_default(data3, [0, "data", "y"], 0);
   },
   containerTpl: '<div class="g2-tooltip"><div class="g2-tooltip-list"></div></div>',
   itemTpl: "<span>{value}</span>",
@@ -58936,7 +58878,7 @@ var DEFAULT_OPTIONS_MAP = {
 function execPlotAdaptor(plot, view, options) {
   var cls = PLOT_CONSTRUCTOR[plot];
   if (!cls) {
-    console.error("could not find ".concat(plot, " plot"));
+    console.error("could not find " + plot + " plot");
     return;
   }
   var module2 = PLOT_ADAPTORS[plot];
@@ -59225,7 +59167,7 @@ var Stage;
   Stage2["STABLE"] = "STABLE";
 })(Stage || (Stage = {}));
 function notice(stage, plotType) {
-  console.warn(stage === Stage.DEV ? "Plot '".concat(plotType, "' is in DEV stage, just give us issues.") : stage === Stage.BETA ? "Plot '".concat(plotType, "' is in BETA stage, DO NOT use it in production env.") : stage === Stage.STABLE ? "Plot '".concat(plotType, `' is in STABLE stage, import it by "import { `).concat(plotType, ` } from '@antv/g2plot'".`) : "invalid Stage type.");
+  console.warn(stage === Stage.DEV ? "Plot '" + plotType + "' is in DEV stage, just give us issues." : stage === Stage.BETA ? "Plot '" + plotType + "' is in BETA stage, DO NOT use it in production env." : stage === Stage.STABLE ? "Plot '" + plotType + `' is in STABLE stage, import it by "import { ` + plotType + ` } from '@antv/g2plot'".` : "invalid Stage type.");
 }
 var Lab2 = (
   /** @class */
@@ -59742,7 +59684,7 @@ var Box = (
 
 // node_modules/@antv/g2plot/esm/plots/bullet/utils.js
 function getSeriesFieldKey(values3, field6, index) {
-  return values3.length > 1 ? "".concat(field6, "_").concat(index) : "".concat(field6);
+  return values3.length > 1 ? field6 + "_" + index : "" + field6;
 }
 function transformData4(options) {
   var data3 = options.data, xField = options.xField, measureField = options.measureField, rangeField = options.rangeField, targetField = options.targetField, layout2 = options.layout;
@@ -59757,7 +59699,7 @@ function transformData4(options) {
       var _a6;
       var range2 = i === 0 ? d : rangeValues[i] - rangeValues[i - 1];
       ds.push((_a6 = {
-        rKey: "".concat(rangeField, "_").concat(i)
+        rKey: rangeField + "_" + i
       }, _a6[xField] = xField ? item[xField] : String(index), _a6[rangeField] = range2, _a6));
     });
     var measureValues = [item[measureField]].flat();
@@ -59850,25 +59792,25 @@ function meta12(params) {
   var xAxis = options.xAxis, yAxis = options.yAxis, targetField = options.targetField, rangeField = options.rangeField, measureField = options.measureField, xField = options.xField;
   var extData = ext.data;
   return flow(scale5((_a6 = {}, _a6[xField] = xAxis, _a6[measureField] = yAxis, _a6), (_b = {}, _b[measureField] = { min: extData === null || extData === void 0 ? void 0 : extData.min, max: extData === null || extData === void 0 ? void 0 : extData.max, sync: true }, _b[targetField] = {
-    sync: "".concat(measureField)
+    sync: "" + measureField
   }, _b[rangeField] = {
-    sync: "".concat(measureField)
+    sync: "" + measureField
   }, _b)))(params);
 }
 function axis9(params) {
   var chart = params.chart, options = params.options;
   var xAxis = options.xAxis, yAxis = options.yAxis, xField = options.xField, measureField = options.measureField, rangeField = options.rangeField, targetField = options.targetField;
-  chart.axis("".concat(rangeField), false);
-  chart.axis("".concat(targetField), false);
+  chart.axis("" + rangeField, false);
+  chart.axis("" + targetField, false);
   if (xAxis === false) {
-    chart.axis("".concat(xField), false);
+    chart.axis("" + xField, false);
   } else {
-    chart.axis("".concat(xField), xAxis);
+    chart.axis("" + xField, xAxis);
   }
   if (yAxis === false) {
-    chart.axis("".concat(measureField), false);
+    chart.axis("" + measureField, false);
   } else {
-    chart.axis("".concat(measureField), yAxis);
+    chart.axis("" + measureField, yAxis);
   }
   return params;
 }
@@ -59887,17 +59829,17 @@ function label9(params) {
   var label17 = options.label, measureField = options.measureField, targetField = options.targetField, rangeField = options.rangeField;
   var _a6 = chart.geometries, rangeGeometry = _a6[0], measureGeometry = _a6[1], targetGeometry = _a6[2];
   if (get_default(label17, "range")) {
-    rangeGeometry.label("".concat(rangeField), __assign({ layout: [{ type: "limit-in-plot" }] }, transformLabel(label17.range)));
+    rangeGeometry.label("" + rangeField, __assign({ layout: [{ type: "limit-in-plot" }] }, transformLabel(label17.range)));
   } else {
     rangeGeometry.label(false);
   }
   if (get_default(label17, "measure")) {
-    measureGeometry.label("".concat(measureField), __assign({ layout: [{ type: "limit-in-plot" }] }, transformLabel(label17.measure)));
+    measureGeometry.label("" + measureField, __assign({ layout: [{ type: "limit-in-plot" }] }, transformLabel(label17.measure)));
   } else {
     measureGeometry.label(false);
   }
   if (get_default(label17, "target")) {
-    targetGeometry.label("".concat(targetField), __assign({ layout: [{ type: "limit-in-plot" }] }, transformLabel(label17.target)));
+    targetGeometry.label("" + targetField, __assign({ layout: [{ type: "limit-in-plot" }] }, transformLabel(label17.target)));
   } else {
     targetGeometry.label(false);
   }
@@ -59986,15 +59928,14 @@ var DEFAULT_OPTIONS18 = {
     return edge2.value || 1;
   },
   sortBy: null
-  // optional, id | weight | frequency | {function}
 };
 function processGraph(nodeById, edges, options) {
   for_in_default(nodeById, function(node, id) {
     node.inEdges = edges.filter(function(edge2) {
-      return "".concat(options.target(edge2)) === "".concat(id);
+      return "" + options.target(edge2) === "" + id;
     });
     node.outEdges = edges.filter(function(edge2) {
-      return "".concat(options.source(edge2)) === "".concat(id);
+      return "" + options.source(edge2) === "" + id;
     });
     node.edges = node.outEdges.concat(node.inEdges);
     node.frequency = node.edges.length;
@@ -60016,7 +59957,7 @@ function sortNodes(nodes, options) {
       return b.frequency - a.frequency;
     },
     id: function(a, b) {
-      return "".concat(options.id(a)).localeCompare("".concat(options.id(b)));
+      return ("" + options.id(a)).localeCompare("" + options.id(b));
     }
   };
   var method2 = sortMethods[options.sortBy];
@@ -60178,7 +60119,7 @@ var DEFAULT_OPTIONS19 = {
     formatter: function(datum) {
       var source = datum.source, target = datum.target, value2 = datum.value;
       return {
-        name: "".concat(source, " -> ").concat(target),
+        name: source + " -> " + target,
         value: value2
       };
     }
@@ -60200,10 +60141,10 @@ function transformData5(params) {
   var chordLayoutInputData = transformDataToNodeLinkData(data3, sourceField, targetField, weightField);
   var _b = chordLayout({ weight: true, nodePaddingRatio, nodeWidthRatio }, chordLayoutInputData), nodes = _b.nodes, links = _b.links;
   var nodesData = nodes.map(function(node) {
-    return __assign(__assign({}, pick(node, __spreadArray(["id", "x", "y", "name"], rawFields, true))), { isNode: true });
+    return __assign(__assign({}, pick(node, __spreadArrays(["id", "x", "y", "name"], rawFields))), { isNode: true });
   });
   var edgesData = links.map(function(link) {
-    return __assign(__assign({ source: link.source.name, target: link.target.name, name: link.source.name || link.target.name }, pick(link, __spreadArray(["x", "y", "value"], rawFields, true))), { isNode: false });
+    return __assign(__assign({ source: link.source.name, target: link.target.name, name: link.source.name || link.target.name }, pick(link, __spreadArrays(["x", "y", "value"], rawFields))), { isNode: false });
   });
   return __assign(__assign({}, params), { ext: __assign(__assign({}, params.ext), {
     // 将chordData放到ext中，方便下面的geometry使用
@@ -60425,7 +60366,7 @@ var DrillDownAction = (
       while (node) {
         var nodeData = node.data;
         historyCache.unshift({
-          id: "".concat(nodeData.name, "_").concat(node.height, "_").concat(node.depth),
+          id: nodeData.name + "_" + node.height + "_" + node.depth,
           name: nodeData.name,
           // children 是实际数据
           children: transformData10(__assign({ data: nodeData }, nodeInfo[HIERARCHY_DATA_TRANSFORM_PARAMS]))
@@ -60475,7 +60416,7 @@ var DrillDownAction = (
         var textShape = _this.breadCrumbGroup.addShape({
           type: "text",
           id: record.id,
-          name: "".concat(BREAD_CRUMB_NAME, "_").concat(record.name, "_text"),
+          name: BREAD_CRUMB_NAME + "_" + record.name + "_text",
           attrs: __assign(__assign({ text: index === 0 && !is_nil_default(config.rootText) ? config.rootText : record.name }, config.textStyle), { x: left2, y: 0 })
         });
         var textShapeBox = textShape.getBBox();
@@ -60505,7 +60446,7 @@ var DrillDownAction = (
         if (index < cache5.length - 1) {
           var dividerShape = _this.breadCrumbGroup.addShape({
             type: "text",
-            name: "".concat(config.name, "_").concat(record.name, "_divider"),
+            name: config.name + "_" + record.name + "_divider",
             attrs: __assign(__assign({ text: config.dividerText }, config.textStyle), { x: left2, y: 0 })
           });
           var dividerBox = dividerShape.getBBox();
@@ -61584,7 +61525,7 @@ function getField(options, defaultField) {
     console.warn(INVALID_FIELD_ERR_MSG);
     return field6[0];
   }
-  console.warn("".concat(INVALID_FIELD_ERR_MSG, " will try to get fields instead."));
+  console.warn(INVALID_FIELD_ERR_MSG + " will try to get fields instead.");
   if (is_string_default(fields)) {
     return fields;
   }
@@ -61678,7 +61619,7 @@ function transformData6(options) {
     var path = node.data.name;
     var ancestorNode = __assign({}, node);
     while (ancestorNode.depth > 1) {
-      path = "".concat((_a7 = ancestorNode.parent.data) === null || _a7 === void 0 ? void 0 : _a7.name, " / ").concat(path);
+      path = ((_a7 = ancestorNode.parent.data) === null || _a7 === void 0 ? void 0 : _a7.name) + " / " + path;
       ancestorNode = ancestorNode.parent;
     }
     if (enableDrillDown && node.depth > 2) {
@@ -61719,7 +61660,6 @@ function defaultOptions4(params) {
         var r = _a6.r;
         return r * diameter;
       }
-      // 当autofit：false时，默认给固定半径
     }
   }, params);
 }
@@ -61765,7 +61705,7 @@ function geometry22(params) {
       yField: "y",
       seriesField: colorField,
       sizeField,
-      rawFields: __spreadArray(__spreadArray([], RAW_FIELDS, true), rawFields, true),
+      rawFields: __spreadArrays(RAW_FIELDS, rawFields),
       point: {
         color: color3,
         style: pointStyle,
@@ -61819,12 +61759,12 @@ function adaptorInteraction(options) {
   var drilldown = options.drilldown, _a6 = options.interactions, interactions = _a6 === void 0 ? [] : _a6;
   if (drilldown === null || drilldown === void 0 ? void 0 : drilldown.enabled) {
     return deepAssign({}, options, {
-      interactions: __spreadArray(__spreadArray([], interactions, true), [
+      interactions: __spreadArrays(interactions, [
         {
           type: "drill-down",
           cfg: { drillDownConfig: drilldown, transformData: transformData6, enableDrillDown: true }
         }
-      ], false)
+      ])
     });
   }
   return options;
@@ -62027,7 +61967,7 @@ function getViewLegendItems(params) {
   var userMarker = get_default(legend18, "marker");
   var geometry35 = findGeometry(view, isLine(geometryOption) ? "line" : "interval");
   if (!geometryOption.seriesField) {
-    var legendItemName = get_default(view, "options.scales.".concat(yField, ".alias")) || yField;
+    var legendItemName = get_default(view, "options.scales." + yField + ".alias") || yField;
     var colorAttribute = geometry35.getAttribute("color");
     var color3 = view.getTheme().defaultColor;
     if (colorAttribute) {
@@ -62878,7 +62818,6 @@ function geometry25(params) {
   var geometry35 = ext.geometry;
   var background = chart.getTheme().background;
   var customInfo = {
-    percent: percent2,
     radius,
     outline,
     wave,
@@ -62898,7 +62837,7 @@ function statistic3(params, updated) {
   var statistic4 = options.statistic, percent2 = options.percent, meta23 = options.meta;
   chart.getController("annotation").clear(true);
   var metaFormatter = get_default(meta23, ["percent", "formatter"]) || function(v) {
-    return "".concat((v * 100).toFixed(2), "%");
+    return (v * 100).toFixed(2) + "%";
   };
   var contentOpt = statistic4.content;
   if (contentOpt) {
@@ -63083,28 +63022,28 @@ function pin(x, y, width, height) {
   var y0 = cy + dy;
   var cpX = x;
   var cpY = cy + r / Math.sin(theta);
-  return "\n      M ".concat(x0, " ").concat(y0, "\n      A ").concat(r, " ").concat(r, " 0 1 1 ").concat(x0 + dx * 2, " ").concat(y0, "\n      Q ").concat(cpX, " ").concat(cpY, " ").concat(x, " ").concat(y + h / 2, "\n      Q ").concat(cpX, " ").concat(cpY, " ").concat(x0, " ").concat(y0, "\n      Z \n    ");
+  return "\n      M " + x0 + " " + y0 + "\n      A " + r + " " + r + " 0 1 1 " + (x0 + dx * 2) + " " + y0 + "\n      Q " + cpX + " " + cpY + " " + x + " " + (y + h / 2) + "\n      Q " + cpX + " " + cpY + " " + x0 + " " + y0 + "\n      Z \n    ";
 }
 function circle(x, y, width, height) {
   var rx = width / 2;
   var ry = height / 2;
-  return "\n      M ".concat(x, " ").concat(y - ry, " \n      a ").concat(rx, " ").concat(ry, " 0 1 0 0 ").concat(ry * 2, "\n      a ").concat(rx, " ").concat(ry, " 0 1 0 0 ").concat(-ry * 2, "\n      Z\n    ");
+  return "\n      M " + x + " " + (y - ry) + " \n      a " + rx + " " + ry + " 0 1 0 0 " + ry * 2 + "\n      a " + rx + " " + ry + " 0 1 0 0 " + -ry * 2 + "\n      Z\n    ";
 }
 function diamond(x, y, width, height) {
   var h = height / 2;
   var w = width / 2;
-  return "\n      M ".concat(x, " ").concat(y - h, "\n      L ").concat(x + w, " ").concat(y, "\n      L ").concat(x, " ").concat(y + h, "\n      L ").concat(x - w, " ").concat(y, "\n      Z\n    ");
+  return "\n      M " + x + " " + (y - h) + "\n      L " + (x + w) + " " + y + "\n      L " + x + " " + (y + h) + "\n      L " + (x - w) + " " + y + "\n      Z\n    ";
 }
 function triangle(x, y, width, height) {
   var h = height / 2;
   var w = width / 2;
-  return "\n      M ".concat(x, " ").concat(y - h, "\n      L ").concat(x + w, " ").concat(y + h, "\n      L ").concat(x - w, " ").concat(y + h, "\n      Z\n    ");
+  return "\n      M " + x + " " + (y - h) + "\n      L " + (x + w) + " " + (y + h) + "\n      L " + (x - w) + " " + (y + h) + "\n      Z\n    ";
 }
 function rect(x, y, width, height) {
   var GOLDEN_SECTION_RATIO = 0.618;
   var h = height / 2;
   var w = width / 2 * GOLDEN_SECTION_RATIO;
-  return "\n      M ".concat(x - w, " ").concat(y - h, "\n      L ").concat(x + w, " ").concat(y - h, "\n      L ").concat(x + w, " ").concat(y + h, "\n      L ").concat(x - w, " ").concat(y + h, "\n      Z\n    ");
+  return "\n      M " + (x - w) + " " + (y - h) + "\n      L " + (x + w) + " " + (y - h) + "\n      L " + (x + w) + " " + (y + h) + "\n      L " + (x - w) + " " + (y + h) + "\n      Z\n    ";
 }
 var builtInShapeByName = {
   pin,
@@ -63118,7 +63057,7 @@ registerShape("interval", "liquid-fill-gauge", {
     var cx = 0.5;
     var cy = 0.5;
     var customInfo = cfg.customInfo;
-    var _a6 = customInfo, percent2 = _a6.percent, radio = _a6.radius, shape = _a6.shape, shapeStyle = _a6.shapeStyle, background = _a6.background, animation7 = _a6.animation;
+    var _a6 = customInfo, radio = _a6.radius, shape = _a6.shape, shapeStyle = _a6.shapeStyle, background = _a6.background, animation7 = _a6.animation;
     var outline = customInfo.outline;
     var wave = customInfo.wave;
     var border = outline.border, distance9 = outline.distance;
@@ -63141,18 +63080,16 @@ registerShape("interval", "liquid-fill-gauge", {
         attrs: __assign({ path: shapePath }, shapeStyle)
       });
     }
-    if (percent2 > 0) {
-      var waves = container.addGroup({
-        name: "waves"
-      });
-      var clipPath = waves.setClip({
-        type: "path",
-        attrs: {
-          path: shapePath
-        }
-      });
-      addWaterWave(center2.x, center2.y, 1 - cfg.points[1].y, waveCount, waveAttrs, waves, clipPath, radius * 2, waveLength, animation7);
-    }
+    var waves = container.addGroup({
+      name: "waves"
+    });
+    var clipPath = waves.setClip({
+      type: "path",
+      attrs: {
+        path: shapePath
+      }
+    });
+    addWaterWave(center2.x, center2.y, 1 - cfg.points[1].y, waveCount, waveAttrs, waves, clipPath, radius * 2, waveLength, animation7);
     container.addShape("path", {
       name: "distance",
       attrs: {
@@ -63263,9 +63200,9 @@ function label11(params) {
   if (!label17) {
     geometry35.label(false);
   } else {
-    var fields = label17.fields, callback = label17.callback, cfg = __rest(label17, ["fields", "callback"]);
+    var callback = label17.callback, cfg = __rest(label17, ["callback"]);
     geometry35.label({
-      fields: fields || [yField],
+      fields: [yField],
       callback,
       cfg: transformLabel(cfg)
     });
@@ -63447,7 +63384,7 @@ function getStackedData(data3, xField, yField) {
 // node_modules/@antv/g2plot/esm/plots/radial-bar/adaptor.js
 function geometry27(params) {
   var chart = params.chart, options = params.options;
-  var style = options.barStyle, color3 = options.color, tooltip11 = options.tooltip, colorField = options.colorField, type = options.type, xField = options.xField, yField = options.yField, data3 = options.data, shape = options.shape;
+  var style = options.barStyle, color3 = options.color, tooltip11 = options.tooltip, colorField = options.colorField, type = options.type, xField = options.xField, yField = options.yField, data3 = options.data;
   var processData2 = processIllegalData(data3, yField);
   chart.data(processData2);
   var p = deepAssign({}, params, {
@@ -63457,7 +63394,7 @@ function geometry27(params) {
       interval: {
         style,
         color: color3,
-        shape: shape || (type === "line" ? "line" : "intervel")
+        shape: type === "line" ? "line" : "intervel"
       },
       // 柱子的一些样式设置：柱子最小宽度、柱子最大宽度、柱子背景
       minColumnWidth: options.minBarWidth,
@@ -63571,15 +63508,14 @@ var RadialBar = (
 // node_modules/@antv/g2plot/esm/plots/rose/adaptor.js
 function geometry28(params) {
   var chart = params.chart, options = params.options;
-  var data3 = options.data, sectorStyle = options.sectorStyle, shape = options.shape, color3 = options.color;
+  var data3 = options.data, sectorStyle = options.sectorStyle, color3 = options.color;
   chart.data(data3);
   flow(interval2)(deepAssign({}, params, {
     options: {
       marginRatio: 1,
       interval: {
         style: sectorStyle,
-        color: color3,
-        shape
+        color: color3
       }
     }
   }));
@@ -63763,7 +63699,7 @@ function cutoffCircle(edges, sourceField, targetField) {
     nodes.forEach(function(node) {
       if (graphMatrix[dfsNode][node] != 0) {
         if (visited[node] == 1) {
-          removedData.push("".concat(dfsNode, "_").concat(node));
+          removedData.push(dfsNode + "_" + node);
         } else if (visited[node] == -1) {
           return;
         } else {
@@ -63780,11 +63716,11 @@ function cutoffCircle(edges, sourceField, targetField) {
     DFS(node);
   });
   if (removedData.length !== 0) {
-    console.warn("sankey data contains circle, ".concat(removedData.length, " records removed."), removedData);
+    console.warn("sankey data contains circle, " + removedData.length + " records removed.", removedData);
   }
   return edges.filter(function(edge2) {
     return removedData.findIndex(function(i) {
-      return i === "".concat(edge2[sourceField], "_").concat(edge2[targetField]);
+      return i === edge2[sourceField] + "_" + edge2[targetField];
     }) < 0;
   });
 }
@@ -64315,10 +64251,10 @@ function transformToViewsData(options, width, height) {
   }, sankeyLayoutInputData), nodes = _b.nodes, links = _b.links;
   return {
     nodes: nodes.map(function(node) {
-      return __assign(__assign({}, pick(node, __spreadArray(["x", "y", "name"], rawFields, true))), { isNode: true });
+      return __assign(__assign({}, pick(node, __spreadArrays(["x", "y", "name"], rawFields))), { isNode: true });
     }),
     edges: links.map(function(link) {
-      return __assign(__assign({ source: link.source.name, target: link.target.name, name: link.source.name || link.target.name }, pick(link, __spreadArray(["x", "y", "value"], rawFields, true))), { isNode: false });
+      return __assign(__assign({ source: link.source.name, target: link.target.name, name: link.source.name || link.target.name }, pick(link, __spreadArrays(["x", "y", "value"], rawFields))), { isNode: false });
     })
   };
 }
@@ -64330,22 +64266,22 @@ function defaultOptions5(params) {
   return deepAssign({}, {
     options: {
       tooltip: {
-        fields: uniq(__spreadArray(["name", "source", "target", "value", "isNode"], rawFields, true))
+        fields: uniq(__spreadArrays(["name", "source", "target", "value", "isNode"], rawFields))
       },
       label: {
-        fields: uniq(__spreadArray(["x", "name"], rawFields, true))
+        fields: uniq(__spreadArrays(["x", "name"], rawFields))
       }
     }
   }, params);
 }
 function geometry29(params) {
   var chart = params.chart, options = params.options;
-  var color3 = options.color, nodeStyle = options.nodeStyle, edgeStyle = options.edgeStyle, label17 = options.label, tooltip11 = options.tooltip, nodeState = options.nodeState, edgeState = options.edgeState, _a6 = options.rawFields, rawFields = _a6 === void 0 ? [] : _a6;
+  var color3 = options.color, nodeStyle = options.nodeStyle, edgeStyle = options.edgeStyle, label17 = options.label, tooltip11 = options.tooltip, nodeState = options.nodeState, edgeState = options.edgeState;
   chart.legend(false);
   chart.tooltip(tooltip11);
   chart.axis(false);
   chart.coordinate().reflect("y");
-  var _b = transformToViewsData(options, chart.width, chart.height), nodes = _b.nodes, edges = _b.edges;
+  var _a6 = transformToViewsData(options, chart.width, chart.height), nodes = _a6.nodes, edges = _a6.edges;
   var edgeView = chart.createView({ id: EDGES_VIEW_ID });
   edgeView.data(edges);
   edge({
@@ -64355,7 +64291,6 @@ function geometry29(params) {
       xField: X_FIELD3,
       yField: Y_FIELD4,
       seriesField: COLOR_FIELD,
-      rawFields: __spreadArray(["source", "target"], rawFields, true),
       edge: {
         color: color3,
         style: edgeStyle,
@@ -64393,7 +64328,7 @@ function geometry29(params) {
 function animation5(params) {
   var chart = params.chart, options = params.options;
   var animation7 = options.animation;
-  var geometries = __spreadArray(__spreadArray([], chart.views[0].geometries, true), chart.views[1].geometries, true);
+  var geometries = __spreadArrays(chart.views[0].geometries, chart.views[1].geometries);
   addViewAnimation(chart, animation7, geometries);
   return params;
 }
@@ -64514,7 +64449,7 @@ var SankeyNodeDragAction = (
           }), y: prevDatum.y.map(function(y2) {
             return y2 += datumGap_1.y;
           }) });
-          var newData = __spreadArray([], data3, true);
+          var newData = __spreadArrays(data3);
           newData[this.currentElementIdx] = nextDatum;
           nodeView.data(newData);
           var name_1 = prevDatum.name;
@@ -64846,7 +64781,7 @@ function transformData7(options) {
   var type = options.type || "partition";
   var nodes = transform11[type](data3, __assign(__assign({ field: seriesField || "value" }, omit_default(hierarchyConfig, ["activeDepth"])), {
     // @ts-ignore
-    type: "hierarchy.".concat(type),
+    type: "hierarchy." + type,
     as: ["x", "y"]
   }));
   var result2 = [];
@@ -64862,10 +64797,10 @@ function transformData7(options) {
     var path = node.data.name;
     var ancestorNode = __assign({}, node);
     while (ancestorNode.depth > 1) {
-      path = "".concat((_b = ancestorNode.parent.data) === null || _b === void 0 ? void 0 : _b.name, " / ").concat(path);
+      path = ((_b = ancestorNode.parent.data) === null || _b === void 0 ? void 0 : _b.name) + " / " + path;
       ancestorNode = ancestorNode.parent;
     }
-    var nodeInfo = __assign(__assign(__assign({}, pick(node.data, __spreadArray(__spreadArray([], rawFields || [], true), [hierarchyConfig.field], false))), (_a7 = {}, _a7[SUNBURST_PATH_FIELD] = path, _a7[SUNBURST_ANCESTOR_FIELD] = ancestorNode.data.name, _a7)), node);
+    var nodeInfo = __assign(__assign(__assign({}, pick(node.data, __spreadArrays(rawFields || [], [hierarchyConfig.field]))), (_a7 = {}, _a7[SUNBURST_PATH_FIELD] = path, _a7[SUNBURST_ANCESTOR_FIELD] = ancestorNode.data.name, _a7)), node);
     if (seriesField) {
       nodeInfo[seriesField] = node.data[seriesField] || ((_d = (_c = node.parent) === null || _c === void 0 ? void 0 : _c.data) === null || _d === void 0 ? void 0 : _d[seriesField]);
     }
@@ -64882,7 +64817,7 @@ function transformData7(options) {
 // node_modules/@antv/g2plot/esm/plots/sunburst/adaptor.js
 function geometry30(params) {
   var chart = params.chart, options = params.options;
-  var color3 = options.color, _a6 = options.colorField, colorField = _a6 === void 0 ? SUNBURST_ANCESTOR_FIELD : _a6, sunburstStyle = options.sunburstStyle, _b = options.rawFields, rawFields = _b === void 0 ? [] : _b, shape = options.shape;
+  var color3 = options.color, _a6 = options.colorField, colorField = _a6 === void 0 ? SUNBURST_ANCESTOR_FIELD : _a6, sunburstStyle = options.sunburstStyle, _b = options.rawFields, rawFields = _b === void 0 ? [] : _b;
   var data3 = transformData7(options);
   chart.data(data3);
   var style;
@@ -64898,11 +64833,10 @@ function geometry30(params) {
       xField: "x",
       yField: "y",
       seriesField: colorField,
-      rawFields: uniq(__spreadArray(__spreadArray([], RAW_FIELDS2, true), rawFields, true)),
+      rawFields: uniq(__spreadArrays(RAW_FIELDS2, rawFields)),
       polygon: {
         color: color3,
-        style,
-        shape
+        style
       }
     }
   }));
@@ -64981,12 +64915,12 @@ function adaptorInteraction2(options) {
   var drilldown = options.drilldown, _a6 = options.interactions, interactions = _a6 === void 0 ? [] : _a6;
   if (drilldown === null || drilldown === void 0 ? void 0 : drilldown.enabled) {
     return deepAssign({}, options, {
-      interactions: __spreadArray(__spreadArray([], interactions, true), [
+      interactions: __spreadArrays(interactions, [
         {
           type: "drill-down",
           cfg: { drillDownConfig: drilldown, transformData: transformData7 }
         }
-      ], false)
+      ])
     });
   }
   return options;
@@ -65154,13 +65088,13 @@ function adaptorInteraction3(options) {
   var enableDrillDown = enableDrillInteraction(options);
   if (enableDrillDown) {
     return deepAssign({}, options, {
-      interactions: __spreadArray(__spreadArray([], interactions, true), [
+      interactions: __spreadArrays(interactions, [
         {
           type: "drill-down",
           // 🚓 这不是一个规范的 API，后续会变更。慎重参考
           cfg: { drillDownConfig: drilldown, transformData: transformData8 }
         }
-      ], false)
+      ])
     });
   }
   return options;
@@ -73741,7 +73675,7 @@ function blend(c0, c1, mode) {
   var r = Math.round((a0 * (1 - a1) * (r0 / 255) + a0 * a1 * (blendRgbArr[0] / 255) + (1 - a0) * a1 * (r1 / 255)) / a * 255);
   var g = Math.round((a0 * (1 - a1) * (g0 / 255) + a0 * a1 * (blendRgbArr[1] / 255) + (1 - a0) * a1 * (g1 / 255)) / a * 255);
   var b = Math.round((a0 * (1 - a1) * (b02 / 255) + a0 * a1 * (blendRgbArr[2] / 255) + (1 - a0) * a1 * (b12 / 255)) / a * 255);
-  return "rgba(".concat(r, ", ").concat(g, ", ").concat(b, ", ").concat(a, ")");
+  return "rgba(" + r + ", " + g + ", " + b + ", " + a + ")";
 }
 function colorToArr(c) {
   var color3 = c.replace("/s+/g", "");
@@ -74332,7 +74266,6 @@ function venn(areas, parameters) {
         x: values3[2 * i2],
         y: values3[2 * i2 + 1],
         radius: circles[setid_1].radius
-        // size : circles[setid].size
       };
     }
     return loss(current, areas);
@@ -74958,8 +74891,6 @@ var DEFAULT_OPTIONS33 = deepAssign({}, Plot.getDefaultOptions(), {
   tooltip: {
     showMarkers: false
   }
-  // 默认区域交互
-  // interactions: [{ type: 'active-region' }],
 });
 
 // node_modules/@antv/g2plot/esm/plots/violin/utils.js
@@ -75443,7 +75374,7 @@ function processData(data3, xField, yField, newYField, total) {
   var newData = [];
   reduce_default(data3, function(r, d) {
     var _a7;
-    log2(LEVEL.WARN, is_number_default(d[yField]), "".concat(d[yField], " is not a valid number"));
+    log2(LEVEL.WARN, is_number_default(d[yField]), d[yField] + " is not a valid number");
     var value2 = is_undefined_default(d[yField]) ? null : d[yField];
     newData.push(__assign(__assign({}, d), (_a7 = {}, _a7[newYField] = [r, r + value2], _a7)));
     return r + value2;
@@ -75476,7 +75407,7 @@ function defaultOptions7(params) {
 }
 function geometry33(params) {
   var chart = params.chart, options = params.options;
-  var data3 = options.data, xField = options.xField, yField = options.yField, total = options.total, leaderLine = options.leaderLine, columnWidthRatio = options.columnWidthRatio, waterfallStyle = options.waterfallStyle, risingFill = options.risingFill, fallingFill = options.fallingFill, color3 = options.color, shape = options.shape, customInfo = options.customInfo;
+  var data3 = options.data, xField = options.xField, yField = options.yField, total = options.total, leaderLine = options.leaderLine, columnWidthRatio = options.columnWidthRatio, waterfallStyle = options.waterfallStyle, risingFill = options.risingFill, fallingFill = options.fallingFill, color3 = options.color;
   chart.data(transformData9(data3, xField, yField, total));
   var colorMapping = color3 || function(datum) {
     if (get_default(datum, [IS_TOTAL])) {
@@ -75493,15 +75424,14 @@ function geometry33(params) {
       widthRatio: columnWidthRatio,
       interval: {
         style: waterfallStyle,
-        // 支持外部自定义形状
-        shape: shape || "waterfall",
+        shape: "waterfall",
         color: colorMapping
       }
     }
   });
   var ext = interval2(p).ext;
   var geometry35 = ext.geometry;
-  geometry35.customInfo(__assign(__assign({}, customInfo), { leaderLine }));
+  geometry35.customInfo({ leaderLine });
   return params;
 }
 function meta21(params) {
@@ -75594,7 +75524,7 @@ function tooltip10(params) {
       fields: [yField]
     }, tooltip11));
     var geometry_1 = chart.geometries[0];
-    (tooltip11 === null || tooltip11 === void 0 ? void 0 : tooltip11.formatter) ? geometry_1.tooltip("".concat(xField, "*").concat(yField), tooltip11.formatter) : geometry_1.tooltip(yField);
+    (tooltip11 === null || tooltip11 === void 0 ? void 0 : tooltip11.formatter) ? geometry_1.tooltip(xField + "*" + yField, tooltip11.formatter) : geometry_1.tooltip(yField);
   } else {
     chart.tooltip(false);
   }
@@ -75667,8 +75597,6 @@ var DEFAULT_OPTIONS36 = {
   spiral: "archimedean",
   // timeInterval: Infinity // max execute time
   timeInterval: 3e3
-  // max execute time
-  // imageMask: '', // instance of Image, must be loaded
 };
 function wordCloud(words2, options) {
   options = mix({}, DEFAULT_OPTIONS36, options);
@@ -75947,10 +75875,10 @@ function tagCloud() {
   };
   function getContext(canvas2) {
     canvas2.width = canvas2.height = 1;
-    var ratio = Math.sqrt(canvas2.getContext("2d", { willReadFrequently: true }).getImageData(0, 0, 1, 1).data.length >> 2);
+    var ratio = Math.sqrt(canvas2.getContext("2d").getImageData(0, 0, 1, 1).data.length >> 2);
     canvas2.width = (cw << 5) / ratio;
     canvas2.height = ch / ratio;
-    var context = canvas2.getContext("2d", { willReadFrequently: true });
+    var context = canvas2.getContext("2d");
     context.fillStyle = context.strokeStyle = "red";
     context.textAlign = "center";
     return { context, ratio };
@@ -76227,7 +76155,7 @@ function geometry34(params) {
       xField: "x",
       yField: "y",
       seriesField: colorField && WORD_CLOUD_COLOR_FIELD,
-      rawFields: is_function_default(color3) && __spreadArray(__spreadArray([], get_default(options, "rawFields", []), true), ["datum"], false),
+      rawFields: is_function_default(color3) && __spreadArrays(get_default(options, "rawFields", []), ["datum"]),
       point: {
         color: color3,
         shape: "word-cloud"
@@ -76367,7 +76295,7 @@ var P = (
 );
 
 // node_modules/@antv/g2plot/esm/index.js
-var version3 = "2.4.32";
+var version3 = "2.4.23";
 registerLocale("en-US", EN_US_LOCALE);
 registerLocale("zh-CN", ZH_CN_LOCALE);
 var adaptors = { scale: scale5, legend, tooltip, annotation, interaction, theme, animation };
