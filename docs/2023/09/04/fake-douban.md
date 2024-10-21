@@ -16,7 +16,8 @@ tags:
 
 参考自 [Web前端开发_渡一教育_bilibili](https://www.bilibili.com/video/BV1yx411d7Rc/)
 
-- [GitLab](https://gitlab.com/tangjan/web-demos/-/tree/main/static-page-douban)
+- [GitLab](https://gitlab.com/tangjan/fake-douban)
+- [在线查看](https://tangjan.gitlab.io/fake-douban/)
 
 ## 著作权声明
 
