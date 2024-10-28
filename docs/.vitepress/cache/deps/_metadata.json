@@ -1,103 +1,43 @@
 {
-  "hash": "08a364b7",
-  "configHash": "76f25abf",
+  "hash": "7af10f36",
+  "configHash": "3d3ce22c",
   "lockfileHash": "64ff91d2",
-  "browserHash": "06869122",
+  "browserHash": "c6e491d0",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "56985a73",
+      "fileHash": "040f4592",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "022223ec",
+      "fileHash": "ebf2aa8b",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "670314cf",
+      "fileHash": "5ba71f66",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "d9af310e",
+      "fileHash": "f413eea1",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "7b314f10",
+      "fileHash": "b40bf1b3",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "e8b33911",
-      "needsInterop": false
-    },
-    "@arco-design/web-vue": {
-      "src": "../../../../node_modules/@arco-design/web-vue/es/index.js",
-      "file": "@arco-design_web-vue.js",
-      "fileHash": "37463b3c",
-      "needsInterop": false
-    },
-    "@arco-design/web-vue/es/grid/style/css.js": {
-      "src": "../../../../node_modules/@arco-design/web-vue/es/grid/style/css.js",
-      "file": "@arco-design_web-vue_es_grid_style_css__js.js",
-      "fileHash": "e3362afd",
-      "needsInterop": false
-    },
-    "@arco-design/web-vue/es/list/style/css.js": {
-      "src": "../../../../node_modules/@arco-design/web-vue/es/list/style/css.js",
-      "file": "@arco-design_web-vue_es_list_style_css__js.js",
-      "fileHash": "16486dc5",
-      "needsInterop": false
-    },
-    "@arco-design/web-vue/es/card/style/css.js": {
-      "src": "../../../../node_modules/@arco-design/web-vue/es/card/style/css.js",
-      "file": "@arco-design_web-vue_es_card_style_css__js.js",
-      "fileHash": "583441e5",
-      "needsInterop": false
-    },
-    "@arco-design/web-vue/es/tag/style/css.js": {
-      "src": "../../../../node_modules/@arco-design/web-vue/es/tag/style/css.js",
-      "file": "@arco-design_web-vue_es_tag_style_css__js.js",
-      "fileHash": "37eb116c",
-      "needsInterop": false
-    },
-    "blueimp-md5": {
-      "src": "../../../../node_modules/blueimp-md5/js/md5.js",
-      "file": "blueimp-md5.js",
-      "fileHash": "fbcd675e",
-      "needsInterop": true
-    },
-    "dayjs": {
-      "src": "../../../../node_modules/dayjs/dayjs.min.js",
-      "file": "dayjs.js",
-      "fileHash": "7ce0e707",
-      "needsInterop": true
-    },
-    "dayjs/locale/zh-cn": {
-      "src": "../../../../node_modules/dayjs/locale/zh-cn.js",
-      "file": "dayjs_locale_zh-cn.js",
-      "fileHash": "8ade26ad",
-      "needsInterop": true
-    },
-    "dayjs/plugin/relativeTime": {
-      "src": "../../../../node_modules/dayjs/plugin/relativeTime.js",
-      "file": "dayjs_plugin_relativeTime.js",
-      "fileHash": "0dd0e57b",
-      "needsInterop": true
-    },
-    "@antv/g2plot": {
-      "src": "../../../../node_modules/@antv/g2plot/esm/index.js",
-      "file": "@antv_g2plot.js",
-      "fileHash": "6fb3b37d",
+      "fileHash": "97008d7f",
       "needsInterop": false
     }
   },
@@ -107,15 +47,6 @@
     },
     "chunk-XJZ34XUT": {
       "file": "chunk-XJZ34XUT.js"
-    },
-    "chunk-OFH4YBLA": {
-      "file": "chunk-OFH4YBLA.js"
-    },
-    "chunk-MDZOBHN3": {
-      "file": "chunk-MDZOBHN3.js"
-    },
-    "chunk-ZS7NZCD4": {
-      "file": "chunk-ZS7NZCD4.js"
     }
   }
 }

@@ -8,8 +8,18 @@ export const sidebar = [
     text: "2024",
     items: [
       {
-        text: "5月",
+        text: "10月",
         collapsed: false,
+        items: [
+          {
+            text: "Vue-Todolist",
+            link: "/2024/10/28/vue-todolist",
+          },
+        ],
+      },
+      {
+        text: "5月",
+        collapsed: true,
         items: [
           {
             text: "AHK配置Telegram快捷键",
