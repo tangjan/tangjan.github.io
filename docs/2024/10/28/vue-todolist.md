@@ -1,12 +1,12 @@
 ---
-title: Vue练手小项目-Todolist
+title: Vue 练手小项目 - Todolist
 date: 2024/05/17
 tags: 
  - AutoHotkey
  - Telegram
 ---
 
-# Vue练手小项目-Todolist
+# Vue 练手小项目 - Todolist
 
 参考自 [尚硅谷Vue2.0+Vue3.0全套教程 - TodoList案例](https://www.bilibili.com/video/BV1Zy4y1K7SH?p=70) 。
 
