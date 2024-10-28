@@ -541,7 +541,7 @@ methods: {
 
 其实可以用 [StackBlitz](https://stackblitz.com/) 部署这个 Vue 项目，并且更方便一点。
 
-但我选择用 [GitLab](https://gitlab.com/) 作为我的个人练手项目集合中心，所以部署到 GitLab Pages。
+但我选择用 [GitLab](https://gitlab.com/tangjan) 作为我的个人练手项目集合中心，所以部署到 GitLab Pages。
 
 ::: details `.gitlab-ci.yml`
 
