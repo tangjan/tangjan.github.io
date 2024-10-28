@@ -1,9 +1,9 @@
 ---
 title: Vue 练手小项目 - Todolist
-date: 2024/05/17
+date: 2024/10/28
 tags: 
- - AutoHotkey
- - Telegram
+ - Vue
+ - Capstone
 ---
 
 # Vue 练手小项目 - Todolist
