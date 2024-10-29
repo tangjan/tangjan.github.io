@@ -12,6 +12,10 @@ export const sidebar = [
         collapsed: false,
         items: [
           {
+            text: "魔改VitePress当主页用",
+            link: "/2024/10/29/vitepress-www-adaptation",
+          },
+          {
             text: "Vue-Todolist",
             link: "/2024/10/28/vue-todolist",
           },
