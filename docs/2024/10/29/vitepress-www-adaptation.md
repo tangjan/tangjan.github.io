@@ -35,7 +35,7 @@ tags:
 
 ## MyLayout.vue
 
-根据 [布局插槽](https://vitepress.dev/zh/guide/extending-default-theme#layout-slots) 提供的插槽，测试了一下，选了个合适的插槽 home-hero-after，写了个 MyLayout.vue 组件：
+根据 [布局插槽](https://vitepress.dev/zh/guide/extending-default-theme#layout-slots) 提供的插槽，测试了一下，选了个合适的插槽 `home-hero-after`，写了个 `MyLayout.vue` 组件：
 
 ::: details `MyLayout.vue`
 
