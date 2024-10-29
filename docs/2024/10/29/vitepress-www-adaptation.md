@@ -106,7 +106,7 @@ SNS 链接 `VPSocialLinks` 组件 `<style>` 内自带居中 CSS 样式，不用�
 
 ![3-bg](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/10/29/vitepress-www-adaptation/3-bg.png)
 
-在 Google 以 `初音未来 线稿` (`Hatsune Miku Lineart`) 为关键词，随便找了两张 MiKU 的线稿，输入给了 ChatGPT，让它写个脚本处理了一下。
+在 Google 以 `初音未来 线稿` (`Hatsune Miku Line Art`) 为关键词，随便找了两张 MiKU 的线稿，输入给了 ChatGPT，让它写个脚本处理了一下。
 
 ::: details ChatGPT 处理线稿
 
