@@ -119,7 +119,7 @@ export default defineConfig({
       rssPlugin({
         title: "糖加盐的学习笔记",
         description: "糖加盐学习过程所记的笔记",
-        siteUrl: "https://tangjiayan.com",
+        siteUrl: "https://notes.tangjiayan.com",
         author: {
           name: "Jan Tang",
           email: "tangjiayan2019@gmail.com",
