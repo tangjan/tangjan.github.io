@@ -3,8 +3,7 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
-    "type": "module"
+    "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
     "vitepress": "^1.0.0-rc.10"
@@ -15,9 +14,11 @@
     "arco-design": "^1.0.0",
     "axios": "^1.7.7",
     "blueimp-md5": "^2.19.0",
+    "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.0",
     "markdown-it-katex": "^2.0.3",
-    "sitemap": "^7.1.1",
+    "sitemap": "^7.1.2",
     "unplugin-vue-components": "^0.27.4"
   },
   "overrides": {
