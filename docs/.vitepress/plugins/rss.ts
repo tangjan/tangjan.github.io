@@ -55,7 +55,7 @@ export function rssPlugin(options: RSSPluginOptions): Plugin {
   const posts: Post[] = [];
 
   return {
-    name: "vitepress-plugin-rss",
+    name: "notes-jan-rss",
 
     transform(code: string, id: string) {
       if (processedFiles.has(id)) {
@@ -87,16 +87,13 @@ export function rssPlugin(options: RSSPluginOptions): Plugin {
       return code;
     },
 
-    buildEnd(error?: Error) {
-      if (error) return;
-
+    closeBundle() {
       posts.sort(
         (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
       );
 
       posts.forEach((post) => {
         const htmlContent = md.render(post.content);
-
         feed.addItem({
           title: post.title,
           id: post.url,
@@ -110,7 +107,6 @@ export function rssPlugin(options: RSSPluginOptions): Plugin {
       });
 
       const outDir = resolve(process.cwd(), "docs/.vitepress/dist");
-
       writeFileSync(resolve(outDir, "feed.xml"), feed.rss2());
       writeFileSync(resolve(outDir, "feed.atom"), feed.atom1());
       writeFileSync(resolve(outDir, "feed.json"), feed.json1());
