@@ -3,9 +3,14 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "sync-title": "tsx scripts/syncTitle.mts"
   },
   "devDependencies": {
+    "@types/node": "^22.9.0",
+    "chokidar": "^4.0.1",
+    "gray-matter": "^4.0.3",
+    "tsx": "^4.19.2",
     "vitepress": "^1.0.0-rc.10"
   },
   "dependencies": {
@@ -15,7 +20,6 @@
     "axios": "^1.7.7",
     "blueimp-md5": "^2.19.0",
     "feed": "^4.2.2",
-    "gray-matter": "^4.0.3",
     "markdown-it": "^14.1.0",
     "markdown-it-katex": "^2.0.3",
     "sitemap": "^7.1.2",

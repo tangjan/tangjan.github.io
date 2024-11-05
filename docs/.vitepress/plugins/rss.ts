@@ -61,87 +61,59 @@ export function rssPlugin(options: RSSPluginOptions): Plugin {
       if (processedFiles.has(id)) {
         return code;
       }
+      if (id.includes("/docs/20") && id.endsWith(".md")) {
+        const content = readFileSync(id, "utf-8");
+        const { data, content: markdownContent } = matter(content);
 
-      if (id.includes("/docs/202") && id.endsWith(".md")) {
-        try {
-          const content = readFileSync(id, "utf-8");
-          console.log("\n开始处理文章:", id);
+        if (data.date) {
+          const relativePath = id
+            .replace(/^.*?docs\//, "")
+            .replace(/\.md$/, ".html");
 
-          const { data, content: markdownContent } = matter(content);
-          console.log("解析出的 frontmatter:", JSON.stringify(data, null, 2));
+          posts.push({
+            title: data.title,
+            url: `${options.siteUrl}/${relativePath}`,
+            date: new Date(data.date.replace(/\//g, "-")),
+            description: data.description || "",
+            content: markdownContent,
+            author: [options.author],
+            categories: data.tags || [],
+            relativePath,
+          });
 
-          if (data.date) {
-            console.log("处理文章:", data.title, "日期:", data.date);
-
-            const relativePath = id
-              .replace(/^.*?docs\//, "")
-              .replace(/\.md$/, ".html");
-
-            posts.push({
-              title: data.title,
-              url: `${options.siteUrl}/${relativePath}`,
-              date: new Date(data.date.replace(/\//g, "-")),
-              description: data.description || "",
-              content: markdownContent,
-              author: [options.author],
-              categories: data.tags || [],
-              relativePath,
-            });
-
-            processedFiles.add(id);
-            console.log("文章添加成功:", relativePath);
-          }
-        } catch (err) {
-          console.error("处理文章失败:", err);
+          processedFiles.add(id);
         }
       }
       return code;
     },
 
     buildEnd(error?: Error) {
-      if (error) {
-        console.error("RSS plugin build failed:", error);
-        return;
-      }
+      if (error) return;
 
-      try {
-        console.log("找到文章数量:", posts.length);
-        if (posts.length === 0) {
-          console.log("警告: 没有找到任何文章!");
-        }
+      posts.sort(
+        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+      );
 
-        posts.sort(
-          (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-        );
+      posts.forEach((post) => {
+        const htmlContent = md.render(post.content);
 
-        posts.forEach((post) => {
-          console.log("添加文章到 RSS:", post.title);
-
-          const htmlContent = md.render(post.content);
-
-          feed.addItem({
-            title: post.title,
-            id: post.url,
-            link: post.url,
-            description: post.description,
-            content: htmlContent,
-            author: post.author,
-            date: new Date(post.date),
-            category: post.categories.map((name: string) => ({ name })),
-          });
+        feed.addItem({
+          title: post.title,
+          id: post.url,
+          link: post.url,
+          description: post.description,
+          content: htmlContent,
+          author: post.author,
+          date: new Date(post.date),
+          category: post.categories.map((name: string) => ({ name })),
         });
+      });
 
-        const outDir = resolve(process.cwd(), "docs/.vitepress/dist");
-        console.log("写入 RSS 文件到:", outDir);
+      const outDir = resolve(process.cwd(), "docs/.vitepress/dist");
 
-        writeFileSync(resolve(outDir, "feed.xml"), feed.rss2());
-        writeFileSync(resolve(outDir, "feed.atom"), feed.atom1());
-        writeFileSync(resolve(outDir, "feed.json"), feed.json1());
-
-        console.log("RSS 文件生成成功");
-      } catch (err) {
-        console.error("生成 RSS feed 失败:", err);
-      }
+      writeFileSync(resolve(outDir, "feed.xml"), feed.rss2());
+      writeFileSync(resolve(outDir, "feed.atom"), feed.atom1());
+      writeFileSync(resolve(outDir, "feed.json"), feed.json1());
     },
   };
 }

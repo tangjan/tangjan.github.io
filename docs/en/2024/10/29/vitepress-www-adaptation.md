@@ -1,41 +1,39 @@
 ---
-title: 魔改一下 VitePress 当个人主页用
+title: Customizing VitePress as my Personal Homepage
 date: 2024/10/29
 tags: 
  - VitePress
  - Vue
 ---
 
-# 魔改一下 VitePress 当个人主页用
+# Customizing VitePress as my Personal Homepage
 
-## 序
+## Introduction
 
-[我的个人主页](https://tangjiayan.com/) 是基于 VitePress 搭建的，[之前](https://github.com/tangjan/www/tree/0bec649e3d2a45303a4f95026b8511ebf19114aa) 它是长这样的：
+[My homepage](https://tangjiayan.com/) is built with [VitePress](https://vitepress.dev/). [Previously](https://github.com/tangjan/www/tree/0bec649e3d2a45303a4f95026b8511ebf19114aa), it looked like this:
 
 ![1-old-www](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/10/29/vitepress-www-adaptation/1-old-www.png)
 
-左右不协调，实在是有点丑。
+The left and right sides were unbalanced, making it quite unappealing.
 
-于是我用 [Google Slides](https://workspace.google.com/products/slides/) 简单做了个设计稿：
+So I made a simple design mockup using [Google Slides](https://workspace.google.com/products/slides/):
 
 ![2-google-slides-www](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/10/29/vitepress-www-adaptation/2-google-slides-www.png)
 
-以此为目标，研究了一下怎么开发 VitePress 实现设计稿。
+With this as my target, I researched how to develop VitePress to achieve this design.
 
-## 引入组件
+## Importing Components
 
-调研了一番和「SNS 链接」「主题切换按钮」相关的组件，最终确定将 [VitePress 官方仓库](https://github.com/vuejs/vitepress/tree/main/src/client/theme-default/components) 中的
+After researching components related to "SNS links" and "theme toggle button", I decided to import these components from the [VitePress official repository](https://github.com/vuejs/vitepress/tree/main/src/client/theme-default/components):
 
 - [VPSocialLink.vue](https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/components/VPSocialLink.vue)
 - [VPSocialLinks.vue](https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/components/VPSocialLinks.vue)
 - [VPSwitch.vue](https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/components/VPSwitch.vue)
 - [VPSwitchAppearance.vue](https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/components/VPSwitchAppearance.vue)
 
-这四个组件引入到了我的仓库里。
-
 ## MyLayout.vue
 
-根据 [布局插槽](https://vitepress.dev/zh/guide/extending-default-theme#layout-slots) 提供的插槽，测试了一下，选了个合适的插槽 `home-hero-after`，写了个 `MyLayout.vue` 组件：
+Based on the slots provided in [Layout Slots](https://vitepress.dev/guide/extending-default-theme#layout-slots), I tested and chose the appropriate slot `home-hero-after`, and created a `MyLayout.vue` component:
 
 ::: details `MyLayout.vue`
 
@@ -68,11 +66,11 @@ const { Layout } = DefaultTheme;
 
 :::
 
-因为 `VPSocialLinks` 组件要用到 `theme.socialLinks`，所以引入了 `theme`。
+Since the `VPSocialLinks` component needs `theme.socialLinks`, I imported `theme`.
 
-## 主题切换按钮居中
+## Centering the Theme Toggle Button
 
-SNS 链接 `VPSocialLinks` 组件 `<style>` 内自带居中 CSS 样式，不用调手动整了。
+The SNS links `VPSocialLinks` component comes with centered CSS styles in its `<style>` section, so no manual adjustment was needed.
 
 ```vue
 <style scoped>
@@ -84,9 +82,9 @@ SNS 链接 `VPSocialLinks` 组件 `<style>` 内自带居中 CSS 样式，不用�
 </style>
 ```
 
-需要手动调整居中的是主题切换按钮。
+What needs manual centering adjustment is the theme toggle button.
 
-我给切换按钮在 `MyLayout.vue` 中加了个 `my_VPSwitch` 类，然后在 [`custom.css`](https://vitepress.dev/zh/guide/extending-default-theme#customizing-css) 中调整了一下居中和 `padding`。
+I added a `my_VPSwitch` class to the toggle button in `MyLayout.vue`, then adjusted the centering and padding in [`custom.css`](https://vitepress.dev/guide/extending-default-theme#customizing-css).
 
 ```css
 .my_VPSwitch {
@@ -96,25 +94,25 @@ SNS 链接 `VPSocialLinks` 组件 `<style>` 内自带居中 CSS 样式，不用�
 }
 ```
 
-完事。
+Done.
 
-## 背景图
+## Background Image
 
-在做的时候就想好了，要用一张纯白色的线稿作为背景图，这样访客点击切换主题按钮时可以被惊艳一下子。
+I had planned to use a pure white line art as the background image, so visitors would be pleasantly surprised when clicking the theme toggle button.
 
 `╰(￣ω￣ｏ)`
 
 ![3-bg](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/10/29/vitepress-www-adaptation/3-bg.png)
 
-在 Google 以 `初音未来 线稿` (`Hatsune Miku Line Art`) 为关键词，随便找了两张 MiKU 的线稿，输入给了 ChatGPT，让它写个脚本处理了一下。
+I searched Google using the keywords `Hatsune Miku Line Art`, casually found two line art images of MiKU, and fed them to ChatGPT to process them.
 
-::: details ChatGPT 处理线稿
+::: details ChatGPT Processing Line Art
 
 ### Prompt
 
 ![4-lineart](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/10/29/vitepress-www-adaptation/4-lineart.png)
 
-白色的部分变为透明，黑色的部分变为白色，发给我，谢谢
+Make white areas transparent and black areas white, please.
 
 ### Response
 
@@ -151,11 +149,11 @@ output_path_new
 
 :::
 
-然后估算了一下中间的留白尺寸，用 PS 把两张图片拼接在了一起，设为了 `body` 的背景。
+Then I estimated the middle spacing and combined the two images in Photoshop, setting it as the background for the `body`.
 
-## 尝试用 DALL-E 做图
+## Trying DALL-E for Images
 
-尝试自己用 ChatGPT 的 DALL-E 做了几张线稿，但效果不是很理想。
+I tried making some line art using ChatGPT's DALL-E, but the results weren't very satisfactory.
 
 ::: details 1
 ![6-DALLE-1](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/10/29/vitepress-www-adaptation/6-DALLE-1.webp)
@@ -177,4 +175,4 @@ output_path_new
 ![10-DALLE-5](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2024/10/29/vitepress-www-adaptation/10-DALLE-5.png)
 :::
 
-[Stable Diffusion](https://zh.wikipedia.org/zh-cn/Stable_Diffusion) 在研究了。
+I have already been exploring [Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion).

@@ -3,6 +3,7 @@ import markdownItKatex from "markdown-it-katex";
 import { sidebar } from "./config/sidebar";
 import { rssPlugin } from "./plugins/rss";
 import { resolve } from "path";
+import { i18n } from "./config/i18n";
 
 const customElements = [
   "math",
@@ -168,7 +169,7 @@ export default defineConfig({
         ariaLabel: "RSS",
       },
     ],
-
-    sidebar: sidebar,
   },
+
+  locales: i18n,
 });
