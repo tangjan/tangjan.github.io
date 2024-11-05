@@ -63,7 +63,7 @@
 
 <script lang="ts" setup>
   import { getQueryParam, goToLink, getChineseZodiac, getChineseZodiacAlias } from '../utils.ts';
-  import { data as articleData } from '../../../../article.data.js';
+  import { data as articleData } from '../data/article.data.js';
 
   // 文章原始数据和归档数据
   let $articleData;

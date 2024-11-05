@@ -9,10 +9,57 @@ interface SidebarItem {
   collapsed?: boolean;
 }
 
-async function generateSidebar(): Promise<SidebarItem[]> {
-  const docsDir = path.resolve(__dirname, "../../../docs");
+interface LangConfig {
+  monthNames: string[];
+  welcomeText: string;
+}
+
+const langConfigs: Record<string, LangConfig> = {
+  zh: {
+    monthNames: [
+      "1月",
+      "2月",
+      "3月",
+      "4月",
+      "5月",
+      "6月",
+      "7月",
+      "8月",
+      "9月",
+      "10月",
+      "11月",
+      "12月",
+    ],
+    welcomeText: "WELCOME",
+  },
+  en: {
+    monthNames: [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ],
+    welcomeText: "WELCOME",
+  },
+};
+
+async function generateSidebar(lang: string = "zh"): Promise<SidebarItem[]> {
+  const docsDir = path.resolve(
+    __dirname,
+    "../../../docs",
+    lang === "zh" ? "" : lang
+  );
   const years = new Map<string, Map<string, any[]>>();
   const files = await getAllMarkdownFiles(docsDir);
+  const config = langConfigs[lang];
 
   for (const file of files) {
     const match = file.match(
@@ -32,16 +79,17 @@ async function generateSidebar(): Promise<SidebarItem[]> {
       monthsMap.set(month, []);
     }
 
+    const linkPrefix = lang === "zh" ? "" : `/${lang}`;
     monthsMap.get(month)!.push({
       text: frontmatter.title || slug,
-      link: `/${year}/${month}/${day}/${slug}`,
+      link: `${linkPrefix}/${year}/${month}/${day}/${slug}`,
     });
   }
 
   const sidebar: SidebarItem[] = [
     {
-      text: "WELCOME",
-      link: "/",
+      text: config.welcomeText,
+      link: lang === "zh" ? "/" : `/${lang}/`,
     },
   ];
 
@@ -57,7 +105,7 @@ async function generateSidebar(): Promise<SidebarItem[]> {
 
     sortedMonths.forEach((month, monthIndex) => {
       const monthItem: SidebarItem = {
-        text: `${parseInt(month)}月`,
+        text: config.monthNames[parseInt(month) - 1],
         collapsed: !(yearIndex === 0 && monthIndex === 0),
         items: months.get(month)!.sort((a, b) => {
           const dateA = a.link!.match(/\/\d{4}\/\d{2}\/(\d{2})/)?.[1] || "";
@@ -70,21 +118,6 @@ async function generateSidebar(): Promise<SidebarItem[]> {
 
     sidebar.push(yearItem);
   });
-
-  sidebar.push(
-    {
-      text: `CC BY-NC-SA 4.0`,
-      link: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    },
-    {
-      text: "旧笔记站",
-      link: "https://old-notes.tangjiayan.com",
-    },
-    {
-      text: "萌ICP备20210789号",
-      link: "https://icp.gov.moe/?keyword=20210789",
-    }
-  );
 
   return sidebar;
 }

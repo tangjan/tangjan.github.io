@@ -70,7 +70,7 @@ const { Layout } = DefaultTheme;
 
 因为 `VPSocialLinks` 组件要用到 `theme.socialLinks`，所以引入了 `theme`。
 
-## 主题切换按钮居中
+## 按钮居中
 
 SNS 链接 `VPSocialLinks` 组件 `<style>` 内自带居中 CSS 样式，不用调手动整了。
 
@@ -84,7 +84,7 @@ SNS 链接 `VPSocialLinks` 组件 `<style>` 内自带居中 CSS 样式，不用�
 </style>
 ```
 
-需要手动调整居中的是主题切换按钮。
+需要手动调整居中的是切换按钮。
 
 我给切换按钮在 `MyLayout.vue` 中加了个 `my_VPSwitch` 类，然后在 [`custom.css`](https://vitepress.dev/zh/guide/extending-default-theme#customizing-css) 中调整了一下居中和 `padding`。
 

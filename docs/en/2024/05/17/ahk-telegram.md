@@ -1,24 +1,24 @@
 ---
-title: AutoHotkey 配置 Telegram 快捷键
+title: Configure Telegram Hotkeys with AutoHotkey
 date: 2024/05/17
 tags: 
  - AutoHotkey
  - Telegram
 ---
 
-# AutoHotkey 配置 Telegram 快捷键
+# Configure Telegram Hotkeys with AutoHotkey
 
-## 目标
+## Goal
 
-最近在整理快捷键，想设定按下 `Ctrl` + `Alt` + `T` 唤出 Telegram 窗口，但在 Telegram 的设置找没找到，在 [Telegram 官方快捷键列表](https://github.com/telegramdesktop/tdesktop/wiki/Keyboard-Shortcuts) 也确实没有。
+Recently while organizing hotkeys, I wanted to set `Ctrl` + `Alt` + `T` to toggle the Telegram window, but couldn't find this option in Telegram's settings or in the [Telegram Official Shortcuts List](https://github.com/telegramdesktop/tdesktop/wiki/Keyboard-Shortcuts).
 
-搜了一下，发现 [小众软件论坛](https://meta.appinn.net/t/topic/34541/8) 有老哥说可以使用 [AutoHotkey](https://www.autohotkey.com/) 。
+After searching, I found someone on [Appinn Forum](https://meta.appinn.net/t/topic/34541/8) suggesting the use of [AutoHotkey](https://www.autohotkey.com/).
 
-## AHK v2 脚本
+## AHK v2 Script
 
-上述 [小众软件论坛](https://meta.appinn.net/t/topic/34541/8) 的老哥给的代码用的是 AHK v1 语法，但 AutoHotkey v1 已经弃用了，得参考 v2 的参考文档重写个脚本。
+The code provided by the user on [Appinn Forum](https://meta.appinn.net/t/topic/34541/8) uses AHK v1 syntax, but since AutoHotkey v1 is deprecated, I needed to rewrite the script using v2 documentation.
 
-::: details 相关 AHK 文档
+::: details Related AHK Documentation
 
 - [Hotkeys - Definition & Usage](https://www.autohotkey.com/docs/v2/Hotkeys.htm#Symbols)
 - [WinExist](https://www.autohotkey.com/docs/v2/lib/WinExist.htm)
@@ -27,9 +27,9 @@ tags:
 
 :::
 
-结合 ChatGPT 和官方手册，写了个 AHK v2 的脚本。
+Using ChatGPT and the official manual, I wrote an AHK v2 script.
 
-`telegram.ahk` :
+`telegram.ahk`:
 
 ```
 ^!t::
@@ -43,17 +43,16 @@ tags:
 }
 ```
 
-其中
+Replace
 
 - `C:\Users\salt\AppData\Roaming\Telegram Desktop\Telegram.exe`
 
-替换为自己的 Telegram 路径即可。
+with your own Telegram path.
 
-## 使用方法
+## Usage
 
-1. 下载安装 [AutoHotkey](https://www.autohotkey.com/) v2
+1. Download and install [AutoHotkey](https://www.autohotkey.com/) v2
 2. `Win` + `R` → `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`
+3. Place the `telegram.ahk` script here
 
-3. 将上述 `telegram.ahk` 放到这里
-
-这样 `telegram.ahk` 就会开机自动运行了。
+This way, `telegram.ahk` will run automatically at startup.

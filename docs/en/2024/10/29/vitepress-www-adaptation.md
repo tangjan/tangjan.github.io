@@ -1,12 +1,12 @@
 ---
-title: Customizing VitePress as my Personal Homepage
+title: Customizing VitePress as Personal Homepage
 date: 2024/10/29
 tags: 
  - VitePress
  - Vue
 ---
 
-# Customizing VitePress as my Personal Homepage
+# Customizing VitePress as Personal Homepage
 
 ## Introduction
 

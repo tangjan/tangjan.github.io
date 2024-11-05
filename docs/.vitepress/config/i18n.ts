@@ -1,6 +1,5 @@
 import type { DefaultTheme, LocaleConfig } from "vitepress";
-import { sidebar } from "./sidebar";
-import { sidebar_en } from "./sidebar_en";
+import { sidebar, sidebar_en } from "./sidebar";
 
 export const i18n: LocaleConfig<DefaultTheme.Config> = {
   root: {
@@ -14,8 +13,7 @@ export const i18n: LocaleConfig<DefaultTheme.Config> = {
     label: "English",
     lang: "en-US",
     link: "/en/",
-    title: "Jan's learning notes",
-    description: "Site Description",
+    title: "Jan's Learning Notes",
     themeConfig: {
       nav: [
         { text: "Tags", link: "/en/tags.md" },
