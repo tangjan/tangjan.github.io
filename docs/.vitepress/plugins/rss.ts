@@ -61,7 +61,9 @@ export function rssPlugin(options: RSSPluginOptions): Plugin {
       if (processedFiles.has(id)) {
         return code;
       }
-      if (id.includes("/docs/20") && id.endsWith(".md")) {
+
+      // 只处理 /docs/20xx/ 目录下的 .md 文件
+      if (/\/docs\/20\d{2}\/.*\.md$/.test(id)) {
         const content = readFileSync(id, "utf-8");
         const { data, content: markdownContent } = matter(content);
 
