@@ -18,7 +18,7 @@ tags:
 
 ## 结果
 
-![结果](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/windows-local-wordpress/9.png)
+![结果](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/windows-local-wordpress/9-result.png)
 
 下面是过程。
 

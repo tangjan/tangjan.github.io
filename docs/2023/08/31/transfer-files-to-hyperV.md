@@ -41,7 +41,7 @@ tags:
 
 创建一个要共享给虚拟机的文件夹，右击 → `Properties` → `Sharing` → `Share...`，添加一个 `Everyone`，允许读写，然后 `Share`。
 
-![share-network-access](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/transfer-files-to-hyperV/4-share-network-access)
+![share-network-access](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/08/31/transfer-files-to-hyperV/4-share-network-access.png)
 
 然后 `Win`+`R` → `cmd` → `ipconfig`，找到 `Ethernet adapter vEthernet (Default Switch)`，找到这个本地 IP 地址。
 

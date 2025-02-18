@@ -26,7 +26,7 @@ GitLab：[matlab-jigsaw](https://gitlab.com/tangjan/matlab-jigsaw)
 
 比如，这里我制作了一张只有一个白色像素点的图片（用 mspaint 制作的），在 MATLAB 中使用 `imread` 函数来读取这张图片，显示出数组信息如图：
 
-![1-pixel-info](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/matlab-jigsaw/2-pixel-info.png)
+![1-pixel-info](https://cdn.jsdelivr.net/gh/tangjan/imgBed/notes/2023/09/09/matlab-jigsaw/2-1-pixel-info.png)
 
 `(255，255，255)` 即表示白色
 
