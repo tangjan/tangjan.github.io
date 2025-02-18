@@ -1,5 +1,13 @@
 # WELCOME
 
+::: tip
+This website stops updating
+
+Navigate to [tangjiayan.notion.site/note](https://tangjiayan.notion.site/note) for the latest notes
+:::
+
+---
+
 [Ciallo～(∠・ω< )⌒☆](https://ciallo.tangjiayan.com/)
 
 🚧 English translations in progress - more coming soon!
